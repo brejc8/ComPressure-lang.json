@@ -425,7 +425,7 @@
                 {"who":"nicola", "text":"When the input is 100, we want the output to be 50. So I guess we connect our 50 generator to the output using a valve. And when the input is 0, we vent the output to atmosphere."}
             ],
             [
-                {"who":"nicola", "text":"This sounds like our buffer design again, but when the input is 50, we want the output to be 100. So the atmosphere venting valve should be closed once we reach 50. I guess, instead of using the 100 PSI on \"-\" side of the venting valve, we could switch it to 50. "}
+                {"who":"nicola", "text":"This sounds like our buffer design again, but when the input is 50, we want the output to be 100. So the atmosphere venting valve should be closed once we reach 50. I guess, instead of using the 100 PSI on \"+\" side of the venting valve, we could switch it to 50. "}
             ],
             [
                 {"who":"nicola", "text":"I don't remember there being any other components in this. I think we just need to connect what is there to the output."}
@@ -942,7 +942,7 @@
                 {"who":"nicola", "text":"When the input is 100, we want the output to be 50. So I guess we connect our 50 generator to the output using a valve. And when the input is 0, we vent the output to atmosphere."}
             ],
             [
-                {"who":"nicola", "text":"This sounds like our buffer design again, but when the input is 50, we want the output to be 100. So the atmosphere venting valve should be closed once we reach 50. I guess, instead of using the 100 PSI on \"-\" side of the venting valve, we could switch it to 50. "}
+                {"who":"nicola", "text":"This sounds like our buffer design again, but when the input is 50, we want the output to be 100. So the atmosphere venting valve should be closed once we reach 50. I guess, instead of using the 100 PSI on \"+\" side of the venting valve, we could switch it to 50. "}
             ],
             [
                 {"who":"nicola", "text":"I don't remember there being any other components in this. I think we just need to connect what is there to the output."}
@@ -1459,7 +1459,7 @@
                 {"who":"nicola", "text":"When the input is 100, we want the output to be 50. So I guess we connect our 50 generator to the output using a valve. And when the input is 0, we vent the output to atmosphere."}
             ],
             [
-                {"who":"nicola", "text":"This sounds like our buffer design again, but when the input is 50, we want the output to be 100. So the atmosphere venting valve should be closed once we reach 50. I guess, instead of using the 100 PSI on \"-\" side of the venting valve, we could switch it to 50. "}
+                {"who":"nicola", "text":"This sounds like our buffer design again, but when the input is 50, we want the output to be 100. So the atmosphere venting valve should be closed once we reach 50. I guess, instead of using the 100 PSI on \"+\" side of the venting valve, we could switch it to 50. "}
             ],
             [
                 {"who":"nicola", "text":"I don't remember there being any other components in this. I think we just need to connect what is there to the output."}
