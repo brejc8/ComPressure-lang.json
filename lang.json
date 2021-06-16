@@ -89,7 +89,7 @@
             "Lock Picking"              :   "Lock Picking",
             "Code filter"               :   "Code filter",
             "Steamputer"                :   "Steamputer",
-            "END"                       :   "END",
+            "END"                       :   "END"
 
         },
         "help":
@@ -117,7 +117,7 @@
             "One method of creating a specific pressure is by simultaneously supplying and venting a pipe at a specific ratio. A valve is as open as the pressure on the (+) side minus the pressure on the (-) side.\n\nOpenness = P - N\n\nWhere P is the pressure on the Positive side of the valve and N is the pressure on the Negative side. Here the lower valve openness is 40 (60 - 20).",
             "The pressure generated in this arrangement is, in percent, the openness of the source valve divided by the sum of the openness of both valves.\n\nPressure = S / (S + V)\n\nWhere S is Supply valve openness and V is Venting valve openness.\nIn this case, Supply is 40 (40 - 0). Venting is also 40 (60 - 20). The expected value between is 40 / (40 + 40) = 50%, thus 50 PSI.",
             "Three scoring modes are available. The default (Accuracy) mode scores the proximity to the target value (for the worst test).\n\nPrice mode ranks designs by cost. Pipes cost £1 per port, valves cost £10 and steam inlets cost £5. There is an extra £4 charge for each subdesign.\n\nSteam mode measures the amount of steam supplied by the steam inlets.",
-            "It is possible to create user defined levels. These have a user defined icon, tests and can be exchanged through the clipboard.\nTests and test steps can be added/removed using the +/- buttons. The time period per step is configurable. If, when playing all tests, some steps can be skipped, the skip all button selects the subtest to start on. The design can be optionally reset on all or only in play one test mode. The port icons select which ports are used. Clicking the ports on the left of the value selects the ports used as the output. The values are changed in the experiment menu.",
+            "It is possible to create user defined levels. These have a user defined icon, tests and can be exchanged through the clipboard.\nTests and test steps can be added/removed using the +/- buttons. The time period per step is configurable. If, when playing all tests, some steps can be skipped, the skip all button selects the subtest to start on. The design can be optionally reset on all or only in play one test mode. The port icons select which ports are used. Clicking the ports on the left of the value selects the ports used as the output. The values are changed in the experiment menu."
         ],
         "dialogue":
         [
@@ -640,7 +640,7 @@
             "在同时通过蒸汽源导入蒸汽并排放蒸汽至大气的情况下， 适当调整导气与排气的比例可以产生特定的压强。 阀门的开度由“+”端与“-”端的差值决定。\n\n开度 = ( P - N ）%\n\n其中P代表“+”端压强， N代表“-”端压强。 左端下方的阀门开度为40% (60 - 20）。",
             "左图中的设计产生的压强， 可通过导气阀开度除以二者开度的和近似计算。\n\n压强 = 100 * S / (S + V)\n\n其中S表示导气阀的开度， V表示排气阀的开度。 左图中， 导气阀开度为40% (40 - 0)， 排气阀开度也为40% (60 - 20)。\n二者之间的输出值是100 * 40% / (40% + 40%） = 50， 即50 PSI。",
             "有三种计分模式可供选择。\n默认模式（精确度模式）通过最差情况下与预期输出的差值计分排名。\n\n价格模式通过造价多少排名。 管道开口各花费£1， 阀门花费£5，  蒸汽源花费£10， 集成元件额外花费£4。\n\n蒸汽量模式通过计算蒸汽源的蒸汽消耗量排名。",
-            "玩家可制造自制关卡， 绘制关卡图标、 设计样例并通过剪贴板分享。 测试样例可以通过+或-按钮来增加或删去， 每个状态的时长都可自行调整。 如果在运行所有样例时有些状态可被跳过， 也可通过对应按钮来设置。 设计可只在当前样例下重置， 也可在所有样例下重置。 可通过管道图标选择需要的管道以及输出管道。 输入值均可通过调试页面更改。",
+            "玩家可制造自制关卡， 绘制关卡图标、 设计样例并通过剪贴板分享。 测试样例可以通过+或-按钮来增加或删去， 每个状态的时长都可自行调整。 如果在运行所有样例时有些状态可被跳过， 也可通过对应按钮来设置。 设计可只在当前样例下重置， 也可在所有样例下重置。 可通过管道图标选择需要的管道以及输出管道。 输入值均可通过调试页面更改。"
         ],
         "dialogue":
         [
@@ -1130,8 +1130,7 @@
             "Lock Picking"              :   "Lock Picking",
             "Code filter"               :   "Code filter",
             "Steamputer"                :   "Steamputer",
-            "END"                       :   "END",
-
+            "END"                       :   "END"
         },
         "help":
         [
@@ -1158,7 +1157,7 @@
             "One method of creating a specific pressure is by simultaneously supplying and venting a pipe at a specific ratio. A valve is as open as the pressure on the (+) side minus the pressure on the (-) side.\n\nOpenness = P - N\n\nWhere P is the pressure on the Positive side of the valve and N is the pressure on the Negative side. Here the lower valve openness is 40 (60 - 20).",
             "The pressure generated in this arrangement is, in percent, the openness of the source valve divided by the sum of the openness of both valves.\n\nPressure = S / (S + V)\n\nWhere S is Supply valve openness and V is Venting valve openness.\nIn this case, Supply is 40 (40 - 0). Venting is also 40 (60 - 20). The expected value between is 40 / (40 + 40) = 50%, thus 50 PSI.",
             "Three scoring modes are available. The default (Accuracy) mode scores the proximity to the target value (for the worst test).\n\nPrice mode ranks designs by cost. Pipes cost £1 per port, valves cost £10 and steam inlets cost £5. There is an extra £4 charge for each subdesign.\n\nSteam mode measures the amount of steam supplied by the steam inlets.",
-            "It is possible to create user defined levels. These have a user defined icon, tests and can be exchanged through the clipboard.\nTests and test steps can be added/removed using the +/- buttons. The time period per step is configurable. If, when playing all tests, some steps can be skipped, the skip all button selects the subtest to start on. The design can be optionally reset on all or only in play one test mode. The port icons select which ports are used. Clicking the ports on the left of the value selects the ports used as the output. The values are changed in the experiment menu.",
+            "It is possible to create user defined levels. These have a user defined icon, tests and can be exchanged through the clipboard.\nTests and test steps can be added/removed using the +/- buttons. The time period per step is configurable. If, when playing all tests, some steps can be skipped, the skip all button selects the subtest to start on. The design can be optionally reset on all or only in play one test mode. The port icons select which ports are used. Clicking the ports on the left of the value selects the ports used as the output. The values are changed in the experiment menu."
         ],
         "dialogue":
         [
@@ -2100,7 +2099,7 @@
             "Repeat\ndialogue" : "Repeat\ndialogue",
             "Hint" : "ヒント",
             "New Design" : "新しいデザイン",
-            "Valve" : "バルブ"
+            "Valve" : "バルブ",
             "Steam Inlet" : "蒸気吸気口",
             "Rotate left" : "左回す",
             "Rotate right" : "右回す",
@@ -2114,7 +2113,7 @@
             "Export to\nclipboard" : "クリップボードに書き出す",
             "Import from\nclipboard" : "クリップボードからインポート",
             "Accuracy mode" : "Accuracy mode",
-            "Price mode" : "価格モード"
+            "Price mode" : "価格モード",
             "Steam mode" : "Steam mode",
             "Confirm" : "確認",
             "Cancel" : "キャンセル",
