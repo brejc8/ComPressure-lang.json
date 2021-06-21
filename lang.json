@@ -1693,7 +1693,7 @@
                 {"who": "charles", "text": "Probieren Sie es aus. Verbinden Sie West und Ost, aber nur, wenn im Norden ein hoher Druck herrscht."}
             ],
             [
-                {"wer": "nicola", "text": "Beeindruckend!"},
+                {"who": "nicola", "text": "Beeindruckend!"},
                 {"who": "charles", "text": "Ah, Nicola, du kommst genau richtig. Gertrude, Nicola wird Ihr Assistent sein. Er hat bereits begonnen, die Notizen zu studieren, die Ada hinterlassen hat. Der nächste Teil ist etwas anspruchsvoller für die alten grauen Zellen.\n\nWährend die Beaufschlagung der \"+\"-Seite mit Dampf das Ventil öffnet, schließt die Beaufschlagung der \"-\"-Seite das Ventil. Das Ventil ist nur geöffnet, wenn \"+\" unter einem höheren Druck als die \"-\"-Seite steht."},
                 {"who": "charles", "text": "Ada hat mich gebeten, dies hinzuzufügen, damit sie ein Ventil herstellen kann, das sich bei Anlegen von Hochdruck an die Steuerleitung schließt. Mal sehen, ob diese Ventile noch richtig funktionieren.\n\nSchließen Sie den Osten und Westen an, aber nur, wenn der vom Süden kommende Druck niedriger als 100 PSI ist.\n\nSie können den Dampfeinlass als Quelle für guten Hochdruckdampf verwenden."}
             ],
