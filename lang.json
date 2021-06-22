@@ -1572,10 +1572,10 @@
             "Delete level"              : "Ebene löschen",
             "Return"                    : "Rückgabe",
             "Level Editor"              : "Level Editor",
-            "Level select"              : "Level select",
-            "Design"                    : "Design",
-            "Test"                      : "Test",
-            "Experiment"                : "Experiment",
+            "Level select"              : "Level auswählen",
+            "Design"                    : "Entwerfen",
+            "Test"                      : "Testen",
+            "Experiment"                : "Experimentieren",
             "Scores"                    : "Spielstände",
             "Help"                      : "Hilfe",
             "Repeat\ndialogue"          : "Repeat\ndialogue",
@@ -1583,17 +1583,17 @@
             "New design"                : "Neues Design",
             "Valve"                     : "Ventil",
             "Steam Inlet"               : "Dampfeinlass",
-            "Rotate left"               : "Drehen nach links",
-            "Rotate right"              : "Drehen nach rechts",
-            "Reflect\nvertically"       : "Reflect\nvertical",
-            "Reflect\nhorizontally"     : "Reflect\nhorizontal",
+            "Rotate left"               : "nach links drehen",
+            "Rotate right"              : "nach rechts drehen",
+            "Reflect\nvertically"       : "Vertikal\nspiegeln",
+            "Reflect\nhorizontally"     : "Horizontal\nspiegeln",
             "Lock blocks"               : "Blöcke sperren",
             "Add sign"                  : "Vorzeichen hinzufügen",
             "Stop tests"                : "Tests anhalten",
             "Repeat 1 test"             : "1 Test wiederholen",
             "Run all tests"             : "Alle Tests ausführen",
-            "Export to\nclipboard"      : "Exportieren nach\nclipboard",
-            "Import from\nclipboard"    : "Importieren von\nclipboard",
+            "Export to\nclipboard"      : "Exportieren in die\nZwischenablage",
+            "Import from\nclipboard"    : "Importieren aus der\nZwischenablage",
             "Accuracy mode"             : "Genauigkeitsmodus",
             "Price mode"                : "Preismodus",
             "Steam mode"                : "Dampfmodus",
@@ -1601,16 +1601,16 @@
             "Cancel"                    : "Abbrechen",
             "Exit"                      : "Beenden",
             "Full Screen"               : "Vollbild",
-            "Join our Discord group"    : "Treten Sie unserer Discord-Gruppe bei",
+            "Join our Discord group"    : "Treten Sie unserem Discord-Server bei",
             "Info"                      : "Info",
             "Select language"           : "Sprache auswählen",
-            "Number resolution"         :  "Number resolution",
+            "Number resolution"         : "Number resolution",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
-                                            "Wenn Sie nicht weiterkommen, können Sie Ihre Herausforderungen mit den klügsten Köpfen unserer High Pressure Steam Society auf Discord besprechen. Drücken Sie Esc und klicken Sie auf die Schaltfläche \"Join our Discord group\".",
+                                            "Wenn Sie nicht weiterkommen, können Sie Ihre Herausforderungen mit den klügsten Köpfen der High Pressure Steam Society auf Discord besprechen. Drücken Sie Esc und klicken Sie auf die Schaltfläche \"Join our Discord group\".",
             "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "Leider muss unsere Reise irgendwo enden. Das Abenteuer geht im vollständigen Spiel weiter.\n\nTo be continued...",
+                                            "Leider muss unsere Reise irgendwo enden. Das Abenteuer geht im vollständigen Spiel weiter.\n\nFortsetzung folgt...",
             "Cross"                     : "Kreuz",
-            "50"                        :  "50",
+            "50"                        : "50",
             "Normally Open"             : "Normalerweise offen",
             "Normally Closed"           : "Normalerweise geschlossen",
             "Switch"                    : "Schalter",
@@ -1645,7 +1645,7 @@
             "CounterE"                  : "ZählerE",
             "Delay"                     : "Verzögerung",
             "Self-timed latch"          : "Selbsttätige Verriegelung",
-            "Lock Picking"              : "Lock Picking",
+            "Lock Picking"              : "Schloss knacken",
             "Code filter"               : "Code-Filter",
             "Steamputer"                : "Steamputer",
             "END"                       : "ENDE"
@@ -1672,7 +1672,7 @@
             "Durch Drücken von Esc wird das Spielmenü angezeigt. Mit den Schaltflächen können Sie das Spiel beenden, zwischen Fenster- und Vollbildmodus umschalten, unserer Discord-Gruppe beitreten und die Credits anzeigen.\n\nDie Schieberegler passen die Soundeffekte und die Musiklautstärke an.",
             "Fertige Konstruktionen stehen zur Verwendung als Komponenten zur Verfügung. Verfügbare Komponenten werden im Erstellungsmenü angezeigt. Wenn Sie einen Entwurf ändern, wird seine Implementierung in allen Komponenten aktualisiert.\n\nDurch Doppelklicken auf die Komponente können Sie sie inspizieren. Sie können den Stapel wieder aufklappen, indem Sie auf das Design-Symbol oben links klicken. Wenn Sie während der Inspektion auf die Schaltfläche \"Anpassen\" klicken, wird ein lokaler Entwurf erstellt, der bearbeitet werden kann und nicht mehr aktualisiert wird, wenn das Original geändert wird. Der Entwurf wird rot, um dies zu signalisieren.",
             "Es gibt vier Steckplätze zum Speichern von Designs. Das beste Design wird ebenfalls gespeichert, so dass es später abgerufen werden kann. Designs können über eine Zeichenfolge in der Zwischenablage ausgetauscht werden.\n\nKlicken Sie auf den Punktestand, um die globale Punktegrafik und Ihren Punktestand im Vergleich zu Ihren Freunden anzuzeigen. Deren Designs können eingesehen werden.",
-            "Eine Methode, einen bestimmten Druck zu erzeugen, ist das gleichzeitige Be- und Entlüften einer Leitung in einem bestimmten Verhältnis. Ein Ventil ist so offen wie der Druck auf der (+) Seite minus dem Druck auf der (-) Seite.\n\nOpenness = P - N\n\nWobei P der Druck auf der positiven Seite des Ventils und N der Druck auf der negativen Seite ist. Hier ist die untere Ventilöffnung 40 (60 - 20).",
+            "Eine Methode, einen bestimmten Druck zu erzeugen, ist das gleichzeitige Be- und Entlüften einer Leitung in einem bestimmten Verhältnis. Ein Ventil ist so offen wie der Druck auf der (+) Seite minus dem Druck auf der (-) Seite.\n\nÖffnung = P - N\n\nWobei P der Druck auf der positiven Seite des Ventils und N der Druck auf der negativen Seite ist. Hier ist die untere Ventilöffnung 40 (60 - 20).",
             "Der in dieser Anordnung erzeugte Druck ist in Prozent die Offenheit des Quellventils geteilt durch die Summe der Offenheit beider Ventile.\n\nDruck = S / (S + V)\n\nWobei S die Offenheit des Versorgungsventils und V die Offenheit des Entlüftungsventils ist.\nIn diesem Fall ist die Versorgung 40 (40 - 0). Die Entlüftung ist ebenfalls 40 (60 - 20). Der erwartete Wert dazwischen ist 40 / (40 + 40) = 50%, also 50 PSI.",
             "Es sind drei Bewertungsmodi verfügbar. Der Standardmodus (Genauigkeit) bewertet die Nähe zum Zielwert (für den schlechtesten Test).\n\nDer Preismodus ordnet Designs nach Kosten. Rohre kosten £1 pro Anschluss, Ventile kosten £10 und Dampfeinlässe kosten £5. Für jede Unterkonstruktion wird eine zusätzliche Gebühr von 4 £ erhoben.\n\nDer Dampfmodus misst die von den Dampfeinlässen gelieferte Dampfmenge.",
             "Es ist möglich, benutzerdefinierte Ebenen zu erstellen. Diese haben ein benutzerdefiniertes Symbol, Tests und können über die Zwischenablage ausgetauscht werden.\nTests und Testschritte können über die +/- Tasten hinzugefügt/entfernt werden. Die Zeitspanne pro Schritt ist konfigurierbar. Wenn beim Abspielen aller Tests einige Schritte übersprungen werden können, wählt die Schaltfläche \"Alle überspringen\" den Untertest aus, mit dem begonnen werden soll. Der Entwurf kann wahlweise auf alle oder nur im Modus \"Play one test\" zurückgesetzt werden. Die Port-Symbole wählen aus, welche Ports verwendet werden. Durch Anklicken der Ports links neben dem Wert werden die verwendeten Ports als Ausgang ausgewählt. Die Werte werden im Menü \"Experiment\" geändert."
@@ -1680,7 +1680,7 @@
         "dialogue":
         [
             [
-                {"who": "charles", "text": "Grüße Gertrude! Mein Name ist Charles Chavvington, der Besitzer dieser allgemeinen Hochdruck-Dampfanlage. Von hier aus versorgen wir die halbe Stadt mit Hochdruckdampf, der alles von Dampfregenschirmen bis zu Dampfxylophonen antreibt. Meine teure verstorbene Frau Ada hat verfügt, dass ihre Forschungen über die mathematischen Eigenschaften von Dampf über ihre Zeit bei uns hinaus fortgesetzt werden sollten. Was uns zu dem Grund führt, warum Sie bei mir angestellt sind. Ihre Aufgabe soll es sein, ihr Vermächtnis zu bewahren und diese wissenschaftlichen Forschungen fortzuführen."},
+                {"who": "charles", "text": "Grüße Gertrude! Mein Name ist Charles Chavvington, der Besitzer dieser Hochdruck-Dampfanlage. Von hier aus versorgen wir die halbe Stadt mit Hochdruckdampf, der alles von Dampfregenschirmen bis zu Dampfxylophonen antreibt. Meine teure verstorbene Frau Ada hat verfügt, dass ihre Forschungen über die mathematischen Eigenschaften von Dampf über ihre Zeit bei uns hinaus fortgesetzt werden sollten. Was uns zu dem Grund führt, warum Sie bei mir angestellt sind. Ihre Aufgabe soll es sein, ihr Vermächtnis zu bewahren und diese wissenschaftlichen Forschungen fortzuführen."},
                 {"who": "charles", "text": "Ich vertraue darauf, dass Sie die elementare Dampftechnik in Ihrem vorherigen Studium gemeistert haben, aber bevor wir Ihnen den Zugang zu ihrem Labor gestatten, müssen Sie zuerst beweisen, dass Sie den grundlegenden Bau von Dampfleitungen beherrschen.\n\nVerbinden Sie den West-Generator mit den Ost-Anlagen und den Nord-Generator mit den Süd-Anlagen. Verbinden Sie auf keinen Fall die Rohre miteinander! Dadurch erhalten die südlichen Anlagen kostenlosen Dampf, und sie bezahlen ihre Rechnungen nie pünktlich!"},
                 {"who": "charles", "text": "Wenn Sie mit unseren Hochdruck-Dampfrohren nicht vertraut sind, finden Sie oben rechts mit dem Symbol \"?\" eine technische Anleitung."}
             ],
@@ -1693,9 +1693,9 @@
                 {"who": "charles", "text": "Probieren Sie es aus. Verbinden Sie West und Ost, aber nur, wenn im Norden ein hoher Druck herrscht."}
             ],
             [
-                {"wer": "nicola", "text": "Beeindruckend!"},
-                {"who": "charles", "text": "Ah, Nicola, du kommst genau richtig. Gertrude, Nicola wird Ihr Assistent sein. Er hat bereits begonnen, die Notizen zu studieren, die Ada hinterlassen hat. Der nächste Teil ist etwas anspruchsvoller für die alten grauen Zellen.\n\nWährend die Beaufschlagung der \"+\"-Seite mit Dampf das Ventil öffnet, schließt die Beaufschlagung der \"-\"-Seite das Ventil. Das Ventil ist nur geöffnet, wenn \"+\" unter einem höheren Druck als die \"-\"-Seite steht."},
-                {"who": "charles", "text": "Ada hat mich gebeten, dies hinzuzufügen, damit sie ein Ventil herstellen kann, das sich bei Anlegen von Hochdruck an die Steuerleitung schließt. Mal sehen, ob diese Ventile noch richtig funktionieren.\n\nSchließen Sie den Osten und Westen an, aber nur, wenn der vom Süden kommende Druck niedriger als 100 PSI ist.\n\nSie können den Dampfeinlass als Quelle für guten Hochdruckdampf verwenden."}
+                {"who": "nicola", "text": "Beeindruckend!"},
+                {"who": "charles", "text": "Ah, Nicola, du kommst genau richtig. Gertrude, Nicola wird Ihr Assistent sein. Er hat bereits begonnen, die Notizen zu studieren, die Ada hinterlassen hat. Der nächste Teil ist etwas anspruchsvoller für die alten grauen Zellen.\n\nWährend Druck auf der \"+\"-Seite das Ventil öffnet, schließt Druck von der \"-\"-Seite das Ventil. Das Ventil ist nur geöffnet, wenn der Druck von der \"+\"-Seite höher ist als der von der \"-\"-Seite."},
+                {"who": "charles", "text": "Ada hat mich gebeten, dies hinzuzufügen, damit sie ein Ventil herstellen kann, das sich bei Anlegen von Hochdruck an die Steuerleitung schließt. Mal sehen, ob diese Ventile noch richtig funktionieren.\n\nVerbinden Sie den Osten und Westen, aber nur, wenn der vom Süden kommende Druck niedriger als 100 PSI ist.\n\nSie können den Dampfeinlass als Quelle für guten Hochdruckdampf verwenden."}
             ],
             [
                 {"who": "charles", "text": "Ausgezeichnet! Jetzt können wir durch Kombination dieser beiden Entwürfe eine Komponente konstruieren, die zwischen zwei Quellen umschaltet.\n\nWenn das West-Kontrollhaus 100 PSI Hochdruckdampf liefert, sollte der Nord-Generator an die Ost-Einrichtungen angeschlossen werden. Wenn das westliche Kontrollhaus jedoch 0 PSI atmosphärischen Druck liefert, sollte der südliche Generator an die östlichen Einrichtungen angeschlossen werden."},
@@ -1704,38 +1704,38 @@
             ],
             [
                 {"who": "nicola", "text": "Lady Chavvingtons Notizen sprechen von einer Dampfverbindung zwischen dem Labor und Lady Easleys Residenz, die zur Kommunikation genutzt wurde."},
-                {"who": "charles", "text": "Ja, ich habe es entfernen lassen. Neue Verfahren. Zu viel von unserem Hochdruckdampf ging verloren. Der einzige Dampf, der unsere Anlage verlassen darf, wird dosiert und an zahlende Kunden geliefert. Keiner meiner Hochdruckdämpfe darf diese Wände verlassen."},
+                {"who": "charles", "text": "Ja, ich habe es entfernen lassen. Neues Vorgehen. Zu viel von unserem Hochdruckdampf ging verloren. Der einzige Dampf, der unsere Anlage verlassen darf, wird dosiert und an zahlende Kunden geliefert. Keiner meiner Hochdruckdämpfe darf diesen Raum verlassen."},
                 {"who": "nicola", "text": "Ich denke, wir können noch eine Verbindung herstellen, ohne Dampf abzulassen. Laut diesen Notizen..."},
-                {"who": "charles", "text": "Hah! Unmöglich! Das ist elementare Dampftechnik, mein lieber Junge! Die Dampfkommunikation beruht auf der Übertragung von Dampf, und du darfst nichts von meinem Dampf \"übertragen\"! Jedenfalls werde ich anderswo gebraucht. Diese Angelegenheit scheint nicht so dringend zu sein, wie die Ermittlungen über meinen fehlenden Dampf."},
-                {"who": "nicola", "text": "Laut Lady Chavvington war Charles nicht als der größte Zuhörer bekannt. Sie beschreibt den Entwurf in einigen Details."},
+                {"who": "charles", "text": "Hah! Unmöglich! Das ist elementare Dampftechnik, mein lieber Junge! Die Dampfkommunikation beruht auf der Übertragung von Dampf, und du darfst nichts von meinem Dampf \"übertragen\"! Jedenfalls werde ich anderswo gebraucht. Diese Angelegenheit scheint nicht so dringend zu sein wie die Ermittlungen über meinen fehlenden Dampf."},
+                {"who": "nicola", "text": "Laut Lady Chavvington war Charles nicht als der größte Zuhörer bekannt. Sie beschreibt den Entwurf recht detailliert."},
                 {"who": "ada", "text": "5. Juni\nIch habe heute ein fantastisches Druckreplikationsgerät erstellt. Um einen Druck mit einem bestimmten Wert zu erzeugen, habe ich Ventile verwendet, die in einem bestimmten Verhältnis Dampf zuführen und entlüften. Indem ich das Dampfventil zu 80 % öffnete und das atmosphärische Entlüftungsventil zu 20 %, konnte ich den ursprünglichen Druck von 80 PSI nachbilden. Charles' Ventile scheinen sich auf den Druck auf der \"+\"-Seite zu öffnen, abzüglich des Drucks auf der \"-\"-Seite"},
-                {"who": "ada", "text": "Dies scheint für eine ganze Reihe von Werten mit einem Minimum an Fehlern zu funktionieren. Aufgrund seiner isolierenden Eigenschaften werde ich es einen \"Puffer\" nennen.\n\nDie Kommunikation durch Druck, anstatt durch den Fluss von Dampf, bietet wundersame Möglichkeiten, da der Wert nicht durch den Widerstand langer Rohre verfälscht wird. Ich habe Charles die Idee erklärt, obwohl er mehr mit Fragen des Firmengewinns beschäftigt war."},
+                {"who": "ada", "text": "Dies scheint für eine ganze Reihe von Werten mit einer minimalen Zahl an Fehlern zu funktionieren. Aufgrund seiner isolierenden Eigenschaften werde ich es einen \"Puffer\" nennen.\n\nDie Kommunikation durch Druck, anstatt durch den Fluss von Dampf, bietet wundersame Möglichkeiten, da der Wert nicht durch den Widerstand langer Rohre verfälscht wird. Ich habe Charles die Idee erklärt, obwohl er mehr mit Fragen der Gewinnmaximierung beschäftigt war."},
                 {"who": "nicola", "text": "Es scheint, dass einige Teile der ursprünglichen Konstruktion noch in der Wand installiert sind. Solange wir Lady Easleys Dampf nutzen, um die Geräte jenseits der Wand zu betreiben, wird sich Charles nicht beschweren."}
             ],
             [
                 {"who": "nicola", "text": "Nicht perfekt, aber wir können immer wieder zurückkommen und es verbessern. Faszinierend, nicht wahr? Die Kombination der Ventile reproduziert jeden Druckwert. Der eingehende Druck öffnet die Dampfeinlass- und die Atmosphärenentlüftungsventile auf die exakten Werte, um den Druck in der Ausgangsleitung korrekt zu reproduzieren.\n\nLassen Sie uns unsere erste Nachricht senden und Lady Easley besuchen, um zu sehen, ob es funktioniert."},
                 {"who": "annie", "text":"[Einige Zeit später]\nDu hast mich so erschreckt! Für eine Minute dachte ich, es wäre Ada, die aus dem Jenseits zu mir spricht."},
-                {"who": "nicola", "text": "Wir bitten um Entschuldigung Lady Easley. Wir versuchen, Lady Chavvingtons Forschung fortzusetzen. Wir haben versucht, 80 PSI zu senden, was laut unserem Codebuch \"Hallo\" bedeutet"},
-                {"who": "annie", "text": "Nein! 80 PSI bedeutet, \"Hilfe! Ich bin im Jenseits gefangen!\". Es sind 20 PSI, die \"Hallo\" bedeuten.\n\nAls Ada das System installierte, machte sie einen Fehler bei den Ventilen und alle Drücke wurden verkehrt herum empfangen. Als sie das Problem untersuchte, bekam sie ihre Erleuchtung über die Möglichkeiten von Dampf. Wir haben das nie behoben, und stattdessen habe ich alle Druckwerte in meinem Codebuch invertiert."},
+                {"who": "nicola", "text": "Wir bitten um Entschuldigung, Lady Easley. Wir versuchen, Lady Chavvingtons Forschung fortzusetzen. Wir haben versucht, 80 PSI zu senden, was laut unserem Codebuch \"Hallo\" bedeutet."},
+                {"who": "annie", "text": "Nein! 80 PSI bedeutet \"Hilfe! Ich bin im Jenseits gefangen!\". Es sind 20 PSI, die \"Hallo\" bedeuten.\n\nAls Ada das System installierte, machte sie einen Fehler bei den Ventilen und alle Drücke wurden verkehrt herum empfangen. Als sie das Problem untersuchte, bekam sie ihre Erleuchtung über die Möglichkeiten von Dampf. Wir haben das nie behoben, und stattdessen habe ich alle Druckwerte in meinem Codebuch invertiert."},
                 {"who": "nicola", "text": "Interessant. Vielleicht sollten wir sehen, ob wir den gleichen Fehler machen können."}
             ],
             [
                 {"who": "charles", "text": "Verflixt! Beim besten Willen kann ich den Druckvergleicher von Ada nicht finden. Jedes Jahr vergleicht die hoch angesehene High Pressure Steam Society die Drücke aller Hochdruckdampfwerke, um den Lieferanten des Dampfes mit dem höchsten Druck zu ermitteln. Ohne einen genauen Komparator müssen wir den diesjährigen Wettbewerb absagen.\n\nMeine fünfjährige Siegesserie wäre ruiniert! Ich bin sicher, dass sie hier irgendwo noch einen hatte..."},
-                {"who": "nicola", "text": "Wir sollten versuchen, es zu schaffen, sonst mischt er sich nur weiter ein..."},
+                {"who": "nicola", "text": "Wir sollten versuchen, ihm einen zu machen, sonst mischt er sich nur weiter ein..."},
                 {"who": "charles", "text": "Was hast du gesagt, Junge?"},
                 {"who": "nicola", "text": "Ich sagte, wir könnten einen machen, Sir."},
                 {"who": "charles", "text": "Hervorragend! Denken Sie nur daran, dass es nicht ausreicht, den Ausgang mit Hochdruckdampf zu verbinden, wenn ein Eingang größer als der andere ist, man muss auch den Ausgang entlüften, wenn das Gegenteil der Fall ist. Meine Rohre sind vollständig abgedichtet und lassen nie Dampf austreten, es sei denn, man öffnet ein Ventil, um sie zu entlüften."}
             ],
             [
-                {"who": "charles", "text": "Ausgezeichnet! Solche Präzision! Ich bin sicher, es könnte den Druck einer Feder auf einem Kricketfeld erkennen.\n\nIch brauche nur noch ein weiteres Gerät, bevor ich Sie Ihren Untersuchungen überlasse. Um in die Hochdruck-Dampf-Gesellschaft aufgenommen zu werden, muss man nachweisen, dass sein Dampfwerk Hochdruckdampf erzeugt."},
-                {"who": "charles", "text": "Hier bei General High Pressure Steam Works produzieren wir Hochdruckdampf bei 100 PSI, dem einzigen Druck, den ich als echten Hochdruckdampf anerkennen würde. Aber technisch gesehen wird jeder Dampfdruck über 50 PSI als Hochdruckdampf angesehen. Als Vorsitzender der Hochdruckdampf-Gesellschaft ist es meine Aufgabe, dafür zu sorgen, dass minderwertige, Niederdruckdampf produzierende Abweichler nicht zugelassen werden."},
+                {"who": "charles", "text": "Ausgezeichnet! Beieindruckende Präzision! Ich bin sicher, es könnte den Druck einer Feder auf einem Kricketfeld erkennen.\n\nIch brauche nur noch ein weiteres Gerät, bevor ich Sie mit Ihren Untersuchungen alleinlasse. Um in die Hochdruck-Dampf-Gesellschaft aufgenommen zu werden, muss man nachweisen, dass sein Dampfwerk Hochdruckdampf erzeugt."},
+                {"who": "charles", "text": "Hier bei General High Pressure Steam Works produzieren wir Hochdruckdampf bei 100 PSI, dem einzigen Druck, den ich als echten Hochdruckdampf anerkennen würde. Aber technisch gesehen wird jeder Dampfdruck über 50 PSI als Hochdruckdampf angesehen. Als Vorsitzender der High Pressure Steam Society ist es meine Aufgabe, dafür zu sorgen, dass minderwertigen Niederdruckdampf produzierende Abweichler nicht zugelassen werden."},
                 {"who": "nicola", "text": "Wir haben noch Ihre Konstruktion für den 50 PSI-Dampfgenerator in der Werkzeugkiste. Wir können die bereits erstellten Entwürfe als Komponenten verwenden."}
             ],
             [
                 {"who": "charles", "text": "Bravo! Mit dieser Vorrichtung werde ich diese Niederdruck-Dampferzeuger von unserer exklusiven Gesellschaft fernhalten."},
                 {"who": "nicola", "text": "Wie viele Mitglieder sind es bisher?"},
-                {"who": "charles", "text": "Nun... Eine... Wie ich schon sagte: \"Sehr exklusiv\". Ich muss auf jeden Fall los, sonst verpasse ich die Empfangsdrinks!"},
-                {"who": "nicola", "text": "Endlich...\n\nLaut Lady Chavvingtons Tagebuch wurde eine zweite Kommunikationsleitung installiert, die zur Residenz von keinem Geringeren als Lord Moorhouse führt! Charles wäre nicht glücklich gewesen, wenn er es gefunden hätte. Sehen Sie."},
+                {"who": "charles", "text": "Nun... Eines... Wie ich schon sagte: \"Sehr exklusiv\". Ich muss auf jeden Fall los, sonst verpasse ich den Sektempfang!"},
+                {"who": "nicola", "text": "Endlich...\n\nLaut Lady Chavvingtons Tagebuch wurde eine zweite Kommunikationsleitung installiert, die zur Residenz von keinem Geringeren als Lord Moorhouse führt! Charles wäre nicht glücklich gewesen, wenn er es gefunden hätte. Sehen Sie sich das hier an."},
                 {"who": "ada", "text": "17. Juni\n\nNachdem die Pipeline zum Anwesen von Lord Moorhouse fertiggestellt ist, beginne ich mit der Arbeit an einem Gerät, das den hohen Bereich der Druckwerte (0-100) auf solche verdichtet, die für das Niederdrucksystem (0-50) akzeptabel sind. Zu meiner völligen Überraschung war der Druckpuffer in der Lage, den Eingangsdruck auf genau die Hälfte zu skalieren, wenn er mit dem Niederdruckdampf von Lord Moorhouse betrieben wurde, aber immer noch 100 PSI als Referenzeingang verwendete."},
                 {"who": "nicola", "text": "Wirklich!?! Wie kann das nur funktionieren?"}
             ],
@@ -1783,7 +1783,7 @@
             ],
             [
                 {"who": "charles", "text": "Ich habe das Schild für die Pfeife mitgebracht, nach dem Ada gefragt hat."},
-                {"wer": "nicola", "text": "Das muss schon Monate her sein."},
+                {"who": "nicola", "text": "Das muss schon Monate her sein."},
                 {"who": "charles", "text": "Ja, nun, wenn ein Chavvington sagt, dass er etwas tun wird, dann wird es auch getan. Sie müssen ihn nicht jeden Monat daran erinnern.\n\nKönnten Sie ihr bitte eine Nachricht von mir schicken?\n\n80, 94, 76, 52, 68, 70"},
                 {"who": "nicola", "text": "Ich sehe, Sie haben die Codes gelernt!"},
                 {"who": "charles", "text": "Gelernt?!? Ich habe sie entworfen! Es war während meiner Zeit beim Militär. Eine Kombination der häufigsten Nachrichten, die zwischen Kapitänen ausgetauscht werden.\n\nSei ein guter Kerl und schicke es sofort ab."},
@@ -1860,7 +1860,7 @@
             ],
             [
                 {"who": "ada", "text": "Also, ich bin beeindruckt. Wir waren erst ein paar Tage weg und Sie haben den Speicherteil des Steamputers erstellt."},
-                {"Wer": "Nicola", "Text": "Die was?"},
+                {"who": "Nicola", "Text": "Die was?"},
                 {"who": "annie", "text": "Alles wird zu gegebener Zeit enthüllt.\n\nNun, ich denke, meine Arbeit hier ist getan! Ich habe es geschafft, den Speicher zu entwerfen. Ich überlasse es Ihnen, die Berechnungen und die Steuerung zu untersuchen..."},
                 {"who": "ada", "text": "Fangen wir mal klein an. Wir brauchen eine Komponente, die uns den kleineren der beiden Eingabewerte liefert. Sollte einfach genug sein."}
             ],
@@ -1948,7 +1948,7 @@
                 {"who": "charles", "text": "Huzzah!\n\nLasst uns heute Nachmittag feiern!"},
                 {"who": "george", "text": "Lady Easley? Werden Sie uns zu diesem Anlass begleiten?"},
                 {"who": "annie", "text": "Ich fürchte, ich kann nicht, denn ich habe heute Nachmittag eine Verabredung mit einem schneidigen Herrn."},
-                {"wer": "george", "text": "Oh."},
+                {"who": "george", "text": "Oh."},
                 {"who": "annie", "text": "Das wärst du, George. Der Nachmittagstee in Madingley Hall wurde angeboten, und ich nehme dankend an." },
                 {"who": "ada", "text": "Danke, dass Sie ComPressure spielen."}
             ]
