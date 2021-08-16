@@ -47,10 +47,9 @@
             "Info"                      :   "Info",
             "Select language"           :   "Select language",
             "Number resolution"         :   "Number resolution",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button.",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued...",
             "Cross"                     :   "Cross",
             "50"                        :   "50",
             "Normally Open"             :   "Normally Open",
@@ -146,6 +145,9 @@
                 {"who":"charles", "text":"What!?! That would be low pressure steam! We do not work with low pressure steam! I did not make my fortune by supplying people with low pressure steam!\n\nNever mind all that low pressure nonsense. When West control is High Pressure, connect the North generator, otherwise connect the South generator."}
             ],
             [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
+            ],
+            [
                 {"who":"nicola", "text":"Lady Chavvington's notes talk about a steam connection between the laboratory and Lady Easley's residence that was used for communication."},
                 {"who":"charles", "text":"Yes, I had it removed. New procedures. Too much of our High Pressure Steam was going missing. The only steam permitted to leave our facility is metered and provided to paying customers. None of my High Pressure Steam may leave these walls."},
                 {"who":"nicola", "text":"I think we can still establish a connection without delivering any steam out. According to these notes..."},
@@ -214,11 +216,14 @@
                 {"who":"nicola", "text":"Everyone assumed she died..."},
                 {"who":"charles", "text":"Hmm... Yes... On reflection, that would explain the flowers and cards expressing sympathy for my loss. I was touched by people's concern for the loss of my High Pressure Steam.\n\nNevertheless. The sooner you complete the steam calculation machine, the sooner we can get to the bottom of this. Continue the research post haste."},
                 {"who":"ada", "text":"June 27th\nTogether with Lord Moorhouse such progress has been made in our research into steam computation. Our previous designs suffered from inaccuracies. Only when the valves were perfectly balanced and produced an output of 50, was the result perfect. With this I was struck with an idea.\n\nI could sense how open any valve is, by placing a second valve which vented the steam and adjusting its openness. Only when the two valves are equally open, will the pressure between them be precisely 50. All I had to do is to adjust the value until this was the case."},
-                {"who":"ada", "text":"Using this, Lord Moorhouse was able to create a steam pressure adding component, which I hope he will reveal to me.\n\nLord Moorhouse is most shy yet smart as a whip, alas often he becomes too afraid to share his innovations."}
+                {"who":"ada", "text":"Using this, Lord Moorhouse was able to create a steam pressure adding component, which I hope he will reveal to me."}
             ],
             [
-                {"who":"nicola", "text":"Well it works. We can now sense how open a valve is, but I don't see how this gets us closer to steam computation. I suppose we must ask Lord Moorhouse."},
-                {"who":"nicola", "text":"Lord Moorhouse. Thank you for allowing us to call upon you. In her absence, we are attempting to continue the steam computation work of Lady Chavvington. Only you know the construction of the pressure adding unit and we beg you share it with us."},
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
+            ],
+            [
+                {"who":"nicola", "text":"According to Lady Chavvington, combining these two sensor designs into one creates a highly accurate buffer. I guess that’s useful, but I don’t how this gets us closer to steam computation. I suppose we must ask Lord Moorhouse."},
+                {"who":"nicola", "text":"Lord Moorhouse. Thank you for allowing us to call upon you. In her absence, we are attempting to continue the steam computation work of Lady Chavvington. Only you know the construction of the pressure adding unit and we beg you to share it with us."},
                 {"who":"george", "text":"I do agree. Having thought on this, the advancement of knowledge must continue despite her collusion with Charles against me. I will disclose the secret of addition in exchange for the assurance that she is safe from him. Hearing the rumours that pass through these halls, I suspect her dead by his hand."},
                 {"who":"nicola", "text":"Lady Chavvington is alive and well, staying with her sister."},
                 {"who":"george", "text":"That is a relief. The idea of her spending any more time in that high pressure death trap keeps me up at night. If one of those high pressure tankers were to explode, perish the thought, the destruction would be immense. I would not rest until the world was rid of this high pressure horror...\n\nOh... Where was I? The addition design. Before you can make one, you must make one of subtraction. A valve is as open as the pressure on the (+) side minus the pressure on the (-) side. Once you create such a valve, you can then measure its openness."},
@@ -266,7 +271,7 @@
                 {"who":"joseph", "text":"The only consequences would be the world finally rejecting steam once and for all! It should be reserved for executions and only seen in museums. To think! Steam invading the offices and displacing my machines! For it is only gears that can produce a...\n\nWHAT!?! Let go of me! Unhand me, you wretched fools! You cannot do this to me! Wait until the Academy hears about this!"},
                 {"who":"charles", "text":"The Academy certainly will hear about this!\n\nWell that's a satisfying conclusion to this matter. My High Pressure Steam is safe as is my dear Ada."},
                 {"who":"ada", "text":"Actually darling, I think the story of steam computation is only just beginning."},
-                {"who":"charles", "text":"Indeed. But, perhaps we should diffuse that steam bomb first."}
+                {"who":"charles", "text":"Indeed. But, perhaps we should defuse that steam bomb first."}
             ],
             [
                 {"who":"ada", "text":"Thank you Gertrude. If not for your quick thinking, we would have had a disaster on our hands."},
@@ -274,9 +279,13 @@
                 {"who":"ada", "text":"Speak no more of this, for I must be forgiven also. As a gesture of good will, feel free to use my... our laboratory. Lady Easley already has access. I do believe Charles and I need a bit of a break from all this commotion. We shall return in a few days and I already look forward to inspecting your discoveries."},
                 {"who":"george", "text":"Thank you, and safe journey.\n\nNicola, could you find me that x2 pressure amplifier."},
                 {"who":"nicola", "text":"It's right here.\n\nThe construction is simple, yet I find the operation stunningly useful."},
-                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a minimum and maximum value, I do believe we can construct an amplifier which will zoom into any given range."},
-                {"who":"nicola", "text":"We shall name it the Zoom element."},
-                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the South our minimum. The East output will tell us where the West input lies within the range."}
+                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a maximum value, I do believe we can construct an amplifier which will scale for any given maximum."},
+                {"who":"nicola", "text":"We shall name it the Scale element."},
+                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the East output will tell us where the West input lies."}
+            ],
+            [
+                {"who":"nicola", "text":"That wasn't that difficult, but what if we wish to zoom into a range which does not begin at zero?"},
+                {"who":"george", "text":"That is an interesting idea. Gertrude, would you be able to construct a Zoom element which scales any range with a minimum and a maximum to the range 0 to 100?\n\nLet North be out maximum and South be our minimum of the range."}
             ],
             [
                 {"who":"george", "text":"Good, now we can zoom into any pressure range we choose. What I need next is a way of detecting if we are within a range. Take a look at this \"steam speedometer\".\n\nAda made it for Charles to measure the amount of steam passing through it. When steam passes through a long pipe, it will lose some pressure. The faster the steam is passing through, the more pressure it loses. If the two sides are at same pressure, there must be no moving steam. She even put some valves in the pipe to increase the resistance and make the difference greater."},
@@ -335,7 +344,7 @@
             ],
             [
                 {"who":"charles", "text":"Excellent stuff! It is just a shame we have to rely on these horrid Cogsworth clocks to provide the timing pulses."},
-                {"who":"nicola", "text":"Gertrude, do you remember how you diffused that bomb? I think we can make a clock just as precise."},
+                {"who":"nicola", "text":"Gertrude, do you remember how you defused that bomb? I think we can make a clock just as precise."},
                 {"who":"charles", "text":"However you do it, I want it flip once every tick and I don't want it changing time depending on what it is connected to."}
             ],
             [
@@ -414,13 +423,16 @@
                 {"who":"nicola", "text":"When the input is high, we connect the North. We know how to do that from the \"Normally Open\" design. And when the input is low, we connect the South. That's our \"Normally Closed\" design."}
             ],
             [
+                {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                 {"who":"nicola", "text":"Well, let's start with the basics. When the input is high, we will connect the output to a steam source. When it is low, we will connect to the atmosphere. To connect to atmosphere, we simply leave the pipe end open.\n\nAs Lady Chavvington noted, the valves are analogue and it appears when values are between 0 and 100, the valves will partly open and recreate the exact ratio."}
             ],
             [
                 {"who":"nicola", "text":"This time, when the input is high pressure, we want it to be connected to atmosphere. When the input is low is when we supply the steam. Our switch design was able to select between two values. Those values could be steam and atmosphere."}
             ],
             [
-                {"who":"nicola", "text":"We can use valves to measure which of North and South is higher. If North is higher, we connect the output to steam. If South is higher, we connect it to atmosphere.\n\nRemember, the steam in the output pipe will not drain away by itself, we need to  actively release it using a valve."}
+                {"who":"nicola", "text":"We can use valves to measure which of North and South is higher. If North is higher, we connect the output to steam. If South is higher, we connect it to atmosphere.\n\nRemember, the steam in the output pipe will not drain away by itself, we need to actively release it using a valve."}
             ],
             [
                 {"who":"nicola", "text":"I guess we already have a comparator, and we have a source of a precise value of 50."}
@@ -441,19 +453,25 @@
                 {"who":"nicola", "text":"We can use the same trick as in our decrypt design. We increase or decrease the amount we open the bottom valve until the pressure between them is exactly 50. We have an Amp50 which does this."}
             ],
             [
+                {"who":"nicola", "text":"We can use the same trick as in our decrypt design. We increase or decrease the amount we open the top valve until the pressure between them is exactly 50. We have an Amp50 which does this."}
+            ],
+            [
                 {"who":"nicola", "text":"We open one valve to the value of the West input minus the South input, we can then open a second valve to the same level of openness by looking for when the pressure between them is 50."}
             ],
             [
                 {"who":"nicola", "text":"This one is somewhat harder. Using a subtractor gives us too much wobble.\n\nComparing the output minus one of the inputs to the other input fails if the second input is 0 and the valve is fully closed. But in that case we can use a second valve pair to do the same comparison and switching the inputs. We can then use an Amp50 to make sure the pressure between the four valves is 50 PSI.\n\nClick the requirements for a diagram of this setup."}
             ],
             [
-                {"who":"annie", "text":"When the South input is high, we open our storage pipe. We can the use a buffer to pressurize the output to the same level as we captured. We have to close off the output while the South input is high so as to not let the new pressure propagate through. The easiest way to guarantee this is to use threshold of 50 on the timing and output valves."}
+                {"who":"annie", "text":"When the South input is high, we open our storage pipe. We can use a buffer to pressurize the output to the same level as we captured. We have to close off the output while the South input is high so as to not let the new pressure propagate through. The easiest way to guarantee this is to use threshold of 50 on the timing and output valves."}
             ],
             [
                 {"who":"nicola", "text":"The output is the value of a latch controlled by the South input. The input to the latch is either the latch output plus or minus the West input. The North input selects between them. We have an adder, a subtractor and a switch."}
             ],
             [
                 {"who":"nicola", "text":"For a change a wobble is actually desirable. Amplifiers in a ring configuration will make the design unstable and will wobble up and down."}
+            ],
+            [
+                {"who":"nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                 {"who":"nicola", "text":"When West is higher than South, start adding more steam. When West is lower than North, start releasing more steam."}
@@ -520,7 +538,7 @@
             ]
         ]
     },
-    "中文":
+    "简体中文":
     {
         "tooltips":
         {
@@ -568,10 +586,9 @@
             "Info"                      :   "关于",
             "Select language"           :   "语言",
             "Number resolution"         :   "Number resolution",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                             "如果您在游玩过程中遇到困难， 可以前来Discord上与优秀的高压蒸汽协会成员一同讨论您遇到的挑战。 按下Esc并点击“加入Discord服务器”来加入。",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "看来我们的旅程必须在此停下了。 您将能够在完整游戏中继续您的冒险。\n\n敬请期待。",
 
 
             "Cross":      "交叉",
@@ -668,6 +685,9 @@
                 {"who":"charles", "text":"什么！？！ 那就是低压蒸汽了， 我们可不用低压蒸汽！ 我可不是靠给人们提供低压蒸汽挣钱的！\n\n总之别管那些没用的低压蒸汽。 当西控制室给高压蒸汽时，接北蒸汽厂，否则接南蒸汽厂。"}
             ],
             [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
+            ],
+            [
                 {"who":"nicola", "text":"Chavvington女士的笔记提到， 实验室和Easley女士的住所之间连接有用来通讯的管道。"},
                 {"who":"charles", "text":"是的， 不过我已经把它拆了。 太多高压蒸汽不知道导哪儿去了， 所以现在有了新规定， 只有按量供应给付费客户的蒸汽才允许离开我们工厂， 其他所有高压蒸汽都不能通过这些墙导出去。"},
                 {"who":"nicola", "text":"但根据这些笔记， 我想还是有办法在不导出蒸汽的情况下建立一个连接的……"},
@@ -739,6 +759,9 @@
                 {"who":"ada", "text":"利用这一方法， Moorhouse先生设计出了一个蒸汽压强加法器。 我十分希望他能向我透露他是怎么制作的。\n\nMoorhouse先生非常内向， 也十分聪明。 唉， 他总是害怕分享他的创新成果。"}
             ],
             [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
+            ],
+            [
                 {"who":"nicola", "text":"好的， 它起作用了。 我们现在可以探测阀门的开度， 但还不清楚这对蒸汽计算有什么帮助。 我想我们得问问Moorhouse先生。"},
                 {"who":"nicola", "text":"Moorhouse先生， 谢谢您允许我们前来拜访。 在Chavvington女士离开的情况下， 我们正试图继续完成她的蒸汽计算工作。 现在只有您知道加法器的结构， 请问能否向我们透露它的结构？"},
                 {"who":"george", "text":"当然可以。 尽管她与Charles串通一同针对我， 知识的发展也不能因此停步。 我会将加法器的原理公之于众， 以确保她不受他的伤害。 那些传闻让我怀疑她已经死于他手。"},
@@ -796,9 +819,13 @@
                 {"who":"ada", "text":"别再说这些了， 我也得向你道歉。 为表达我的善意， 请随意使用我的……我们的实验室。 Easley女士已经有实验室的权限了。 我认为Charles和我需要在这场骚乱后休息一下。 我们将在几天后回来， 希望能够看到你们的进展。"},
                 {"who":"george", "text":"好的， 一路平安。\n\nNicola， 你能帮我找找那个乘二器吗？"},
                 {"who":"nicola", "text":"就在这儿。\n\n它的构造很简单， 但我发现这个设计模式非常有用。"},
-                {"who":"george", "text":"的确。 这个装置只能把数值从0到50这一范围放大到0到100。 我认为在给定值的范围时， 可以制造一个把值放大到任何范围的元件。"},
-                {"who":"nicola", "text":"我们可以把它命名为放大器。"},
-                {"who":"george", "text":"是的， 但首先我们应该先制造出来。 北输入给出取值范围的上限， 南输入给出取值范围的下限。 东输出表示西输入在取值范围内的位置。"}
+                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a maximum value, I do believe we can construct an amplifier which will scale for any given maximum."},
+                {"who":"nicola", "text":"We shall name it the Scale element."},
+                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the East output will tell us where the West input lies."}
+            ],
+            [
+                {"who":"nicola", "text":"That wasn't that difficult, but what if we wish to zoom into a range which does not begin at zero?"},
+                {"who":"george", "text":"That is an interesting idea. Gertrude, would you be able to construct a Zoom element which scales any range with a minimum and a maximum to the range 0 to 100?\n\nLet North be out maximum and South be our minimum of the range."}
             ],
             [
                 {"who":"george", "text":"很好， 现在我们可以放大任何压强范围。 接下来需要一种探测压强是否在某个范围内的元件。 看看这个“蒸汽速度表”。\n\nAda为Charles造了这个来测量蒸汽量。 当蒸汽通过长管道时， 它的压强会有所损失。 蒸汽的流速越快， 压强损失就越大。 如果两边的压强相同， 蒸汽就不会流动。 她甚至在管道里放了一些阀门来增加阻抗， 使差别更加明显。"},
@@ -936,6 +963,9 @@
                 {"who":"nicola", "text":"当输入高压时， 连接北部， 这就是“常开开关”的设计。 当输入低压时， 连接南方， 这就是“常闭开关”的设计。"}
             ],
             [
+                {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                 {"who":"nicola", "text":"让我们从基础部分开始。 当输入较高时， 将输出连接到蒸汽源； 当输入较低时， 将输出连接到大气。 只需保持管道末端打开就能连接到大气。\n\n正如Chavvington女士所指出的， 阀门是给出的是模拟信号。 当数值在0到100之间时， 阀门会部分打开， 并可以生成准确的比率。"}
             ],
             [
@@ -963,6 +993,9 @@
                 {"who":"nicola", "text":"可以使用与解密器一样的设计。 不断调整底部阀门的开度， 直到它们之间的压强正好为50。 鉴别器正好能实现这一点。"}
             ],
             [
+                {"who":"nicola", "text":"可以使用与解密器一样的设计。 不断调整底部阀门的开度， 直到它们之间的压强正好为50。 鉴别器正好能实现这一点。"}
+            ],
+            [
                 {"who":"nicola", "text":"令一个阀门的开度为西部输入减去南部输入， 然后令第二个阀门打开到相同的开度， 此时当它们之间的压强为50。"}
             ],
             [
@@ -976,6 +1009,9 @@
             ],
             [
                 {"who":"nicola", "text":"这次我们反而需要振荡了。 将比较器连成环会使设计不稳定， 输出值会上下摆动。"}
+            ],
+            [
+                {"who":"nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                 {"who":"nicola", "text":"当西部高于南部时， 将输出连接到蒸汽源。 当西部低于北部时， 将输出连接到大气。"}
@@ -1042,6 +1078,544 @@
             ]
         ]
     },
+    "繁體中文":
+    {
+        "tooltips":
+        {
+            "Save"                      :   "保存",
+            "Restore"                   :   "查看",
+            "Best solution"             :   "最佳設計",
+            "Customize"                 :   "自訂",
+            "Import level"              :   "匯入關卡",
+            "Delete"                    :   "刪除",
+            "Copy design\nto current"   :   "覆蓋當前",
+            "Delete level"              :   "刪除",
+            "Return"                    :   "返回",
+            "Level Editor"              :   "編輯器",
+            "Level select"              :   "選關",
+            "Design"                    :   "元件",
+            "Test"                      :   "測試",
+            "Experiment"                :   "實驗",
+            "Scores"                    :   "分數",
+            "Help"                      :   "幫助",
+            "Repeat\ndialogue"          :   "對話",
+            "Hint"                      :   "提示",
+            "Reveal a solution"         :   "看解答",
+            "New design"                :   "新元件",
+            "Valve"                     :   "閥門",
+            "Steam Inlet"               :   "蒸汽源",
+            "Rotate left"               :   "左旋",
+            "Rotate right"              :   "右旋",
+            "Reflect\nvertically"       :   "垂直翻轉",
+            "Reflect\nhorizontally"     :   "水平翻轉",
+            "Lock blocks"               :   "鎖定方塊",
+            "Add sign"                  :   "註解",
+            "Stop tests"                :   "停止",
+            "Repeat 1 test"             :   "運行當前測資",
+            "Run all tests"             :   "運行所有測資",
+            "Export to\nclipboard"      :   "匯出至剪貼簿",
+            "Import from\nclipboard"    :   "從剪貼簿匯入",
+            "Accuracy mode"             :   "精準度模式",
+            "Price mode"                :   "價格模式",
+            "Steam mode"                :   "蒸汽量模式",
+            "Confirm"                   :   "確認",
+            "Cancel"                    :   "取消",
+            "Exit"                      :   "退出",
+            "Full Screen"               :   "全螢幕",
+            "Join our Discord group"    :   "加入Discord伺服器",
+            "Info"                      :   "關於",
+            "Select language"           :   "語言",
+            "Number resolution"         :   "小數精確度",
+            "User levels"               :   "User levels",
+            "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
+                                            "如果您在遊玩過程中遇到困難， 可以上Discord與優秀的高壓蒸汽協會成員一同討論您遇到的挑戰。 按下Esc並點「加入Discord伺服器」來加入。",
+            "Cross":      "交叉",
+            "50":      "50源",
+            "Normally Open":      "常開開關",
+            "Normally Closed":      "常閉開關",
+            "Switch":      "選擇器",
+            "Buffer":      "緩衝器",
+            "Inverter":      "翻轉器",
+            "Comparator":      "比較器",
+            "Amp50":      "鑑別器",
+            "Div2":      "除二器",
+            "Mul2":      "乘二器",
+            "Encrypt":      "加密器",
+            "Decrypt":      "解密器",
+            "Sensor":      "測量器",
+            "Subtractor":      "減法器",
+            "Adder":      "加法器",
+            "Latch":      "鎖存器",
+            "Tabulator":      "製表器",
+            "Broken Link":      "解除連接",
+            "Zoom":      "放大器",
+            "Flow Detector":      "流量探測器",
+            "LatchE":      "可控鎖存器",
+            "Latch2":      "二鎖存器",
+            "Latch5":      "五鎖存器",
+            "Latch10":      "十鎖存器",
+            "Min":      "最小值器",
+            "Max":      "最大值器",
+            "Fuse":      "保險絲",
+            "Counter":      "計數器",
+            "ROM":      "唯讀記憶體",
+            "Poem":      "詩歌朗誦器",
+            "Clock":      "時脈",
+            "Cross v2":      "交叉2",
+            "CounterE":      "可控計數器",
+            "Delay":      "延時器",
+            "Self-timed latch":      "定時鎖存器",
+            "Lock Picking":      "撬鎖",
+            "Code filter":      "過濾器",
+            "Steamputer":      "蒸汽計算機",
+            "END":      "尾聲"
+
+
+        },
+        "help":
+        [
+            "在選關頁面中， 下方的面板展示了此關的設計目標。 每一關四周都有四個管道， 每個管道有其對應的顏色。 設計目標說明了管道的之間應當如何相互作用。 點擊設計目標面板可獲得提示。",
+            "當您通過了所有測試測資時， 您便可進入下一關。 您可隨時返回調整先前的解法。\n\n點擊下方的管道按鈕以繼續進行教學。 您可以按F1打開此幫助。",
+            "管道可透過兩種方法放置： 一是按住左鍵， 從起點拖曳至終點來放置管道； 二是點擊左鍵， 使管道向滑鼠方向延伸。 點擊右鍵可退出管道放置模式。",
+            "按住右鍵可刪除管道以及其他元件。",
+            "您可在元件頁面向設計中添加元件。 選中蒸汽源並將滑鼠停留在關卡中時， 可使用方向鍵改變蒸汽源朝向。 您也可透過按Q鍵與E鍵或是滾動滾輪來旋轉。 點擊左鍵可放置元件， 點擊右鍵可退出元件放置模式。",
+            "閥門可透過同種方式放置。 按下Tab鍵或是滾輪， 可快速選中閥門； 而再次按下Tab鍵或是滾輪， 可選中蒸汽源。",
+            "蒸汽源會提供壓強為 100 PSI 的蒸汽， 而斷開的管道會將蒸汽排放至大氣中， 壓強變為 0 PSI。",
+            "在管道的連接處可以看到該點的壓強。 注意每段管道都有一部分阻抗。",
+            "當閥門的「＋」端壓強大於「－」端壓強時， 蒸汽可以通過。 二者差值越大， 閥門的開度越大。 「＋」端與「－」端的蒸汽不會被消耗。\n\n在圖中， 「－」端連接大氣， 因此為 0 PSI； 而「＋」端為 100 PSI， 故閥門的開度為100%。 如果「＋」端為 75 PSI 而「－」端為 25 PSI， 則閥門的開度為50%。",
+            "「＋」端的壓強不大於「－」端的壓強時， 閥門將會關閉， 蒸汽無法通過。",
+            "如果在閥門的「＋」端連接蒸汽源， 那麼只有當「－」端的壓強小於 100 PSI 時， 閥門才會打開。\n\n和之前一樣， 閥門的開度與「＋」端與「－」端的差值成正比。",
+            "在閥門的「－」端連接蒸汽源會關閉閥門， 因為「－」端的壓強總是不小於「＋」端的壓強。",
+            "您可在測試頁面觀察您的設計運行結果如何。 該頁面中前三個按鈕的作用分別是停止、 運行當前測資和運行所有測資， 對應的快捷鍵是1、2、3。\n\n每個測資上標註的是當前的分數， 下方標註的是最佳設計的分數。 在最右端的最終分數是各分數的最小值。",
+            "下方面板展示了當前測資的輸入序列和預期輸出。 當前運行到的相位會被框起來。 上一次執行的結果記錄在輸入序列右端。 您可按空白鍵切換至下一個測資。\n\n您在每個測資所得的分數由最終輸出與預期輸出的差值決定。 圖像將顯示測資中最後一個狀態的輸出曲線。\n淡線代表最佳設計的曲線。",
+            "在實驗頁面中， 您可以手動改變各個管道的值， 觀察設計是如何運行的。 直的滑塊可調整所需的值， 橫的滑塊可調整輸入強度。 將水平滑塊移至最左會變為輸出管道。 各管道的初始值由當前測資決定。",
+            "下方的圖像記錄了各個管道的值的變化。",
+            "有兩種方式同時選取多個元件： 按住Ctrl時點擊， 或是按住Shift時拖動。 選中的元件在不被阻擋的情況下， 可用WASD移動， 用Q和E旋轉。 選取的元件可用C鍵複製， X鍵剪下， V鍵貼上。 按下Delete可刪除選取的元件。 可用Z鍵或同時按下左右鍵撤銷， Y鍵或是Shift+Z重做。",
+            "按下Esc可打開遊戲選單。 選單中可退出遊戲、 切換視窗或全螢幕、 加入Discord伺服器和查看製作訊息。\n\n右端滑塊可調整音效與音樂的音量大小。",
+            "已完成的設計可作為元件使用。 元件頁面中會列出所有可用的元件。 改變元件的設計將會影響到所有使用該元件的關卡。\n\n雙擊元件可查看元件內部設計， 點擊左上元件圖示可退出。 查看元件內部時， 點擊自訂變為自訂元件可自由修改內部設計， 不受原元件影響。 紅色元件表示這是一個自訂元件。",
+            "每關有四個可保存設計的欄位， 最佳設計也會自動保存以便使用。 設計可以利用剪貼簿匯入與匯出。\n\n進入分數頁面可展示全球分數分布曲線與您和您的好友的分數。 您可以自由查看您與您的好友的設計。",
+            "在同時從蒸汽源導入蒸汽並排放蒸汽至大氣的情況下， 適當調整導氣與排氣的比例可以產生特定的壓強。 閥門的開度由「＋」端與「－」端的差值決定。\n\n開度 = ( P - N )%\n\n其中P代表「＋」端壓強， N代表「－」端壓強。 左端下方的閥門開度為40% (60 - 20)。",
+            "左圖的設計產生的壓強， 可用導氣閥開度除以二者開度的和來近似計算。\n\n壓強 = 100 * S / (S + V)\n\n其中S表示導氣閥的開度， V表示排氣閥的開度。 左圖中， 導氣閥開度為40% (40 - 0)， 排氣閥開度也為40% (60 - 20)。\n二者之間的輸出值是100 * 40% / (40% + 40%) = 50， 即 50 PSI。",
+            "有三種計分模式可供選擇。\n預設模式（精確度模式）是用最差情況下與預期輸出的差值來計分排名。\n\n價格模式是用造價多少來排名。 管道開口各花費￡1， 閥門花費￡5， 蒸汽源花費￡10， 集成元件額外花費￡4。\n\n蒸汽量模式是計算蒸汽源的蒸汽消耗量來排名。",
+            "玩家可設計自製關卡， 繪製關卡圖示、 設計測資並透過剪貼簿分享。 測試測資可以透過+或-按鈕來增加或刪去， 每個狀態的時長都可自行調整。 如果在運行所有測資時有些狀態可被跳過， 也可透過對應按鈕來設置。 設計可只在當前測資下重設， 也可在所有測資下重設。 可利用管道圖示選擇需要的管道以及輸出管道。 輸入值均可在實驗頁面更改。 "
+        ],
+        "dialogue":
+        [
+            [
+                {"who":"charles", "text":"你好， Gertrude！  我是Charles Chavvington， 是這項通用高壓蒸汽工程的所有人。 我們從這裡向半個城市提供高壓蒸汽， 從蒸汽傘到蒸汽木琴的各式物品都由我們提供動力。\n\n我已離去的妻子Ada要求， 在她離開我們之後， 我們要繼續她對於蒸汽的數學性質的研究， 因此我們雇用了你。 你的職責是維護她留下的設計， 並繼續進行這些研究。"},
+                {"who":"charles", "text":"相信你在之前的學習中已經掌握了基本的蒸汽工程知識， 但在你進入她的實驗室之前， 必須先證明你能熟練做到基礎的蒸汽管道建造。\n\n將西端的蒸汽廠連接到東端的設施， 並將北端的蒸汽廠連接到南端的設施。 不要把管子連在一起！ 這樣做會為南端的設施提供免費蒸汽， 而且他們從不按時付帳！\n\n如果你還不太熟悉我們的高壓蒸汽管道， 右上角有一本標著「？」的工程手冊。"}
+            ],
+            [
+                {"who":"charles", "text":"見鬼， Ada的實驗室安全門居然是用低壓蒸汽操作的！ 不知道她是怎麼把這東西打開的。\n\n在通用高壓蒸汽工程裡， 我們生產的蒸汽壓強都是100磅每平方英寸（PSI）， 而這個門用的是Moorhouse的低壓蒸汽， 工作壓強是50磅每平方英寸（PSI）。 如果我把他那變質的蒸汽引到我的屋裡， 我會被詛咒的！"},
+                {"who":"charles", "text":"如果你不能提供 50 PSI 的低壓蒸汽， 我們就只能放棄了。\n\n在元件頁面中， 你可以找到蒸汽源， 它可以為你提供大量的 100 PSI 高壓蒸汽。 就在上面， 用扳手標記著。 你也可以按兩次Tab來選取。"}
+            ],
+            [
+                {"who":"charles", "text":"天啊， 你做到了！ 雖然這白白浪費了大量的優質蒸汽， 但它確實能用。 抱歉， 這裡面並不太整潔， 因為曾經有一些流氓闖入過， 把這裡弄得一團糟。\n\n在這個實驗室裡， 我親愛的Ada對我按照精確規格製造的閥門進行了研究。 在標有「＋」的埠上施加高壓蒸汽時， 閥門會被打開， 蒸汽可以在兩個未標記的埠之間自由流動。\n\n試一試吧， 當北端處於高壓時， 連接西端和東端。"}
+            ],
+            [
+                {"who":"nicola", "text":"做得好！"},
+                {"who":"charles", "text":"啊， Nicola， 你來得正是時候。 Gertrude， Nicola將成為你的助手， 他已經開始研究Ada留下的筆記了。 下一個部分對你將會是更大的挑戰。\n\n向「＋」端通入蒸汽時會打開閥門， 而向「－」端通入蒸汽會關閉閥門。 閥門只有在「＋」端的壓強高於「－」端時才會打開。\n\nAda讓我加上這個， 這樣她就能向控制管施加高壓來關閉閥門。 讓我們試試這些閥門還能不能正常運作。"},
+                {"who":"charles", "text":"當南端的壓強低於 100 PSI 時， 連接西端和東端。\n\n你可以使用蒸汽源提供良好的高壓蒸汽。"}
+            ],
+            [
+                {"who":"charles", "text":"好極了！ 現在把這兩種設計結合， 應該可以構造一個在兩個源之間切換的元件。\n\n當西控制室提供 100 PSI 的高壓蒸汽時， 東設施應連接到北蒸汽廠； 但當西控制室的壓強為 0 PSI 時， 東設施應連接至南蒸汽廠。"},
+                {"who":"nicola", "text":"控制室提供的壓強在0到 100 PSI 之間時會發生什麼事？"},
+                {"who":"charles", "text":"什麼！？！ 那就是低壓蒸汽了， 我們可不用低壓蒸汽！ 我可不是靠給人們提供低壓蒸汽賺錢的！\n\n總之別管那些沒用的低壓蒸汽。 當西控制室給高壓蒸汽時，接北蒸汽廠，否則接南蒸汽廠。"}
+            ],
+            [
+                {"who":"charles", "text":"雖然我很討厭這個想法， 但有時候還是必須放掉蒸汽。 東端有一個蒸汽容器。 在北端處於高壓時， 我們想要將它連接到一個蒸汽源。 而在南端處於高壓時， 將東端的蒸汽排放到大氣中。 我們稱這個操作為「排氣」。"}
+            ],
+            [
+                {"who":"nicola", "text":"Chavvington女士的筆記提到， 實驗室和Easley女士的住所之間有通訊管道連接。"},
+                {"who":"charles", "text":"是的， 不過我已經把它拆了。 太多高壓蒸汽不知道導哪裡去了， 所以現在有了新規定， 只有供應給按量付費客戶的蒸汽才允許離開我們工廠， 其他所有高壓蒸汽都不能通過這些牆導出去。"},
+                {"who":"nicola", "text":"但根據這些筆記， 我想還是有辦法在不導出蒸汽的情況下建立一個連接的……"},
+                {"who":"charles", "text":"哈哈， 那是不可能的！ 這可是最基礎的蒸汽學！ 蒸汽訊號的傳遞依賴於蒸汽的傳遞， 而現在任何蒸汽都不能「傳遞」出去。\n\n無論如何， 我還有其他事情需要去辦。 調查我那不知去向的蒸汽可比現在這件事緊急多了。"},
+                {"who":"nicola", "text":"正如Chavvington女士在筆記裡寫的那樣， Charles並不是個好的傾聽者。 她在筆記裡具體地描述了這個設計。"},
+                {"who":"ada", "text":"6月5日\n我今天製造了一個神奇的壓強複製器。 為了產生一個特定的壓強值， 我使用兩個閥門， 以精確的比例導入並排放蒸汽。 把導氣閥開到80%， 把排氣閥開到20%， 就能產生與原來相同的 80 PSI。 Charles的閥門開度看起來是「＋」端的壓強減去「－」端的壓強。\n\n這適用於整個數值範圍， 誤差也很小。 由於它能隔離開前後管道之間的影響， 我將它命名為「緩衝器」。"},
+                {"who":"ada", "text":"不是透過蒸汽流， 而是透過壓強進行通訊。 這個想法能夠帶來很多神奇的可能性， 因為壓強不會受長管道的阻抗影響而偏差。 我向Charles解釋了這個想法， 但他顯然更關心公司的利益。"},
+                {"who":"nicola", "text":"原來的一些部分設計似乎還安裝在牆上。 只要我們用Easley女士的蒸汽為牆外的裝置提供動力， Charles就沒辦法抱怨了。"}
+            ],
+            [
+                {"who":"nicola", "text":"還不是很好， 但我們可以隨時回來改進。 太神奇了， 通過兩個閥門的組合能重現任何壓強值。 輸入的壓強把導氣閥和排氣閥打開到對應的程度， 就可以正確地在輸出端重現原管道中的壓強。\n\n讓我們給Easley女士發送一條消息， 看看這個管道還是不是有效。"},
+                {"who":"annie", "text":"[一段時間後]\n你嚇了我一跳！ 有那麼一瞬間， 我以為是Ada在墳墓另一邊跟我說話！"},
+                {"who":"nicola", "text":"我們向您道歉， Easley女士。 我們正嘗試繼續Chavvington女士的研究。 我試圖發送 80 PSI， 因為根據我們的編碼簿， 它的意思是 「你好」。"},
+                {"who":"annie", "text":"不！ 80 PSI 意味著 「救命！ 我被困在來世！」。 20 PSI 的意思才是 「你好」。\n\nAda安裝系統時， 在閥門上犯了一個錯誤， 所以所有的壓強都被翻轉過來了。 正是在調查這個問題時， 她突然意識到蒸汽的可能性。 我們沒有修復它， 而是在我的編碼簿中翻轉了所有的壓強值。"},
+                {"who":"nicola", "text":"有意思。 也許我們應該試試能不能犯同樣的錯誤。"}
+            ],
+            [
+                {"who":"charles", "text":"可惡， 無論如何我都找不到Ada製造的壓強比較器！ 著名的高壓蒸汽協會每年都會對所有高壓蒸汽工廠提供的蒸汽壓強進行比較， 確定哪一家供應商提供壓強最高的蒸汽。 如果沒有準確的比較器， 我們就不得不取消今年的比賽了。\n\n我蟬聯五年的得獎紀錄會被毀掉的！ 我敢肯定她放了一個比較器在這附近的某個地方……"},
+                {"who":"nicola", "text":"我們得給他做一個， 不然他會在這裡一直打擾……"},
+                {"who":"charles", "text":"你剛才說了什麼？"},
+                {"who":"nicola", "text":"我說我們可以做一個比較器， 先生。"},
+                {"who":"charles", "text":"好極了！ 記住， 只做到在一個輸入大於另一個時將輸出連接到高壓蒸汽是不夠的。 相反的情況發生時， 還必須將輸出排空。 我的管道是完全密封的， 永遠不會洩漏蒸汽， 所以必須打開一個閥門讓它們排氣。"}
+            ],
+            [
+                {"who":"charles", "text":"非常好， 十分精確！ 我相信它連一根羽毛在一整個球場上產生的壓強都能探測到。\n\n不過在你繼續研究之前， 我還需要一個裝置。 要想加入高壓蒸汽協會， 就必須證明自己的蒸汽廠生產的是高壓蒸汽。"},
+                {"who":"charles", "text":"在我的通用高壓蒸汽工程中， 生產的都必須是 100 PSI 的高壓蒸汽， 這也是我唯一真正認可的的高壓蒸汽。 但從技術上講， 任何超過 50 PSI 的蒸汽壓力都能被視為高壓蒸汽。 作為高壓蒸汽協會的主席，我有責任確保沒有任何生產劣質低壓蒸汽的人員加入。\n\n我需要一個裝置來確定申請人的蒸汽的品質。"},
+                {"who":"nicola", "text":"你設計的 50 PSI 發生器還在工具箱裡。 我們可以用已經完成的設計作為元件。"}
+            ],
+            [
+                {"who":"charles", "text":"很好！ 有了這個裝置， 我就不會讓那些生產低壓蒸汽的人進入我們的專屬協會。"},
+                {"who":"nicola", "text":"協會裡到目前為止有多少成員？"},
+                {"who":"charles", "text":"嗯…… 一個…… 正如我所說的「專屬」……\n\n無論如何， 我現在必須離開， 以免錯過我的酒會！"},
+                {"who":"nicola", "text":"最後……\n\n根據Chavvington女士的筆記， 還有第二條通訊管道被安裝， 通往了Moorhouse先生的住所！ 如果Charles知道了， 他不會高興的。 你看："},
+                {"who":"ada", "text":"6月17日\n\n隨著通往Moorhouse先生莊園的管道逐漸完工， 我開始研製一種裝置， 將高壓值（0-100）壓縮到低壓系統可接受的範圍（0-50）。 令我驚訝的是， 由Moorhouse先生的低壓蒸汽提供蒸汽源， 但仍然使用 100 PSI 作為參考壓強時， 緩衝器能夠將輸入壓強精確地縮到一半。\n\n這些特性在數學領域可能有著驚人的用途。"},
+                {"who":"nicola", "text":"真的嗎！？！那怎麼可能呢？"}
+            ],
+            [
+                {"who":"nicola", "text":"太令人吃驚了！ 好吧， 我們已經成功了一半了。 我們可以發送訊號了， 但現在我們還需要接受訊號。 我們必須把他的蒸汽壓強擴大到我們的使用範圍。 根據Chavvington女士的說法， 需要用 100 PSI 的蒸汽為元件提供蒸汽， 但是用 50 PSI 作為參考壓強。"}
+            ],
+            [
+                {"who":"nicola", "text":"試試看這能不能起作用。\n\n80 PSI [你好]\n55 PSI [請求會面]\n57 PSI [在Madingley大廳進行下午茶]"},
+                {"who":"george", "text":"……\n23 PSI [拒絕]\n……\n6  PSI [6]\n12 PSI [/]\n7  PSI [7]"},
+                {"who":"nicola", "text":"什麼？！？ 6/7？ 讓我查一下筆記。\n……\n6月7日的所有內容都是關於壓強翻轉器的設計。 如果壓強翻轉了，他怎麼能和我們溝通呢…… 翻轉的…… 翻轉？…… 對了！\n\n抱歉， 之前我的所在地使用的日月順序是相反的。 這才是正確的筆記。"},
+                {"who":"ada", "text":"7月6日\n\n我懷疑我們的通訊管道被破壞了！ 經過幾天的懇求， Moorhouse先生終於同意了與我一同進行研究工作。 我們通過通訊管道交換了各自實驗室門的密碼。 但在幾小時後， 我就收到了一張他手寫的便條， 告知我他的實驗室已被洗劫一空， 不願再接受我的合作了。 我趕緊前往我的實驗室， 發現也已經被人闖入了！ 許多工作成果都已經遺失了。"},
+                {"who":"ada", "text":"我把密碼保存地很安全， 而Charles也肯定不會做出這種事。 我立刻把實驗室的門換掉了。 Charles寧死也不願開Moorhouse的低壓蒸汽門。"},
+                {"who":"ada", "text":"我感覺這裡不再安全了。 我聯繫了我姊姊， 告知她我很快就會前往她家。 這正適合測試我的新加密系統， 因為它能保持我們的通訊安全。 Charles曾答應過會通過管道向姊姊的住所發送訊號， 但我仍然沒有收到。 他有時真的很健忘。"},
+                {"who":"nicola", "text":"那是她最後一篇筆記。\n\n哦等等！ 我以為這根管道不會通向哪裡， 所以把這些元件都用到我們的其他設計中了。 還好有些管道是是焊住的， 它們還留在原處。 加密部分似乎基本上還可以正常工作。"}
+            ],
+            [
+                {"who":"nicola", "text":"這並不難， 加密只是一個不平衡的緩衝器。 但是該怎樣做出一個能精確解密的設計呢？\n\n也許Easley女士可以幫上忙， 我應該問問她有沒有空幫助我們……"},
+                {"who":"annie", "text":"你們有沒有在Ada的文件裡找到一張Madingley茶室的餐巾？ 那天應該是6月24日， 我們正在討論英國皇家學會的新論文「單調序列的收斂性」時， Ada突然開始在餐巾上寫些什麼。 之後她就跑出了茶室， 大喊她可能會解決解密的問題了。 順帶一提， 她沒結帳。"},
+                {"who":"ada", "text":"6月24日\n解密設備可以透過反覆猜測答案， 對猜測的值進行加密， 並將其與加密過的輸入進行比較， 來不斷逼近原值。 如果輸入值更高， 就增大猜測值； 如果輸入值較低， 就減小猜測值。 這樣的設計還能實現許多函數的逆運算。\n\n我需要用Charles的比較器， 不過我得記得在今年的高壓蒸汽協會會議之前還給他。"},
+                {"who":"nicola", "text":"至少我們知道了他的比較器到哪裡去了。"}
+            ],
+            [
+                {"who":"nicola", "text":"簡直不可思議！ 我們可以用這種方法提高所有設計的精度。 Chavvington女士的姊姊一定有更多關於這些技術的資訊。\n\n80 PSI [你好]"},
+                {"who":"ada", "text":"80 PSI [你好]\n93 PSI [這裡是 Ada Chavvington]\n"},
+                {"who":"nicola", "text":"60 PSI [誰?]\n73 PSI [重複]"},
+                {"who":"ada", "text":"25 PSI [A], 28 PSI [D], 25 PSI [A]\n24 PSI [_]\n27 PSI [C], 32 PSI [H], 25 PSI [A], 46 PSI [V], 46 PSI [V], 33 PSI [I], 38 PSI [N], 31 PSI [G], 44 PSI [T], 39 PSI [O], 38 PSI [N]"},
+                {"who":"nicola", "text":"怎麼會這樣？ 我們得馬上通知Chavvington先生。\n……\nChavvington先生！ 我們與Chavvington女士的姊姊的住處聯繫上了， 但另一端的人卻自稱就是Chavvington女士本人！"},
+                {"who":"charles", "text":"啊， 那應該就是Ada吧。"},
+                {"who":"nicola", "text":"但…… 但是Chavvington先生， 你說Ada離世了。"},
+                {"who":"charles", "text":"胡說八道！ Ada好好活著呢， 現在和她姊姊住在一起。 等我們解決了高壓蒸汽不知去向的問題後她才回來。"},
+                {"who":"nicola", "text":"但你說她「離去」了。"},
+                {"who":"charles", "text":"對啊， 她「離」開這裡「去」她姊姊的……"},
+                {"who":"nicola", "text":"每個人都覺得她離世了……"},
+                {"who":"charles", "text":"嗯…… 好吧…… 我想了想， 這就解釋了為什麼會有人送我花和卡片， 對我表示同情。 我本來很感動人們對我失去高壓蒸汽感到擔心……\n\n不過這些都無關啦。 你越早完成蒸汽計算器， 我們就能越早弄清真相。 趕緊繼續研究。"},
+                {"who":"ada", "text":"6月27日\n我和Moorhouse先生在蒸汽計算方面取得了進展。 我們以前的設計不夠精確， 只有當閥門完全平衡產生 50 PSI 的輸出時， 結果才是精確的。 對於這一點我突然想到了一個主意。\n\n通過放置另一個閥門並調整其開度， 我可以探測任何閥門的開度。 因為只有當兩個閥門開度相等時， 它們之間的壓強才會精確到 50 PSI。 我所要做的就是不斷調整數值， 直到這個情況出現。"},
+                {"who":"ada", "text":"利用這個方法， Moorhouse先生設計出了一個蒸汽壓強加法器。 我十分希望他能向我透露他是怎麼製作的。\n\nMoorhouse先生非常內向， 也十分聰明。 唉， 他總是害怕分享他的創新成果。"}
+            ],
+            [
+                {"who":"nicola", "text":"成功了。 這個設計在輸入是低壓時可以精確地重現輸入值， 但是很難達到高壓。 Chavvington女士有提過另一個設計是可以完好地重現高壓， 但在低壓時表現不佳。"}
+            ],
+            [
+                {"who":"nicola", "text":"好的， 它起作用了。 我們現在可以探測閥門的開度， 但還不清楚這對蒸汽計算有什麼幫助。 我想我們得問問Moorhouse先生。"},
+                {"who":"nicola", "text":"Moorhouse先生， 謝謝您允許我們前來拜訪。 在Chavvington女士離開的情況下， 我們正試圖繼續完成她的蒸汽計算工作。 現在只有您知道加法器的結構， 請問能否向我們透露它的結構？"},
+                {"who":"george", "text":"當然可以。 儘管她與Charles串通一同針對我， 知識的發展也不能因此停步。 我會將加法器的原理公之於眾， 以確保她不受他的傷害。 那些傳聞讓我懷疑她已經死於他手。"},
+                {"who":"nicola", "text":"Chavvington女士還活著， 現在和她姊姊住在一起。"},
+                {"who":"george", "text":"這樣我就放心了。 一想到她可能還要在那高壓蒸汽的危險環境裡待上很久， 我就徹夜難眠。 假如有高壓蒸汽罐爆炸， 將會造成極大的破壞， 後果難以想像。 在擺脫這種高壓恐怖之前， 我是不會停下的……\n\n哦……我剛剛說到哪裡了？ 對了是加法器。 在你做它之前， 你必須先做一個減法器。 閥門的開度等於「＋」端的壓強減去「－」端的壓強。 先製造一個兩端有壓強差的閥門， 然後測量它的開度就可以得出結果。"},
+                {"who":"george", "text":"但現在你該走了。 既然Ada還活著， 我就要準備一件重要的任務。"}
+            ],
+            [
+                {"who":"charles", "text":"我把Ada要求透過管道發送的訊號序列帶來了。"},
+                {"who":"nicola", "text":"那個訊號幾個月前就該發了。"},
+                {"who":"charles", "text":"是的， 但我說過要做某件事時， 我肯定會去做的， 沒必要每個月都提醒我。\n\n你能幫我給她發條訊息嗎？\n\n80， 94， 76， 52， 68， 70"},
+                {"who":"nicola", "text":"看來你已經學會使用這些編碼了！"},
+                {"who":"charles", "text":"學會？！？ 這可是我設計的！ 我在從軍的時候， 把上校之間最經常使用的消息組合設計成了這套編碼。\n\n別問那麼多了， 趕緊把訊息發出去。"},
+                {"who":"nicola", "text":"80 PSI [你好]\n94 PSI [這邊是 Charles Chavvington]\n76 PSI [我親愛的天使]\n52 PSI [我的心嚮往著你]\n68 PSI [我熱切地等待你的歸來]\n70 PSI [沒有你我的生命就沒有意義]"},
+                {"who":"charles", "text":"好極了， 看來現在減法器已經做好了！ 正如我已離去的妻子所說……"},
+                {"who":"nicola", "text":"先生！ 你不要再用那個詞了！ 人們都開始認為你是殺人犯了……"},
+                {"who":"charles", "text":"嗯…… 好吧。 正如…… 不再和我們待在一起的Ada所說， 「加法器就是反向的減法器。 輸出端減去其中一個輸入應該等於另一個輸入。」 但是應該減去哪個輸入？\n\n她有一段時間很沮喪， 因為當一個輸入為零時， 她的設計會卡住； 而交換輸入後， 另一個輸入為零也會使設計卡住。 後來她靈光一現， 意識到需要把兩種方法結合。"}
+            ],
+            [
+                {"who":"annie", "text":"為什麼你們沒有回覆我的訊息？"},
+                {"who":"nicola", "text":"抱歉Easley女士， 但我們沒有收到任何訊息。"},
+                {"who":"annie", "text":"它們應該記錄在了你的訊息鎖存器上。\n……\n\n鎖存器到哪裡去了！ 肯定是被闖進實驗室的人偷了。 為防止錯過其他重要的訊息， 你們應該立刻重新製造鎖存器。"},
+                {"who":"annie", "text":"當訊息穩定下來時， 「時脈管」會發送一個脈衝， 鎖存器就會存下當前的輸入值。 鎖存器會留著這個記錄， 但在時脈管恢復低壓前， 輸出都將保持舊值。\n\n因為需要透過順序放置鎖存器來記錄一系列訊息， 所以只有當時脈管恢復到低壓時才能輸出新值。"},
+                {"who":"annie", "text":"Charles的閥門令我印象深刻， 因為它們的密封性非常好， 在關閉時能夠保持管道內的壓強不變。\n\n我希望這個設計能夠重現， 因為我覺得它還有多方面延伸的可能。"}
+            ],
+            [
+                {"who":"charles", "text":"好消息！ 讓我向你們介紹 Joseph Cogsworth 教授。 他在世上即便不是最聰明的也是最聰明的之一。 他製作的齒輪傳動製表機為我們的會計部門創造了許多奇蹟。\n\n他一直在幫助我們解決高壓蒸汽失蹤問題， 而且表現出了對Ada的成果的興趣。"},
+                {"who":"joseph", "text":"很高興看到你們已經進展到這麼遠了。 看來你們已經重新造出了Ada在筆記裡描述的暫存器。"},
+                {"who":"nicola", "text":"那些筆記在實驗室被闖入時就不見了， 你怎麼知道的？"},
+                {"who":"joseph", "text":"Ada很欣賞我的成果。 儘管我認為她那些基於蒸汽的計算方法不夠準確， 她還是經常會徵求我的意見， 希望能夠有所進步。"},
+                {"who":"charles", "text":"一旦蒸汽製表器製作好了， 我們就能夠確定哪個會計盜用了我的高壓蒸汽。\n\n每個製表器從當前計數中加上或減去一個值。 北輸入選擇進行加或減， 南輸入提供定時的高壓蒸汽脈衝。\n\n為了提高各個元件的準確度， Ada必須改進她之前的所有設計。 這是她從未能完成的。"}
+            ],
+            [
+                {"who":"charles", "text":"很好， 但已經遲了， 因為Cogsworth教授已經找出了盜用蒸汽的會計。"},
+                {"who":"joseph", "text":"作為回報， 我希望能得到這種蒸汽製表器的原型設計。 Ada希望我能夠接手她所有研究。 Gertrude， Nicola， 你們的工作已經完成了。"},
+                {"who":"ada", "text":"我可沒這麼說過！ 我可不會把我的工作交給一個性格和智力都不怎麼樣的人。"},
+                {"who":"joseph", "text":"Ada！ 我以為你已經去世了！"},
+                {"who":"ada", "text":"Charles！ 抓住這個人， 他就是引起這一切事件的罪魁禍首！"},
+                {"who":"charles", "text":"什麼！？！ 我難以相信像他這樣有地位的人會做出這樣的行為。"},
+                {"who":"george", "text":"是真的， Charles。 Joseph用謊言挑起我們相互攻擊， 使我們彼此憎惡。 起初我和他合作是因為他不喜歡高壓蒸汽， 但後來我才意識到， 他討厭所有蒸汽！"},
+                {"who":"charles", "text":"Joseph， 這是真的嗎？ 你對高壓蒸汽一點熱情也沒有？"},
+                {"who":"joseph", "text":"當然是真的！ 可惡的蒸汽。 但是你要抓住我？ 憑什麼？ 你沒辦法證明我有任何不當行為！"},
+                {"who":"ada", "text":"當然能夠證明。 你的齒輪製表機從每筆交易中減去了很小的值。 我們比較了你的結果和蒸汽製表機的， 才發現這些錯誤。 你就是透過這樣逐漸挪用高壓蒸汽的。 如果不是Charles感到有什麼不對勁， 這件事就永遠不會被發現。"},
+                {"who":"joseph", "text":"太荒謬了！ 我要這噁心的蒸汽做什麼！"},
+                {"who":"george", "text":"把你讓我在市政廳下方建造的蒸汽容器慢慢裝滿。"},
+                {"who":"charles", "text":"什麼！？！ 那可是個低壓容器！ 你不知道裝入高壓蒸汽的後果嗎！？！"},
+                {"who":"joseph", "text":"唯一的後果是人們將永遠拒絕蒸汽！ 它會留作處決之用， 而且只能在博物館裡看到。 看看現在！ 蒸汽管已經蔓延到了辦公室內， 取代了我的機器！ 只有我的齒輪機器才能…\n\n什麼！？！ 放開我！ 放開我， 你們這些可憐的傻瓜！ 你不能這樣對我！ 等研究院了解了這件事再說！"},
+                {"who":"charles", "text":"研究院當然會了解這件事！\n\n對這件事來說， 這是一個令人滿意的結果。 我的高壓蒸汽和我親愛的Ada一樣安全。"},
+                {"who":"ada", "text":"事實上， 親愛的， 我認為蒸汽計算的故事才剛剛開始。"},
+                {"who":"charles", "text":"是的。 但是， 也許我們應該先把這個隨時可能爆炸的蒸汽炸彈拆除……"}
+            ],
+            [
+                {"who":"ada", "text":"謝謝你， Gertrude。 要不是你這麼快就解決了它， 它可能就會帶來災難了。"},
+                {"who":"george", "text":"對此我也十分欽佩。 Ada， 我對指控你洗劫我的實驗室感到十分抱歉。 Gertrude和Nicola能幫助我進行設計嗎？ 我認為他們的意見會很有建設性。"},
+                {"who":"ada", "text":"別再說這些了， 我也得向你道歉。 為表達我的善意， 請隨意使用我的…… 我們的實驗室。 Easley女士已經有實驗室的權限了。 我認為Charles和我需要在這場騷亂後休息一下。 我們將在幾天後回來， 希望到時能看到你們的進展。"},
+                {"who":"george", "text":"好的， 一路平安。\n\nNicola， 你能幫我找找那個乘二器嗎？"},
+                {"who":"nicola", "text":"就在這裡。\n\n它的構造很簡單， 但我發現這個設計模式非常有用。"},
+                {"who":"george", "text":"的確。 這個裝置只能把數值從0到50這一範圍放大成0到100。 不過我相信， 給定一個最大值， 我們可以製造一個元件按比例把它放大到100。"},
+                {"who":"nicola", "text":"我們可以把它命名為「等比放大器」。"},
+                {"who":"george", "text":"是的， 但首先我們應該把它製造出來。 北端代表那個最大值， 東端要表示出西端在0到最大值之間的位置。"}
+            ],
+            [
+                {"who":"nicola", "text":"那沒有很難嘛。 但假如我們想要放大的範圍不是從0開始呢？"},
+                {"who":"george", "text":"這是個很有趣的想法。 Gertrude， 你可以製造一個放大器， 把任意範圍放大成0到100嗎？\n\n北端是這個範圍的最大值， 南端是這個範圍的最小值。"}
+            ],
+            [
+                {"who":"george", "text":"很好， 現在我們可以放大任何壓強範圍。 接下來需要一種探測壓強是否在某個範圍內的元件。 看看這個「蒸汽計速器」。\n\nAda為Charles造了這個來測量通過的蒸汽量。 當蒸汽通過長管道時， 它的壓強會有所損失。 蒸汽的流速越快， 壓強損失就越大。 如果兩邊的壓強相同， 蒸汽就不會流動。 她甚至在管道裡放了一些閥門來增加阻抗， 使差別更加明顯。"},
+                {"who":"george", "text":"現在需要一種設計來判斷西輸入的壓強是否介於這兩個壓強之間。 它需要比北輸入低、 比南輸入高。"}
+            ],
+            [
+                {"who":"george", "text":"現在通過放大值的範圍， 我可以更準確地判斷蒸汽的使用量， 同時也可以判斷壓強是否在我設定的範圍內。 下次我要告訴我的客戶在蒸汽帳單上多留一位小數！"},
+                {"who":"annie", "text":"這些研究只是為了幫助你的公司盈利嗎？我們訂的協議上可不是這樣說的。"},
+                {"who":"george", "text":"Easley女士！ 這個元件確實是給你做的。 相信我， 之後這個元件將會非常有用。"},
+                {"who":"annie", "text":"我對此深表懷疑。 是時候進行一些純粹的研究了。\n\n讓我們回到Ada和我正在研究的鎖存器設計。 我想要一個可以啟用或停用的鎖存器。 如果北輸入是高壓， 鎖存器正常工作； 但如果是低壓， 則既不改變原有輸出， 也不在收到脈衝時接受新的輸入。 我們可以在舊設計外部進行延伸， 但重做一個可能效率更高。"}
+            ],
+            [
+                {"who":"annie", "text":"現在我想要一個「定址鎖存器」的設計， 其中北輸入在幾個鎖存器中進行選擇。 這樣我就可以同時儲存多個值並隨意存取。\n\n讓我們先從兩個值開始。 北輸入在兩個鎖存器之間選擇。 值在0到50間時選擇第一個， 在50到100間時選擇第二個。"}
+            ],
+            [
+                {"who":"annie", "text":"好， 但這就是我們目前能做到的最好地步了。 接下來我想要一個可以儲存五個值的鎖存器， 但我和Ada總是無法將其全部放入一個設計中。 選擇範圍是0-20、 20-40、 40-60、 60-80和80-100。 判斷輸入訊號在哪一個範圍太困難了。"},
+                {"who":"george", "text":"有判斷壓強範圍的裝置就能做了。"},
+                {"who":"annie", "text":"但你的設計判斷的是是否在某一範圍， 不是在哪一個範圍。"},
+                {"who":"george", "text":"是， 但也不完全對。 它探測的是流動蒸汽的壓力範圍。 如果把它排成一列， 讓蒸汽通過， 就能判斷出壓強處於哪個範圍。"}
+            ],
+            [
+                {"who":"annie", "text":"我承認， 流量探測器是很巧妙， 也確實是我們需要的。 但現在， 我們該如何把兩個五鎖存器合成一個十鎖存器？\n\n選擇範圍是0-10、10-20、20-30……"},
+                {"who":"george", "text":"這就是為什麼我要設計放大器。 我早就看出了你的想法的絕妙之處， 並且已經提前計劃好了。"}
+            ],
+            [
+                {"who":"ada", "text":"真令我吃驚。 我們才離開了幾天， 你們就已經造出了蒸汽計算機的記憶體。"},
+                {"who":"nicola", "text":"蒸汽什麼？"},
+                {"who":"annie", "text":"一切都會慢慢揭曉的。\n\n好吧， 我想我的工作已經完成了！ 我已經成功設計了記憶體， 現在換你來設計計算和控制的部分了？"},
+                {"who":"ada", "text":"先從簡單的部分做起吧。 我們需要一個能給出兩個輸入值中較小值的元件。 這應該不難。"}
+            ],
+            [
+                {"who":"charles", "text":"親愛的Ada！ 嚐嚐George介紹給我的這種令人興奮的新飲料吧！ 它被稱為 Froffee Coffee。 嚐嚐看！"},
+                {"who":"ada", "text":"嗯， 它嚐起來的確很不錯……"},
+                {"who":"charles", "text":"你知道什麼能讓它變得更好嗎！？！"},
+                {"who":"ada", "text":"高壓……?"},
+                {"who":"charles", "text":"高壓蒸汽！"},
+                {"who":"ada", "text":"親愛的， 我對你與George的重歸於好感到高興， 但你們兩個不是應該在計劃程式部分的設計嗎？"},
+                {"who":"charles", "text":"早就完成了！ George正在完善這個詩…… 或者該說是這份需求。"},
+                {"who":"ada", "text":"哦！ 我們必須趕緊完成最大值器， 然後就該去見我們的工程師了。\n\n這次輸出兩個輸入中的較大值。"}
+            ],
+            [
+                {"who":"charles", "text":"既然在George來之前還有時間， 我們應該花點時間讓他的蒸汽容器更安全。 在壓強未達到 90 PSI 之前， 容器都是安全的； 但一旦超過了這個值， 容器就有爆炸的危險。 我需要一個「蒸汽保險絲」。 它允許蒸汽從西向東流動， 但一旦壓強超過了 90 PSI， 就立刻切斷連接， 並排空容器。 記得要先斷開蒸汽輸入， 再把容器排空。"}
+            ],
+            [
+                {"who":"charles", "text":"快來， George！ 我想我們有一些私事要談！\n\n……"},
+                {"who":"george", "text":"你真的這樣認為嗎， Charles？ Easley女士幾乎都還不認識我。"},
+                {"who":"charles", "text":"別總克制自己了老傢伙！"},
+                {"who":"george", "text":"好吧， 這還真是善解人意。 我需要一個每次增加 10 PSI 的元件。 它從 0 PSI 開始， 在每個脈衝後增加 10 PSI。 而要到達 100 PSI 時， 應重設回 0 PSI。\n\n請謹慎考慮它的結構。"}
+            ],
+            [
+                {"who":"george", "text":"Charles， 我非常感謝你能讓我使用你寫的詩。 這首詩完美地表達了我對Easley女士的感情。 它描述了她的美麗， 她的善良和她巧妙的鎖存器設計。 我只需要把你的詩裡的「高壓蒸汽」換成「Easley女士」。"},
+                {"who":"george", "text":"來看看Easley的十鎖存器設計。 我們需要一個更簡單但可能又更複雜的元件。 對於每個輸入值範圍， 我需要輸出設定的壓強值。 設定的值不需要更新。\n\n現在正好適合做一些自訂元件。 你可以在舊設計的基礎上， 更改該元件的內部， 應用到其他設計裡。"}
+            ],
+            [
+                {"who":"george", "text":"我們快要成功了。 把這些部分連接起來就能重現我的詩了。 每次接受到蒸汽脈衝時， 它應讀出下一個值。 這並不簡單， 因為我們的計數器生成的序列是0，10，20，30…… 而我們的詩歌儲存器需要的序列是5，15，25，35……"}
+            ],
+            [
+                {"who":"charles", "text":"完美！ 可是我們還是不得不依靠這些可怕的Cogsworth時脈來提供定時脈衝。"},
+                {"who":"nicola", "text":"Gertrude， 你還記得你是怎麼拆除炸彈的嗎？ 我們可以做一個同樣精確的時脈。"},
+                {"who":"charles", "text":"不管你怎麼做， 我希望時脈的輸出每刻翻轉一次， 並且不會因為連接到不同元件而改變。"}
+            ],
+            [
+                {"who":"ada", "text":"你們兩個在忙什麼？"},
+                {"who":"charles", "text":"George和我剛把一台最棒的詩歌朗誦器送給了Easley女士。 它被設置成朗誦George對她的感情。\n\n只要有足夠的調整， 就可以把這樣的裝置縮小到馬的大小。"},
+                {"who":"ada", "text":"聽起來不錯。 但我希望你們有翻轉壓強， 因為Annie記錄的的編碼都是相反的。"},
+                {"who":"george", "text":"什麼！？！ Nicola！ 我剛發送給她的訊息是什麼？"},
+                {"who":"nicola", "text":"嗯…… 看起來你稱讚了她華麗的鬍鬚十分吸引人…… 請求得到她的淫穢蝕刻畫…… 並指示她在黎明時攻擊敵人。"},
+                {"who":"george", "text":"...\n好的， 我回我的住處去喝瓶白蘭地。"},
+                {"who":"ada", "text":"Charles！ 去幫幫他!\n\n他們離開了， 但你們兩個還可以來幫幫忙。 Charles本該在這堵牆上安裝兩根管道， 但現在只有一根。 我需要把南北兩方和東西兩方連接起來。 在新管道安裝好之前有沒有辦法做到這一點？"},
+                {"who":"nicola", "text":"我有個好主意。 幸好我們活在有時脈的世界裡。"}
+            ],
+            [
+                {"who":"annie", "text":"你好， Ada。 George在嗎？ 我是來和他談談這台之前運到我家的機器的。"},
+                {"who":"ada", "text":"哦， Annie！ 非常抱歉， 他和Charles都完全不知道編碼簿是有區別的。"},
+                {"who":"annie", "text":"哦， 我當時很快就明白了。 按我的編碼簿解讀這就只是一堆愚蠢的句子。"},
+                {"who":"ada", "text":"Nicola！ 不管George和Charles到哪裡去了， 去把他們帶來。"},
+                {"who":"annie", "text":"他們製作的這個詩歌朗誦器真是個神奇的裝置， 裡面使用的元件都很巧妙。 Gertrude， 我想你也有參與計數器的建造。 你能調整一下設計， 加入設定當前值的方法嗎？ 西輸入會給出新值， 而北輸入會選擇是否使用新值。"}
+            ],
+            [
+                {"who":"ada", "text":"Annie， 我不得不問， 你有沒有覺得這一切越來越複雜了？"},
+                {"who":"annie", "text":"我當然覺得， 但看看我們已經走了多遠。 還記得你花了一週的時間設計加法器嗎？ 現在回想起來， 一切看起來都那麼簡單。 我們不僅在研究上有所進展， 也對蒸汽有了更好的理解。"},
+                {"who":"ada", "text":"那麼也許你能幫我看看你的其中一個訊息鎖存器。 我不知道它出了什麼問題， 所有來自Bechdel女士的訊息都毫無意義。"},
+                {"who":"annie", "text":"有趣。 定時脈衝似乎在值變得穩定之前就提前發出了。 如果能把脈衝延遲一點點， 就能解決問題。 它需要在0到 100 PSI 之間快速轉換。 讓我們做點什麼。"}
+            ],
+            [
+                {"who":"annie", "text":"這個計量器顯示的是什麼？"},
+                {"who":"ada", "text":"應該是通向Cogsworth鐘錶廠那裡的蒸汽壓強。 為什麼問這個？"},
+                {"who":"annie", "text":"看， 它的變化模式有點奇怪。 而且今天是星期天， 他們不是應該休息嗎？\n\n它在一刻中跳到 100 PSI， 下一刻跳到另一個值， 最後返回到 0 PSI。"},
+                {"who":"ada", "text":"這有點神秘。 我試試看能不能破譯它。"}
+            ],
+            [
+                {"who":"nicola", "text":"Chavvington女士！ 我搜遍了整個城市， 也找不到……"},
+                {"who":"ada", "text":"我們知道他們在哪裡！ George透過不斷改變蒸汽開關給我們發送了訊息。 他們被鎖在Cogsworth鐘錶廠的蒸汽房裡。 我們現在就去那裡！"},
+                {"who":"charles", "text":"[砰][砰][砰]\n把我們救出來！ 房間裡充滿了高壓蒸汽！ 我要被我愛的東西殺死了， 這可真是殘酷的諷刺。"},
+                {"who":"nicola", "text":"這扇門沒辦法用鑰匙打開了！ 看來有人朝門鎖開過槍， 裡面的管道破裂了！ 我對撬鎖一無所知， 更別說是斷了的鎖。"}
+            ],
+            [
+                {"who":"charles", "text":"Gertrude！ 我萬分感激你！ 你不僅拯救了我們的生命，而且還是用高壓蒸汽救的！"},
+                {"who":"ada", "text":"親愛的， 你怎麼會陷入這種可怕的情況？"},
+                {"who":"charles", "text":"George和我在那家古銅酒館裡喝了幾杯， 然後一切都變得模糊不清了。 之後我記得的就是在這個房間裡醒來， Cogsworth指控我們毀了他的生活。 被研究院開除後， 他的投資者也開始向他發難。 他只能壓制住我們， 使他有足夠的時間帶著他的投資者的錢倉促逃離。\n\n快！ 去機場！ 我們不能讓他逃跑。"},
+                {"who":"george", "text":"這條管道從西向東輸送起飛許可編碼。 每組編碼都有三個值， 每個值持續兩刻。 一旦我們看到Cogsworth的編碼27，39，31， 我們就會知道他正試圖逃跑。"},
+                {"who":"ada", "text":"到那時就太晚了， 他獲得起飛許可後就會立刻逃跑。 我們必須告訴機場經理不要讓他離開。"},
+                {"who":"george", "text":"唉， 經理早就被一台Cogsworth機器取代了， 而且八成是一台動過手腳的。\n\n我們不能讓Cogsworth的編碼通過， 但我們又不能破壞這根管道， 以免他發現我們在跟蹤他。\n\n如果我們把訊號延遲幾秒， 並找到他的編碼， 我們能把它刪除嗎？ 這將給我們爭取逮捕他的時間。"}
+            ],
+            [
+                {"who":"ada", "text":"終於， Cogsworth坐牢後， 我們終於可以完成我們的蒸汽計算機了。\n\n所有元件都已就位。 我寫了一個計算費式數列的程式， 但結果不太正確。\n\n我們需要改進之前的元件， 直到計算機能夠正常工作。 這可能需要花費大量時間來診斷問題並進行微調。"}
+            ],
+            [
+                {"who":"charles", "text":"來自研究院的回覆到了！\n\n「感謝您提交蒸汽計算機供研究院審查。 我們發現它大大擴展了我們在蒸汽計算方面的知識。 因此， 我們很高興地通知您， 您的入會申請已獲批准！」"},
+                {"who":"nicola", "text":"祝賀你， Chavvington女士。"},
+                {"who":"ada", "text":"實際上， 這並不是我的申請表， 而是代表Gertrude的。\n\nGertrude， 是你構造了所有的元件， 並向我們展示了如何操縱蒸汽來達到奇妙的用途。 你才是應該教別人蒸汽計算的人。"},
+                {"who":"charles", "text":"太棒了！\n\n讓我們今天下午就來慶祝吧！"},
+                {"who":"george", "text":"Easley女士？ 您願意和我們一起參加這一活動嗎？"},
+                {"who":"annie", "text":"恐怕不行， 因為我今天下午要和一位風度翩翩的先生約會。"},
+                {"who":"george", "text":"哦……"},
+                {"who":"annie", "text":"那就是你， George。 Madingley大廳會提供下午茶， 我會欣然接受你的邀請的。"},
+                {"who":"ada", "text":"感謝您遊玩ComPressure！"}
+            ]
+        ],
+        "hints":
+        [
+            [
+                {"who":"charles", "text":"按住左鍵從起點到終點拖曳以放置新管道。 新管道跨過舊管道時， 它們不會互相連接。 如果放置錯誤， 可以點擊右鍵移除管道。"}
+            ],
+            [
+                {"who":"charles", "text":"你可以從元件頁面放置一個蒸汽源。 蒸汽源提供 100 PSI 的蒸汽。 開口的管道會把壓力釋放到 0 PSI。 在管道中間的某個地方開口， 就有可能在某個地方產生正確的壓強。"}
+            ],
+            [
+                {"who":"charles", "text":"元件頁面也包含閥門元件。 將閥門的「＋」端連接到北端， 就能夠由北輸入控制閥門的開度。 當北輸入處於高壓時， 東端和西端就會連通。"}
+            ],
+            [
+                {"who":"nicola", "text":"如果我沒有理解錯， 我們只需要將閥門的「＋」端連接蒸汽源， 並將「－」端連接到南輸入。 這樣只有在南端處於低壓時， 才會將東西端連接； 如果處於高壓， 閥門就會關閉。"}
+            ],
+            [
+                {"who":"nicola", "text":"當輸入高壓時， 連接北端， 這就是「常開開關」的設計。 當輸入低壓時， 連接南端， 這就是「常閉開關」的設計。"}
+            ],
+            [
+                {"who":"nicola", "text":"我們需要兩個閥門和一個蒸汽源。 一個閥門由北端控制， 連接蒸汽源和東端。 另一個閥門連接東端和大氣。"}
+            ],
+            [
+                {"who":"nicola", "text":"讓我們從基礎部分開始。 當輸入是高壓時， 將輸出連接到蒸汽源； 當輸入是低壓時， 將輸出連接到大氣。 只需保持管道末端打開就能連接到大氣。\n\n正如Chavvington女士所指出的， 閥門是類比的。 當數值在0到100之間時， 閥門會依照比例打開部分。"}
+            ],
+            [
+                {"who":"nicola", "text":"這一次， 當輸入是高壓時， 將輸出連接到大氣； 當輸入是低壓時， 將輸出連接到蒸汽源。 我們的選擇器可以在兩個值當中做選擇， 一個可以是蒸汽源， 另一個可以是大氣。"}
+            ],
+            [
+                {"who":"nicola", "text":"我們可以用閥門測量南北哪端壓強高。 如果北端更高， 就將輸出連接到蒸汽源； 如果南端更高， 將輸出連接到大氣。\n\n請記住， 輸出管中的蒸汽不會自行排出， 需要使用閥門主動排放。"}
+            ],
+            [
+                {"who":"nicola", "text":"我想我們已經有了一個比較器， 和一個精確的50源。"}
+            ],
+            [
+                {"who":"nicola", "text":"當輸入為100時， 我們希望輸出為50， 所以應該將輸出連接到50源； 當輸入為0時， 應該將輸出連接到大氣。"}
+            ],
+            [
+                {"who":"nicola", "text":"這聽起來很像我們的緩衝器， 但當輸入是50時， 輸出應當是100。 所以壓強到達50時， 排氣閥應該關閉。 我猜應該把排氣閥的「＋」端換成50源。"}
+            ],
+            [
+                {"who":"nicola", "text":"我不記得這裡之前還有其他元件。 我認為只需要把它和輸出連接起來就行。"}
+            ],
+            [
+                {"who":"nicola", "text":"令輸出通過加密器， 得出的結果應該和輸入一樣。\n\n當比較器上的兩個輸入相等時， 輸出既不會導氣， 也不會排氣。 如果輸出總是振盪， 應當回去調整比較器設計， 使它產生的輸出不過於強大。"}
+            ],
+            [
+                {"who":"nicola", "text":"可以使用與解密器一樣的設計。 不斷調整底部閥門的開度， 直到它們之間的壓強正好為50。 鑑別器正好能實現這一點。"}
+            ],
+            [
+                {"who":"nicola", "text":"可以使用與解密器一樣的設計。 不斷調整底部閥門的開度， 直到它們之間的壓強正好為50。 鑑別器正好能實現這一點。"}
+            ],
+            [
+                {"who":"nicola", "text":"令一個閥門的開度為西端輸入減去南端輸入， 然後令第二個閥門打開到相同的開度， 此時當它們之間的壓強為50。"}
+            ],
+            [
+                {"who":"nicola", "text":"這個有些難了。 使用減法器會帶來太多的震盪。\n\n如果用輸出減去一個輸入與另一個輸入進行比較， 在第二個輸入為0的情況下就會出錯。 在這種情況下， 可以使用另一對閥門交換輸入進行比較。 可以使用鑑別器來確保四個閥門之間的壓強為50。\n\n點擊設計目標面板可以看閥門配置。"}
+            ],
+            [
+                {"who":"annie", "text":"當南端輸入高壓時， 打開儲存管道。 可以使用緩衝器持續輸出儲存值。 而且在南端輸入高壓的時候必須關閉輸出， 以免新的壓強影響輸出。 保證這一點的最簡單方法是在輸入閥和輸出閥上使用50作為閾值。"}
+            ],
+            [
+                {"who":"nicola", "text":"輸出是由南輸入控制的鎖存器的值。 鎖存器的輸入是輸出加上或減去西輸入， 北輸入在二者之間進行選擇。 我們現在已經有加法器、 減法器和選擇器了。"}
+            ],
+            [
+                {"who":"nicola", "text":"這次我們反而需要震盪了。 將放大器排成環狀會使設計不穩定， 輸出值會上下震盪。"}
+            ],
+            [
+                {"who":"nicola", "text":"回去看看乘二器的設計。 這裡我們可以把50源換成北端的壓強。"}
+            ],
+            [
+                {"who":"nicola", "text":"當西端高於南端時， 增加輸出的蒸汽。 當西端低於北端時， 減少輸出的蒸汽。"}
+            ],
+            [
+                {"who":"nicola", "text":"可以把閥門串聯起來。 只有所有的閥門都打開了，蒸汽才會通過。"}
+            ],
+            [
+                {"who":"nicola", "text":"這與我們的普通鎖存器沒有太大區別， 只不過當北端輸入低壓時， 不要將脈衝與鎖存器連接。"}
+            ],
+            [
+                {"who":"nicola", "text":"當北輸入大於50時， 啟用一個鎖存器， 小於50時啟用另一個。"}
+            ],
+            [
+                {"who":"nicola", "text":"有這麼多種選擇訊號！ 如果把一排流量探測器連在一起， 一端是蒸汽源， 另一端是大氣呢？ 這樣就能得到所需的所有範圍了。"}
+            ],
+            [
+                {"who":"nicola", "text":"可以使用兩個五鎖存器元件， 並在二者之間切換。 選擇哪個五鎖存器取決於選擇訊號是低於50還是高於50。 而且還需要將兩個範圍（0-50或50-100）縮放到五鎖存器所需的範圍（0-100）。\n\n放大器雖然很有用， 但在這種情況下， 它可能需要足夠強大才不會出問題。 每一個放大器會連接到五個流量探測器， 並需要一段時間來給管道加壓。 為了使設計更穩定， 我們可以直接複製放大器的內部結構。"}
+            ],
+            [
+                {"who":"ada", "text":"它應該很簡單， 只需要比較器和開關就行。"}
+            ],
+            [
+                {"who":"ada", "text":"這不是和最小值器一樣，不過把選擇交換嗎？"}
+            ],
+            [
+                {"who":"charles", "text":"可以使用很長的排氣管形成 90 PSI 的壓強值。 輸入和90之間的比較器會告訴我們什麼時候給容器排氣。 比較器的輸出從 0 PSI 上升到 50 PSI 時， 應該關閉輸入； 而輸出升至 50 PSI 以上後， 應透過閥門將容器內的蒸汽排放。"}
+            ],
+            [
+                {"who":"george", "text":"可以利用加法器給輸入增加固定的 10 PSI， 然後使用鎖存器記錄新值。 最後， 用保險絲將值重設為 0 PSI。"}
+            ],
+            [
+                {"who":"george", "text":"可以使用與十鎖存器中相同的方法在10個值之間進行選擇。 進行選擇時， 每個值都需要自行製作並連接到輸出。 這會涉及到許多自訂元件。"}
+            ],
+            [
+                {"who":"george", "text":"可以將計數器連接到唯讀記憶體， 但在那之前需要用加法器給它加5。"}
+            ],
+            [
+                {"who":"nicola", "text":"如果做一個鑑別器的環， 並在某個地方加入一個翻轉器， 就可以得到一個規則的振盪。 然後， 可以添加管道來進行調整， 使它的頻率低一點。"}
+            ],
+            [
+                {"who":"nicola", "text":"可以用時脈在兩個輸入與兩個輸出之間進行同步選擇。 因為不能夠把兩個輸入都連接起來， 所以當我們選擇其中一個輸入時， 另一個輸入應該是被封住的。 我們可以用 50 PSI 作為閾值。"}
+            ],
+            [
+                {"who":"annie", "text":"我們可以修改計數器， 在裡面插入一個開關， 選擇使用新值或是遞增值。"}
+            ],
+            [
+                {"who":"annie", "text":"我們只需要延遲 0 PSI 和 100 PSI 的值。 一連串鑑別器可以延遲脈衝， 再進行一些微調即可。"}
+            ],
+            [
+                {"who":"annie", "text":"延時器可以提供所需的定時脈衝。 一旦接收到延遲脈衝， 就可以把值存下來， 同時將延時器輸入降為 0 PSI。"}
+            ],
+            [
+                {"who":"nicola", "text":"把那個洞用蒸汽源填上會更加容易。 製作蒸汽鑰匙只需要複製鎖內形成的壓強值。"}
+            ],
+            [
+                {"who":"george", "text":"需要三個鎖存器延遲輸入， 自訂延遲的時脈可以為它們計時。 要檢查是否所有的值都正確， 可以製作一個緩慢填充的管道， 且在鎖存值不等於搜尋值時排空管道。"}
+            ],
+            [
+                {"who":"ada", "text":"花些時間理解一下蒸汽計算機是如何運作的。 一旦你理解了， 你就可以改善你的設計， 從而提升計算機的表現。"}
+            ],
+            [
+                {"who":"ada", "text":"沒有更多提示了。 享受你的勝利吧！"}
+            ]
+        ]
+    },
     "Česky":
     {
         "tooltips":
@@ -1064,7 +1638,7 @@
             "Help"                      :   "Dokumentace",
             "Repeat\ndialogue"          :   "Zopakovat\nrozhovor",
             "Hint"                      :   "Nápověda",
-            "Reveal a solution"         :   "Reveal a solution",
+            "Reveal a solution"         :   "Zobrazit řešení",
             "New design"                :   "Založit\nnovou úroveň",
             "Valve"                     :   "Ventil",
             "Steam Inlet"               :   "Přívod páry",
@@ -1090,11 +1664,10 @@
             "Info"                      :   "Informace",
             "Select language"           :   "Vybrat jazyk",
             "Number resolution"         :   "Number resolution",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                             "Pokud se vám nedaří, zkuste probrat své problémy s odborníky Spolku pro Vysokotlakou Páru na našem Discordu. Zmáčkněte Esc a klikněte na tlačítko \"Přidejte se k našemu Discordu\".",
 
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "Tento příběh zde prozatím končí. Naše dobrodružství ale pokračuje\nv plné verzi hry\n\nPokračování příště...",
             "Cross"                     :   "Kříž",
             "50"                        :   "50",
             "Normally Open"             :   "Spínač",
@@ -1138,18 +1711,18 @@
         },
         "help":
         [
-            "In the level select menu, the bottom panel describes the design requirements. Each design has four ports and the requirements state the expected output in terms of other ports. Each port has a colour identifier. Click on the requirements to receive a hint.",
-            "Once you pass all the tests, the next design becomes available. You can always come back to refine your solution.\n\nPress the pipe button below to continue the tutorial. You can return to the help by pressing F1.",
-            "Pipes can be laid down by either left mouse button dragging the pipe from the source to the destination, or by clicking left mouse button to extend the pipe in the direction of the mouse. Right click to cancel pipe laying mode.",
-            "Hold the right mouse button to delete pipes and other elements.",
-            "The build menu allows you to add components into your design. Select the steam inlet component and hover over your design. The arrow buttons change the orientation. This can also be done using keys Q and E or the mouse scroll wheel. Clicking the left mouse button will place the component. Right click to exit steam inlet placing mode.",
-            "Valves can be placed in the same way. Pressing Tab, or middle mouse button, is a shortcut to enter valve placement mode. Pressing Tab, or middle mouse button, again switches to steam inlet placement.",
-            "A steam inlet will supply steam at pressure 100. Any pipes with open ends will vent the steam to the atmosphere at pressure 0.",
-            "Pressure at different points is visible on pipe connections. Note how each pipe has a little resistance.",
-            "Valves allow steam to pass through them if the (+) side of the valve is at a higher pressure than the (-) side. The higher it is, the more the valve is open. Steam on the (+) and (-) sides is not consumed.\n\nHere, the (-) side is vented to atmosphere and thus at 0 pressure. With (+) at 100 PSI and (-) at 0 PSI, the valve is 100% open. If (+) is at 75 and (-) is at 25, the valve will be 50% open.",
-            "If the pressure on the (+) side is equal or lower than the (-) side, the valve becomes closed and no steam will pass through.",
-            "By pressurising (+) side with a steam inlet, the valve will become open only if the pressure on the (-) side is lower than 100 PSI.\n\nAs before, the openness of the valve is the pressure on the (+) side minus the pressture on the (-) side.",
-            "Applying high pressure to the (-) side will close the valve as the pressure on the (-) side becomes equal or higher than the (+) side.",
+            "Ve spodní části seznamu úrovní jsou popsány požadavky, které má návrh splňovat. Každý návrh má čtyři porty a v požadavcích je uveden očekávaný výstup portů v reakci na vstup na ostatních portech. Porty jsou barevně označeny. Klepnutím na požadavky zobrazíte nápovědu.",
+            "Jakmile splníte alespoň zčásti všechny testy, odemkne se další úroveň. Vždy se můžete vrátit a své řešení vylepšit.\n\nPro pokračování na další stránku tutoriálu klikněte na tlačítko s ikonou potrubí níže. Do této nápovědy se můžete vrátit stisknutím klávesy F1.",
+            "Potrubí lze položit buď držením levého tlačítka myši a tažením od zdroje k cíli, nebo kliknutím levého tlačítka myši prodloužit potrubí ve směru pohybu myši. Kliknutím pravého tlačítka myši pak režim pokládání trubek ukončíte.",
+            "Držení pravého tlačítka myši funguje jako guma, s níž můžete odstranit potrubí a další prvky.",
+            "Záložka Návrh umožňuje přidávat další prvky do současného návrhu. Zvolte např. přívod páry a najeďte myší nad svůj návrh. Orientaci vybrané komponenty lze měnit kurzorovými šipkami, klávesami Q a E nebo pomocí rolování kolečka myši. Levým tlačítkem myši zvolený prvek umístíte, pravým tlačítkem myši pak ukončíte režim jeho umisťování.",
+            "Ventily lze umístit stejným způsobem. Stisknutím tabulátoru nebo prostředního tlačítka myši vstoupíte do režimu umisťování ventilů. Opětovným stisknutím tabulátoru nebo prostředního tlačítka myši se přepnete do režimu umisťování přívodu páry.",
+            "Přívod páry dodává páru o tlaku 100 PSI (libra na čtverečný palec). Jakákoli část potrubí otevřená do atmosféry vypouští páru při tlaku 0 PSI.",
+            "Tlak v různých bodech systému je viditelný na spojích potrubí. Všimněte si, že každé potrubí má malý odpor.",
+            "Ventil umožňuje průchod páry, pokud je na přívodu označeném (+) vyšší tlak než na přívodu označeném (-). Čím je rozdíl tlaků na těchto přívodech vyšší, tím více je ventil otevřený. Ani na jednom z těchto regulačních přívodů se pára nespotřebovává.\n\nZde je přívod (-) otevřen do atmosféry, a tedy pod tlakem 0. Při přivedení tlaku 100 PSI na (+) a tlaku 0 PSI na (-) je ventil otevřen na 100 %. Pokud je 75 PSI na (+) a 25 PSI na (-), bude ventil otevřen na 50 %.",
+            "Pokud je tlak na regulačním přívodu (+) stejný nebo nižší než na přívodu (-), ventil se uzavře a neprojde přes něj žádná pára.",
+            "Při natlakování regulačního přívodu (+) pomocí přívodu páry se ventil otevře pouze tehdy, pokud je tlak na přívodu (-) nižší než 100 PSI.\n\nPodobně jako v předchozím případě je výsledná míra otevření ventilu (v procentech) dána rozdílem tlaků na jeho regulačních přívodech (+) a (-).",
+            "Působením vysokého tlaku na regulačním přívodu (-) pak dojde k uzavření ventilu, protože tlak na (-) bude stejný nebo vyšší než na (+).",
             "The test menu allows you to inspect how well your design is performing. The first three buttons pause the testing, repeatedly run a single test and run all tests respectively. You can also use hotkeys 1, 2 and 3.\n\nThe current scores for individual tests are shown with the scores of best design seen below. On the right is the final score formed from the worst of all tests.",
             "The next panel shows the sequence of inputs and expected outputs for the current test. The current phase is highlighted. The output recorded on the last run is shown to the right. You can press Space to fast forward to the next phase.\n\nThe score is based on how close the output is to the target value. The graph shows the output value during the final stage of the test. The faded line in the graph shows the path of the best design so far.",
             "The experiment menu allows you to manually set the ports and examine your design's operation. The vertical sliders set the desired value. The horizontal sliders below set force of the input. Setting the slider all the way left makes it an output. Initial values are set from the current test.",
@@ -1185,6 +1758,9 @@
                 {"who":"charles", "text":"Excellent! Now, combining these two designs, we can construct a component that switches between two sources.\n\nWhen the West control house supplies 100 PSI High Pressure Steam, the North generator should be connected to the East facilities. But when the West control house is at 0 PSI atmospheric pressure, the South generator should be connected to the East facilities."},
                 {"who":"nicola", "text":"What happens when the control house supplies a pressure between 0 and 100?"},
                 {"who":"charles", "text":"What!?! That would be low pressure steam! We do not work with low pressure steam! I did not make my fortune by supplying people with low pressure steam!\n\nNever mind all that low pressure nonsense. When West control is High Pressure, connect the North generator, otherwise connect the South generator."}
+            ],
+            [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
             ],
             [
                 {"who":"nicola", "text":"Lady Chavvington's notes talk about a steam connection between the laboratory and Lady Easley's residence that was used for communication."},
@@ -1258,8 +1834,11 @@
                 {"who":"ada", "text":"Using this, Lord Moorhouse was able to create a steam pressure adding component, which I hope he will reveal to me.\n\nLord Moorhouse is most shy yet smart as a whip, alas often he becomes too afraid to share his innovations."}
             ],
             [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
+            ],
+            [
                 {"who":"nicola", "text":"Well it works. We can now sense how open a valve is, but I don't see how this gets us closer to steam computation. I suppose we must ask Lord Moorhouse."},
-                {"who":"nicola", "text":"Lord Moorhouse. Thank you for allowing us to call upon you. In her absence, we are attempting to continue the steam computation work of Lady Chavvington. Only you know the construction of the pressure adding unit and we beg you share it with us."},
+                {"who":"nicola", "text":"Lord Moorhouse. Thank you for allowing us to call upon you. In her absence, we are attempting to continue the steam computation work of Lady Chavvington. Only you know the construction of the pressure adding unit and we beg you to share it with us."},
                 {"who":"george", "text":"I do agree. Having thought on this, the advancement of knowledge must continue despite her collusion with Charles against me. I will disclose the secret of addition in exchange for the assurance that she is safe from him. Hearing the rumours that pass through these halls, I suspect her dead by his hand."},
                 {"who":"nicola", "text":"Lady Chavvington is alive and well, staying with her sister."},
                 {"who":"george", "text":"That is a relief. The idea of her spending any more time in that high pressure death trap keeps me up at night. If one of those high pressure tankers were to explode, perish the thought, the destruction would be immense. I would not rest until the world was rid of this high pressure horror...\n\nOh... Where was I? The addition design. Before you can make one, you must make one of subtraction. A valve is as open as the pressure on the (+) side minus the pressure on the (-) side. Once you create such a valve, you can then measure its openness."},
@@ -1307,7 +1886,7 @@
                 {"who":"joseph", "text":"The only consequences would be the world finally rejecting steam once and for all! It should be reserved for executions and only seen in museums. To think! Steam invading the offices and displacing my machines! For it is only gears that can produce a...\n\nWHAT!?! Let go of me! Unhand me, you wretched fools! You cannot do this to me! Wait until the Academy hears about this!"},
                 {"who":"charles", "text":"The Academy certainly will hear about this!\n\nWell that's a satisfying conclusion to this matter. My High Pressure Steam is safe as is my dear Ada."},
                 {"who":"ada", "text":"Actually darling, I think the story of steam computation is only just beginning."},
-                {"who":"charles", "text":"Indeed. But, perhaps we should diffuse that steam bomb first."}
+                {"who":"charles", "text":"Indeed. But, perhaps we should defuse that steam bomb first."}
             ],
             [
                 {"who":"ada", "text":"Thank you Gertrude. If not for your quick thinking, we would have had a disaster on our hands."},
@@ -1315,9 +1894,13 @@
                 {"who":"ada", "text":"Speak no more of this, for I must be forgiven also. As a gesture of good will, feel free to use my... our laboratory. Lady Easley already has access. I do believe Charles and I need a bit of a break from all this commotion. We shall return in a few days and I already look forward to inspecting your discoveries."},
                 {"who":"george", "text":"Thank you, and safe journey.\n\nNicola, could you find me that x2 pressure amplifier."},
                 {"who":"nicola", "text":"It's right here.\n\nThe construction is simple, yet I find the operation stunningly useful."},
-                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a minimum and maximum value, I do believe we can construct an amplifier which will zoom into any given range."},
-                {"who":"nicola", "text":"We shall name it the Zoom element."},
-                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the South our minimum. The East output will tell us where the West input lies within the range."}
+                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a maximum value, I do believe we can construct an amplifier which will scale for any given maximum."},
+                {"who":"nicola", "text":"We shall name it the Scale element."},
+                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the East output will tell us where the West input lies."}
+            ],
+            [
+                {"who":"nicola", "text":"That wasn't that difficult, but what if we wish to zoom into a range which does not begin at zero?"},
+                {"who":"george", "text":"That is an interesting idea. Gertrude, would you be able to construct a Zoom element which scales any range with a minimum and a maximum to the range 0 to 100?\n\nLet North be out maximum and South be our minimum of the range."}
             ],
             [
                 {"who":"george", "text":"Good, now we can zoom into any pressure range we choose. What I need next is a way of detecting if we are within a range. Take a look at this \"steam speedometer\".\n\nAda made it for Charles to measure the amount of steam passing through it. When steam passes through a long pipe, it will lose some pressure. The faster the steam is passing through, the more pressure it loses. If the two sides are at same pressure, there must be no moving steam. She even put some valves in the pipe to increase the resistance and make the difference greater."},
@@ -1376,7 +1959,7 @@
             ],
             [
                 {"who":"charles", "text":"Excellent stuff! It is just a shame we have to rely on these horrid Cogsworth clocks to provide the timing pulses."},
-                {"who":"nicola", "text":"Gertrude, do you remember how you diffused that bomb? I think we can make a clock just as precise."},
+                {"who":"nicola", "text":"Gertrude, do you remember how you defused that bomb? I think we can make a clock just as precise."},
                 {"who":"charles", "text":"However you do it, I want it flip once every tick and I don't want it changing time depending on what it is connected to."}
             ],
             [
@@ -1455,13 +2038,16 @@
                 {"who":"nicola", "text":"When the input is high, we connect the North. We know how to do that from the \"Normally Open\" design. And when the input is low, we connect the South. That's our \"Normally Closed\" design."}
             ],
             [
+                {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                 {"who":"nicola", "text":"Well, let's start with the basics. When the input is high, we will connect the output to a steam source. When it is low, we will connect to the atmosphere. To connect to atmosphere, we simply leave the pipe end open.\n\nAs Lady Chavvington noted, the valves are analogue and it appears when values are between 0 and 100, the valves will partly open and recreate the exact ratio."}
             ],
             [
                 {"who":"nicola", "text":"This time, when the input is high pressure, we want it to be connected to atmosphere. When the input is low is when we supply the steam. Our switch design was able to select between two values. Those values could be steam and atmosphere."}
             ],
             [
-                {"who":"nicola", "text":"We can use valves to measure which of North and South is higher. If North is higher, we connect the output to steam. If South is higher, we connect it to atmosphere.\n\nRemember, the steam in the output pipe will not drain away by itself, we need to  actively release it using a valve."}
+                {"who":"nicola", "text":"We can use valves to measure which of North and South is higher. If North is higher, we connect the output to steam. If South is higher, we connect it to atmosphere.\n\nRemember, the steam in the output pipe will not drain away by itself, we need to actively release it using a valve."}
             ],
             [
                 {"who":"nicola", "text":"I guess we already have a comparator, and we have a source of a precise value of 50."}
@@ -1482,19 +2068,25 @@
                 {"who":"nicola", "text":"We can use the same trick as in our decrypt design. We increase or decrease the amount we open the bottom valve until the pressure between them is exactly 50. We have an Amp50 which does this."}
             ],
             [
+                {"who":"nicola", "text":"We can use the same trick as in our decrypt design. We increase or decrease the amount we open the bottom valve until the pressure between them is exactly 50. We have an Amp50 which does this."}
+            ],
+            [
                 {"who":"nicola", "text":"We open one valve to the value of the West input minus the South input, we can then open a second valve to the same level of openness by looking for when the pressure between them is 50."}
             ],
             [
                 {"who":"nicola", "text":"This one is somewhat harder. Using a subtractor gives us too much wobble.\n\nComparing the output minus one of the inputs to the other input fails if the second input is 0 and the valve is fully closed. But in that case we can use a second valve pair to do the same comparison and switching the inputs. We can then use an Amp50 to make sure the pressure between the four valves is 50 PSI.\n\nClick the requirements for a diagram of this setup."}
             ],
             [
-                {"who":"annie", "text":"When the South input is high, we open our storage pipe. We can the use a buffer to pressurize the output to the same level as we captured. We have to close off the output while the South input is high so as to not let the new pressure propagate through. The easiest way to guarantee this is to use threshold of 50 on the timing and output valves."}
+                {"who":"annie", "text":"When the South input is high, we open our storage pipe. We the use a buffer to pressurize the output to the same level as we captured. We have to close off the output while the South input is high so as to not let the new pressure propagate through. The easiest way to guarantee this is to use threshold of 50 on the timing and output valves."}
             ],
             [
                 {"who":"nicola", "text":"The output is the value of a latch controlled by the South input. The input to the latch is either the latch output plus or minus the West input. The North input selects between them. We have an adder, a subtractor and a switch."}
             ],
             [
                 {"who":"nicola", "text":"For a change a wobble is actually desirable. Amplifiers in a ring configuration will make the design unstable and will wobble up and down."}
+            ],
+            [
+                {"who":"nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                 {"who":"nicola", "text":"When West is higher than South, start adding more steam. When West is lower than North, start releasing more steam."}
@@ -1609,10 +2201,9 @@
             "Info"                      : "Info",
             "Select language"           : "Sprache auswählen",
             "Number resolution"         : "Number resolution",
+            "User levels"               : "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                             "Wenn Sie nicht weiterkommen, können Sie Ihre Herausforderungen mit den klügsten Köpfen der High Pressure Steam Society auf Discord besprechen. Drücken Sie Esc und klicken Sie auf die Schaltfläche \"Join our Discord group\".",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "Leider muss unsere Reise irgendwo enden. Das Abenteuer geht im vollständigen Spiel weiter.\n\nFortsetzung folgt...",
             "Cross"                     : "Kreuz",
             "50"                        : "50",
             "Normally Open"             : "Normalerweise offen",
@@ -1707,6 +2298,9 @@
                 {"who": "charles", "text": "Was!?! Das wäre Niederdruckdampf! Wir arbeiten nicht mit Niederdruckdampf! Ich habe mein Vermögen nicht damit gemacht, Leute mit Niederdruckdampf zu versorgen!\n\nVergessen Sie diesen ganzen Niederdruck-Quatsch. Wenn die West-Steuerung auf Hochdruck steht, schließen Sie den Nord-Generator an, ansonsten den Süd-Generator."}
             ],
             [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
+            ],
+            [
                 {"who": "nicola", "text": "Lady Chavvingtons Notizen sprechen von einer Dampfverbindung zwischen dem Labor und Lady Easleys Residenz, die zur Kommunikation genutzt wurde."},
                 {"who": "charles", "text": "Ja, ich habe es entfernen lassen. Neues Vorgehen. Zu viel von unserem Hochdruckdampf ging verloren. Der einzige Dampf, der unsere Anlage verlassen darf, wird dosiert und an zahlende Kunden geliefert. Keiner meiner Hochdruckdämpfe darf diesen Raum verlassen."},
                 {"who": "nicola", "text": "Ich denke, wir können noch eine Verbindung herstellen, ohne Dampf abzulassen. Laut diesen Notizen..."},
@@ -1776,6 +2370,9 @@
                 {"who": "charles", "text": "Hmm... Ja... Wenn ich darüber nachdenke, würde das die Blumen und Karten erklären, die mein Mitgefühl für meinen Verlust ausdrücken. Ich war gerührt von der Sorge der Leute um den Verlust meines Hochdruckdampfes. Je eher Sie die Dampfberechnungsmaschine fertigstellen, desto eher können wir der Sache auf den Grund gehen. Setzen Sie die Nachforschungen zügig fort."},
                 {"who": "ada", "text": "27. Juni\nZusammen mit Lord Moorhouse wurden solche Fortschritte in unserer Forschung zur Dampfberechnung gemacht. Unsere früheren Konstruktionen litten unter Ungenauigkeiten. Nur wenn die Ventile perfekt ausbalanciert waren und eine Leistung von 50 erzeugten, war das Ergebnis perfekt. Dabei kam mir eine Idee.\n\nIch konnte spüren, wie offen ein beliebiges Ventil ist, indem ich ein zweites Ventil, das den Dampf ablässt, anbrachte und dessen Offenheit einstellte. Nur wenn beide Ventile gleich offen sind, ist der Druck zwischen ihnen genau 50. Ich musste nur den Wert so lange einstellen, bis dies der Fall war."},
                 {"who": "ada", "text": "Damit konnte Lord Moorhouse ein dampfdruckbeaufschlagendes Bauteil herstellen, das er mir hoffentlich verraten wird.\n\nLord Moorhouse ist sehr schüchtern, aber sehr schlau, leider hat er oft zu viel Angst, seine Innovationen zu teilen."}
+            ],
+            [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
             ],
             [
                 {"who": "nicola", "text": "Nun, es funktioniert. Wir können jetzt spüren, wie offen ein Ventil ist, aber ich sehe nicht, wie uns das der Dampfberechnung näher bringt. Ich nehme an, wir müssen Lord Moorhouse fragen."},
@@ -1975,6 +2572,9 @@
                 {"who": "nicola", "text": "Wenn der Eingang hoch ist, verbinden wir den Norden. Wie das geht, wissen wir von der Konstruktion \"Normalerweise offen\". Und wenn der Eingang niedrig ist, verbinden wir den Süden. Das ist unser \"Normalerweise geschlossen\"-Design."}
             ],
             [
+                {"who": "nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                 {"who": "nicola", "text": "Nun, beginnen wir mit den Grundlagen. Wenn der Eingang hoch ist, werden wir den Ausgang mit einer Dampfquelle verbinden. Wenn er niedrig ist, werden wir eine Verbindung zur Atmosphäre herstellen. Um eine Verbindung zur Atmosphäre herzustellen, lassen wir das Rohrende einfach offen. Wie Lady Chavvington bemerkte, sind die Ventile analog und es scheint, wenn die Werte zwischen 0 und 100 liegen, werden die Ventile teilweise geöffnet und stellen das exakte Verhältnis wieder her."}
             ],
             [
@@ -2002,6 +2602,9 @@
                 {"who": "nicola", "text": "Wir können denselben Trick wie bei unserem Entschlüsselungsentwurf anwenden. Wir erhöhen oder verringern den Betrag, den wir das Bodenventil öffnen, bis der Druck zwischen ihnen genau 50 beträgt. Wir haben einen Amp50, der dies tut."}
             ],
             [
+                {"who": "nicola", "text": "Wir können denselben Trick wie bei unserem Entschlüsselungsentwurf anwenden. Wir erhöhen oder verringern den Betrag, den wir das Bodenventil öffnen, bis der Druck zwischen ihnen genau 50 beträgt. Wir haben einen Amp50, der dies tut."}
+            ],
+            [
                 {"who": "nicola", "text": "Wir öffnen ein Ventil auf den Wert des West-Eingangs minus des Süd-Eingangs, wir können dann ein zweites Ventil auf den gleichen Öffnungsgrad öffnen, indem wir danach suchen, wann der Druck zwischen ihnen 50 beträgt."}
             ],
             [
@@ -2015,6 +2618,9 @@
             ],
             [
                 {"who": "nicola", "text": "Zur Abwechslung ist ein Wobbeln eigentlich erwünscht. Verstärker in einer Ringkonfiguration machen die Konstruktion instabil und wackeln auf und ab."}
+            ],
+            [
+                {"who": "nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                 {"who": "nicola", "text": "Wenn West höher als Süd ist, beginnen Sie, mehr Dampf hinzuzufügen. Wenn West niedriger ist als Nord, beginnen Sie, mehr Dampf abzulassen."}
@@ -2080,7 +2686,7 @@
                 {"who": "ada", "text": "Keine weiteren Hinweise. Genießen Sie Ihren Gewinn."}
             ]
         ]
-    },
+   },
    "日本語":
    {
         "tooltips":
@@ -2129,10 +2735,9 @@
             "Info" : "クレジット",
             "Select language" : "言語選択",
             "Number resolution" : "Number resolution",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
-                                            "もし デザイン で悩んだら、\n「Discord」にある高圧蒸気学会の知識人の皆さんと議論するのがオススメするよ。\n「Esc」キーから「Discord に参加」を押してみたまえ。",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "残念ながら デモ版 はここまで。 この続きは『ゲーム本編』で\nお楽しみ下さい。\n\n\To be continued...",
+                                            "もし「デザイン」で悩んだら、\n「Discord」にある高圧蒸気アカデミーの知識人の皆さんと議論するのをオススメするよ。\n「Esc」キーから「Discord に参加」を押してみたまえ。",
             "Cross" : "交差",
             "50"   :   "50",
             "Normally Open" : "常時 開",
@@ -2149,8 +2754,8 @@
             "Sensor" : "センサー",
             "Subtractor" : "減算回路",
             "Adder" : "加算回路",
-            "Latch" : "ラッチ",
-            "Tabulator" : "図表作成",
+            "Latch" : "ラッチ回路",
+            "Tabulator" : "作表機",
             "Broken Link" : "壊れたリンク",
             "Zoom" : "ズーム",
             "Flow Detector":"フロー検出器",
@@ -2164,7 +2769,7 @@
             "Counter" : "計数器",
             "ROM" : "ROM",
             "Poem" : "ポエム",
-            "Clock" : "時計",
+            "Clock" : "クロック",
             "Cross v2" : "交差v2",
             "CounterE" : "計数器E",
             "Delay" : "ディレイ",
@@ -2200,32 +2805,35 @@
             "意図した圧力を生み出す方法として、\n『パイプの供給・排出を特定比率で同時実行』というものがあります。\nバルブの開度は『(+)側の圧力から(-)側の圧力を引いた値』となります。\n\n左の図では、\n『P』は「バルブの(+)側の圧力」\n『N』は「バルブの(-)側の圧力」を表しています。\n\nこの場合、下側のバルブの開度を『40（60-20）』となります。",
             "この配置で発生する圧力は、パーセント換算で\n「供給バルブの開度」を\n「両方(供給・排出)バルブの開度の合計値で割ったものとなります。\n『○圧力 = S / (S + V)』\n(『S』は「供給バルブの開度」、『V』は「排出バルブの開度」を指します)\n\n今回の場合、供給バルブの開度(S)は「40（40 - 0）」。\n排出バルブの開度(V)は「40（60 - 20）」となります。\nしたがって、この例における圧力の期待値は\n「40 / (40 + 40) = 50%」、すなわち「50PSI」となります。",
             "本作には、「3つの採点モード」が用意されています。\n『的確度（デフォルト）モード』では、\n「（最悪のテストでの）目標値に近いか」を採点します。\n『価格モード』は、デザインにかかる「コスト」でランク付けします。\n(パイプ「1ポンド」、バルブ「10ポンド」、蒸気孔「5ポンド」)\n各サブデザインには「4ポンド」の追加コストがかかります。\n\n『蒸気モード』では、蒸気孔から供給される「蒸気量」を測定します。",
-            "プレイヤー自らレベルを作成・共有することができます。\n作成したレベルはクリップボードを介して交換できます。\nテスト(手順)は、「+/-ボタン」で追加／削除できます。\nステップごとの時間は設定可能です。\n全てのテストを実行する際に、一部の工程をスキップ可能な場合は、\n「skip all」ボタンで開始するサブテストを選択できます。\nデザインのリセットは「全テスト」・「1つのテスト」モードでのみ行うことが可能です。\n「ポート」アイコンを使用して、必要なパイプラインと出力パイプラインを選択できます。\n入力値の変更は「実験メニュー」で行います。 "
+            "プレイヤー自らレベルを作成・共有することができます。\n作成したレベルはクリップボードを介して交換できます。\nテスト(手順)は、「+/-ボタン」で追加／削除できます。\nステップごとの時間は設定可能です。\n全てのテストを実行する際に、一部の工程をスキップ可能な場合は、\n「skip all」ボタンで開始するサブテストを選択できます。\nデザインのリセットは「全テスト」・「1つのテスト」モードでのみ行うことが可能です。\n「ポート」アイコンを使用して、必要なパイプラインと出力パイプラインを選択できます。\n入力値の変更は「実験メニュー」で行います。"
         ],
         "dialogue":
         [
             [
-                {"who": "charles", "text": "ようこそ、 ガートルード!\nワシの名前は チャールズ = チャヴィントン、この高圧蒸気機関のオーナーじゃ。\nこの場所から高圧蒸気を街の半分へと供給し、\n「蒸気傘」や「蒸気木琴」といった、 蒸気にまつわるありとあらゆる物 を動かしておる。\n\n妻エイダは「蒸気の数学的研究を夫婦の時を超えて続けてほしい」\nという言葉を私に残していった。\n彼女の残した「遺産」を守り、「科学的探求」を続ける為に君が雇われた、というわけじゃ。"},
+                {"who": "charles", "text": "ようこそ、 ガートルード!\nワシの名前は チャールズ = チャヴィントン、この高圧蒸気機関のオーナーじゃ。\nこの場所から高圧蒸気を街の半分へと供給し、\n「蒸気傘」や「蒸気木琴」といった、 蒸気にまつわるありとあらゆる物 を動かしておる。\n\n妻エイダは「蒸気の数学的研究を夫婦の時を超えて続けてほしい」\nという言葉を私に残していった。\n彼女の残した「遺産」を守り、「科学的探求」を続ける為に君が雇われたというわけじゃ。"},
                 {"who": "charles", "text": "従前の研究で君が初歩的な蒸気工学を習得していることは百も承知だが、\n我が妻のラボへの入室を許可する前に、\nまず基本的な蒸気パイプの建築を理解しているかテストしても宜しいかな。\n\n西の蒸気発生装置 を 東の設備 に、\n北の蒸気発生装置 を 南の設備 に接続してきてくれないか。\nどんな場合でも、パイプを一緒に接続しては駄目だぞ。\nそんなことをすれば、南の施設に蒸気を無償で供給することになり、\n彼ら従業員が期限内に使用料金を払えなくなってしまうからな！"},
                 {"who": "charles", "text": "高圧蒸気パイプについて詳しく分からない場合は、\n右上の「？」マークから 作業マニュアル を読むこともできるから、\n確認してみることをお勧めするよ。"}
             ],
             [
                 {"who": "charles", "text": "しまった!\n我が妻エイダの ラボ の セキュリティドア は、「低圧蒸気」で動くんじゃった。\nこの忌々しいドアを彼女がどうやって開けていたか、私にはさっぱり理解できなくてな。\n我が高圧蒸気機関では、 1in² あたり 100ポンド（PSI） の蒸気を発生させておる。\nこのドアには「ムーアハウス社」の低圧蒸気機関を使用されていて、\n1in² あたり 50ポンドの蒸気で作動するんじゃよ。\n\nあの旧時代的なムーアハウス社の蒸気機関を\nワシの敷地内に断じて配管しないぞ！"},
-                {"who": "charles", "text": "魔法かなにかで 50PSI の低圧蒸気を供給できない限り、\n諦めた方がマシかもしれんな。\n\n「スパナ」のアイコンからアクセスできる「ビルド」メニューの中に、 \n100PSI の高圧蒸気を大量に供給できる「蒸気孔」があるぞ。\n「Tab」キーを2回押すことでも「蒸気孔」を選択し、使用できることを忘れないようにな。"}
+                {"who": "charles", "text": "魔法かなにかで「50PSI」の低圧蒸気を供給できない限り、\n諦めた方がマシかもしれんな。\n\n「スパナ」のアイコンからアクセスできる「ビルド」メニューの中に、 \n100PSI の高圧蒸気を大量に供給できる「蒸気孔」があるぞ。\n「Tab」キーを2回押すことでも「蒸気孔」を選択し、使用できることを忘れないようにな。"}
             ],
             [
                 {"who": "charles", "text": "おお! 実に見事だ。\n良質な蒸気の 無駄遣い をしてしまったが、やるべきことをやれたな。\nラボが散らかっていることはお詫びするが、\n以前とある「チンピラ」が侵入して メチャクチャにしていっての。\n\nこのラボで、我が妻エイダは、ワシが彼女用に組立てた「バルブ」の実験を行っていた。\n(+)マークがついたポートに高圧蒸気をたっぷりと当てれば、\nバルブが開き、マークのついていない2つのポート間を\n蒸気が自由に行き来できるようになるじゃろう。"},
-                {"who": "charles", "text": "試してみたまえ。\n「西と東をつなぐ。 ただし、北が高圧のときに限る」じゃ。"}
+                {"who": "charles", "text": "試してみたまえ。\n「西と東をつなぐ。ただし、北が高圧のときに限る」じゃ。"}
             ],
             [
                 {"who": "nicola", "text": "お見事ですね！" },
-                {"who": "charles", "text": "おお、ニコラ、ちょうどよいところに来たな。\nガートルード、ニコラ は君の「助手」だ。\n彼は既にエイダが残した「日記」を基に勉強を始めておる。\nさて、次の仕掛けは、古びた頭脳では少しばかり難しいぞ。\nバルブが開くのは、(+)側が(-)側よりも高い圧力を受けている時だけじゃ。"},
-                {"who": "charles", "text": "エイダは以前、ワシに、制御パイプに高圧をかけたときに\n閉じる「バルブ」を作るよう頼んできた。\nこれらのバルブがまだ正しく動作するかどうか確認してみよう。\n\n\南からの圧力が「100PSI」の時のみ、東西のポートが接続させなさい。\n\n高圧蒸気の供給源として「蒸気孔」が使用できるぞ。"}
+                {"who": "charles", "text": "おお、ニコラ、ちょうどよいところに来たな。\n\nガートルード、ニコラ は君の「助手」だ。\n彼は既にエイダが残した「日記」を基に研究を開始しておる。\nさて、次の仕掛けは、古びた頭脳では少しばかり難しいぞ。\nバルブが開くのは、(+)側が(-)側よりも高い圧力を受けている時だけじゃ。"},
+                {"who": "charles", "text": "エイダは以前、ワシに、制御パイプに高圧をかけたときに\n閉じる「バルブ」を作るよう頼んできた。\nこれらのバルブがまだ正しく動作するかどうか確認してみよう。\n\n\南からの圧力が「100PSI」の時のみ、東西のポートが接続するように設定したまえ。\n\n高圧蒸気の供給源として「蒸気孔」が使用できるぞ。"}
             ],
             [
                 {"who": "charles", "text": "エクセレント! \nさて、「常時開」と「常時閉」、これら2つのデザインを組み合わせると、\n2つの供給源を切り替えるコンポーネントを構築することができるぞ。\n\n西側の操作室が「100PSI」の高圧蒸気を供給してる時、\n「北の蒸気発生装置」を 東の設備 に接続する必要がある。\nしかしな、西の操作室の気圧が「0PSI」の時は、\n「南の蒸気発生装置」を 東の設備 に接続する必要がある。"},
                 {"who": "nicola", "text": "操作室で蒸気を「0 から 100の間」で供給したらどうなるんでしょう？"},
                 {"who": "charles", "text": "何だって!?! それだと「低圧蒸気」が生成されるじゃろう！\nワシらは「低圧蒸気」で仕事をしているわけではないぞ！\nワシは人々に「低圧蒸気」を提供して財を成した覚えはこれっぽっちも無い！\n\n「低圧蒸気」のことは気にしなくていいぞ。\n西側が「高圧」の場合は 「北」の蒸気発生装置を接続し - そうでなければ「南」の蒸気発生装置を接続するのじゃ。"}
+            ],
+            [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
             ],
             [
                 {"who": "nicola", "text": "チャヴィントン夫人のノートには、\nラボとイーズリー夫人のご住居との間に\n「連絡用の蒸気接続機関」があったことが書かれていますね。"},
@@ -2234,26 +2842,26 @@
                 {"who": "charles", "text": "ハ！ 無理じゃよ！\nこれは蒸気学の基本中の基本じゃぞ。\n蒸気による通信は「蒸気の移動」に依存しておるし、\nワシの蒸気を一切「移動」させてはならん。\n\nとにかく、 ワシには別件の用事がある。\n今回の件は、 消えたワシの蒸気の調査ほど急を要する問題ではないからな。"},
                 {"who": "nicola", "text": "チャヴィントン夫人によると、チャールズはあまり「聞き上手」ではなかったようです。\n彼女の日記にそのデザインが詳しく説明されています。"},
                 {"who": "ada", "text": "『6月5日_\n今日は、素晴らしい「圧力複製装置」を開発した。\n特定値の圧力を作り出すために、\n蒸気の供給と排出を行う「バルブ」を正確な比率で使用した。\n蒸気バルブを「80％」、 大気排出バルブを「20％」開くことで、\n元の圧力である「80PSI」を再現することができた。\n\nチャールズが作成したバルブは、\n(+)側の圧力から(-)側の圧力を引いた分だけ開くようだ。"},
-                {"who": "ada", "text": "この仕様は、全範囲の値に対して、最小限のエラーで動作するようだ。\nその「絶縁」 特性から、私はこれを「バッファ」と呼ぶことにした。\nチャールズに「このアイデア」を説明してみたものの、\n彼は会社の利益のことで頭がいっぱいのようだ。 』"},
+                {"who": "ada", "text": "この仕様は、全範囲の値に対して、最小限のエラーで動作するようだ。\nその「絶縁」 特性から、私はこれを「バッファ」と呼ぶことにした。\nチャールズに「このアイデア」を説明してみたものの、\n彼は会社の利益のことで頭がいっぱいのようだ。』"},
                 {"who": "nicola", "text": "元々あった機関の一部がまだ壁に取り付けられたままになっているようです。\nイーズリー夫人側から供給されている蒸気で壁向こうの機器を動かすことができれば、\nチャールズも文句は言わないでしょう。"}
             ],
             [
-                {"who": "nicola", "text": "不完全ではありますが、いつでも戻って「デザインの改善」ができる。 魅力的ですね。\nバルブの組み合わせで、任意の圧力値を再現するようです。\n入力された圧力は、蒸気孔と大気排出バルブを、\n出力パイプ内の圧力を正しく再現するために、正確なレベルで開くみたいです。\n\nイーズリー夫人に最初のメッセージを 送信 し、\n彼女の元を訪れて蒸気通信機関が機能したか確認してみましょうか。"},
-                {"who": "annie", "text":"[しばらくして...]\nビックリさせないでよ!\n一瞬、 エイダが墓の向こうから話しかけているのかと思ったわ。"},
+                {"who": "nicola", "text": "不完全ではありますが、いつでも戻って「デザインの改善」ができる。魅力的ですね。\nバルブの組み合わせで、任意の圧力値を再現するようです。\n入力された圧力は、蒸気孔と大気排出バルブを、\n出力パイプ内の圧力を正しく再現するために、正確なレベルで開くみたいです。\n\nイーズリー夫人に最初のメッセージを 送信 し、\n彼女の元を訪れて蒸気通信機関が機能したか確認してみましょうか。"},
+                {"who": "annie", "text":"[しばらくして...]\nビックリさせないでよ!\n一瞬、 エイダがお墓の向こうから話しかけているのかと思ったわ。"},
                 {"who": "nicola", "text": "申し訳ございません、イーズリー様。\n我々はチャビントン夫人の研究を続けようとしているのです。\nコードブックによると『こんにちは』を意味する「80PSI」を送ろうとしたのですが..."},
-                {"who": "annie", "text": "違うわ! 「80PSI」は 『助けて!死後の世界に閉じ込められています！』 という意味よ。\n『こんにちは』は「20PSI」で表現するの。\nエイダがシステムを蒸気通信機関を設置したとき、\n彼女はバルブを間違って配置して、全ての圧力を逆転させてしまったのよ。\nこの問題を調査したときに、彼女は蒸気が持つ可能性を閃いてね。\n私たちはそれを修正する代わりに、\nコードブックのすべての圧力値を反転させて記載したのよ。"},
+                {"who": "annie", "text": "違うわ! 「80PSI」は 『助けて！死後の世界に閉じ込められています！』 という意味よ。\n\n『こんにちは』は「20PSI」で表現するの。\nエイダがシステムを蒸気通信機関を設置したとき、\n彼女はバルブを間違って配置して、全ての圧力を逆転させてしまったのよ。\nこの問題を調査したときに、彼女は蒸気が持つ可能性を閃いてね。\n私たちはそれを修正する代わりに、\nコードブックのすべての圧力値を反転させて記載したのよ。"},
                 {"who": "nicola", "text": "興味深いですね。 同じ「間違い」をしてないか確認してみましょう。"}
             ],
             [
                 {"who": "charles", "text": "クソ! エイダが発明した「圧力比較器」がどうしても見つからん。\n高名な高圧蒸気協会は、毎年、すべての高圧蒸気機関の圧力を比較して、\n最も高圧の蒸気を供給している機関がどこかを決めておるのじゃ。\n\n精密な比較器がなければ、今年の大会は中止せざるを得ないじゃろう。\n ワシの5年間に及ぶ連続優勝記録が台無しになってしまう！\n\n妻エイダはきっとどこかに「スペア」を持っていたと思うんじゃが...。"},
                 {"who": "nicola", "text": "頑張って作成してみましょう、でないとずっと「彼」が邪魔をしてきますよ..." },
                 {"who": "charles", "text": "今、なんと？" },
-                {"who": "nicola", "text": "「比較器は作成可能である」と申し上げたのです。 チャールズ様。 " },
+                {"who": "nicola", "text": "「比較器は作成可能である」と申し上げたのです。チャールズ様。" },
                 {"who": "charles", "text": "実にいい考えだ！\nだがしかし、一方の入力が、他方の入力よりも大きい時に\n出力を高圧蒸気に接続するだけでは不十分で、\n逆の場合は出力自体を排出せねばならんことは覚えておく必要があるぞ。\n\nワシの蒸気パイプは完全に密閉されていて、\nバルブを開けてガス抜きをしない限り、\n蒸気が漏れないようになっておるからな。"}
             ],
             [
                 {"who": "charles", "text": "すんばらしい!\n惚れ惚れする精密さじゃ。\nクリケットのピッチにかかる羽毛の圧力ですら検知できそうじゃぞ。\n\n高圧蒸気協会に入会するには、\n「自らが所有する蒸気機関が高圧蒸気を生成すること」を証明しなければならん。"},
-                {"who": "charles", "text": "この高圧蒸気機関では、ワシが唯一「真の高圧蒸気」と認める\n「100PSI」の高圧蒸気を生成しておる。\nじゃが、技術的には「50PSI」以上の圧力を持つ蒸気は全て高圧蒸気と見なされるのじゃ。\n\n高圧蒸気協会の長であるワシの責務は、\n低圧蒸気を発生させる劣悪な人間を入会できないようにすることじゃ。\n\n入会希望者の蒸気の質を正しく判断する為の装置が必要じゃな。"},
+                {"who": "charles", "text": "この高圧蒸気機関では、ワシが唯一「真の高圧蒸気」と認める\n「100PSI」の高圧蒸気を生成しておる。\nじゃが、技術的には「50PSI」以上の圧力を持つ蒸気は全て高圧蒸気と見なされるのじゃ。\n\n高圧蒸気協会の長であるワシの責務は、\n低圧蒸気を発生させる劣悪な人間を入会できないようにすることじゃ。 \n\n入会希望者の蒸気の質を正しく判断する為の装置が必要じゃな。"},
                 {"who": "nicola", "text": "ツールボックスには、あなたのデザインした「50PSIの蒸気発生器」がまだあります。\n作成済みのデザインは「部品」として使用することができます。"}
             ],
             [
@@ -2261,7 +2869,7 @@
                 {"who": "nicola", "text": "ちなみに、現在の会員数は何名でしょう？"},
                 {"who": "charles", "text": "え～と...「一人」じゃ...『非常に限定的』と言ったじゃろ。\n\nとにかく、歓迎ドリンクを逃さない為にも、そろそろ失礼する！"},
                 {"who": "nicola", "text": "やっと行ってくれましたね...\n\nチャヴィントン夫人の日記によると、\nムーアハウス卿の住居に繋がる、2本目の「パイプライン」が設置されていたようですね。\nもしチャールズがこれを見つけていたら納得できなかったでしょうね。\n\n日記を見てみましょう。"},
-                {"who": "ada", "text": "『6月17日 \nムーアハウス卿の屋敷へのパイプラインが完成したので、\n高域の圧力値（0〜100）を、\n「低圧のシステムで許容できる値（0〜50）に圧縮する」装置の開発に着手した。\n\n驚いたことに、ムーアハウス卿の低圧蒸気を動力源とし、\nなお且つ「100PSI」を基準入力とした場合、\n圧力バッファは入力圧力を正確に「1/2」に縮小することができたのだ。 』"},
+                {"who": "ada", "text": "『6月17日 \nムーアハウス卿の屋敷へのパイプラインが完成したので、\n高域の圧力値（0〜100）を、\n「低圧のシステムで許容できる値（0〜50）に圧縮する」装置の開発に着手した。\n\n驚いたことに、ムーアハウス卿の低圧蒸気を動力源とし、\nなお且つ「100PSI」を基準入力とした場合、\n圧力バッファは入力圧力を正確に「1/2」に縮小することができたのだ。』"},
                 {"who": "nicola", "text": "正気ですか!!!! 本当に動くんでしょうか？" }
             ],
             [
@@ -2273,13 +2881,13 @@
                 {"who": "nicola", "text": "おや?! 「6/7」? 日記を見てみましょう。\n6月7日の日記には 「圧力インバーター」の設計について書かれています。\n圧力が逆転しているとなると、彼はどうコミュニケーションを取っていたんでしょう？\n\n逆転...逆転...? そうか！\nすみません、植民地での生活が長すぎたもので。\n正しい日付はこちらですね。"},
                 {"who": "ada", "text": "『7月6日 \n通信が傍受されている!?\nムーアハウス卿は、連日の懇願の末、研究活動を互いに協力することに同意した。\n私たちは蒸気通信機関を利用して、それぞれのラボのドアの「パスコード」を交換した。\n\nその数時間後、我が家に\n「彼らのラボが荒らされ、君はもう歓迎されないだろう」と書かれたメモが届いた。\n慌てて自身のラボに向かうと、荒らされ、多くの研究成果が失われていたのだ。"},
                 {"who": "ada", "text": "パスコードは厳重に保管していた。\nチャールズがまさかそんな事をするはずがないだろう。\n私はすぐに研究室のドアを交換してもらった。\n\nチャールズは\n「ムーアハウスの蒸気ドアを操作するくらいなら、死んだほうがましだ」と語っていた。"},
-                {"who": "ada", "text": "「ここはもう安全ではない」そう感じた。\n\n私は急ぎ妹に連絡を取り、私がすぐに向かうことを伝えた。\n私たちの新しい「通信暗号化システム」を試すのに絶好の機会だった。\nチャールズが「妹の家に通じるパイプラインに設置する」と\n約束したサインはまだ受け取っていない。 彼は忘れっぽいところがあるのだ。 』"},
+                {"who": "ada", "text": "「ここはもう安全ではない」そう感じた。\n\n私は急ぎ妹に連絡を取り、私がすぐに向かうことを伝えた。\n私たちの新しい「通信暗号化システム」を試すのに絶好の機会だった。\nチャールズが「妹の家に通じるパイプラインに設置する」と\n約束したサインはまだ受け取っていない。彼は忘れっぽいところがあるのだ。』"},
                 {"who": "nicola", "text": "それが彼女の最後の日記でした。\n\nなんてことだ！ パイプラインはどこかにつながってないと思っていたので、\nその部品を他のデザインに流用していました。\n幸い、いくつかは溶接されていたので、そのままにしておきました。\n「暗号化装置」はほぼ機能しているようです。"}
             ],
             [
-                {"who": "nicola", "text": "実にシンプルでしたね。\n「暗号」とは単純に「不均衡なバッファ」です。 しかし、どうすれば\nこのような暗号を正確に反転させるデザインを作ることができるのでしょうか？\n\nおそらくイーズリー夫人が助けてくれるはずです。\n彼女の助力が得られるか、問い合わせてみましょう。\n..."},
-                {"who": "annie", "text": "エイダの日記の中に、\nメイディングリーホールのティールームで使われている「ナプキン」は無かった？\n\n「6月24日」の事だったと思うわ。 私たちが王立学会に提出する\n「単調系列の収束」に関する新しい論文について議論していたとき、\nエイダはナプキンに何かを書き留めはじめたの。\nそして、「暗号解読に成功した」と叫びながら彼女は駆け出していったわ。\n\n支払手形も書かずにね。 その時は私が代わりに書いたけど。"},
-                {"who": "ada", "text": "『6月24日 \n復号化装置は、値の推測・暗号化、そして\n暗号化された入力値を繰り返し比較することができる。\n入力値が高ければ推測値を大きくし、逆に入力値が少なければ、推測値を小さくする。\nこのような装置は、多くの機能を「反転」させることができるのだ。\n\nチャーリーが開発した蒸気比較器こそ、今の私には必要だ。\nしかしながら、今年の高圧蒸気協会の会合前には、\n忘れずにチャールズに返却しなくては。 』"},
+                {"who": "nicola", "text": "実にシンプルでしたね。\n「暗号」とは単純に「不均衡なバッファ」です。しかし、どうすれば\nこのような暗号を正確に反転させるデザインを作ることができるのでしょうか？\n\nおそらくイーズリー夫人が助けてくれるはずです。\n彼女の助力が得られるか、問い合わせてみましょう。\n..."},
+                {"who": "annie", "text": "エイダの日記の中に、\nメイディングリーホールのティールームで使われている「ナプキン」は無かった？\n\n「6月24日」の事だったと思うわ。私たちが王立アカデミーに提出する\n「単調系列の収束」に関する新しい論文について議論していたとき、\nエイダはナプキンに何かを書き留めはじめたの。\nそして、「暗号解読に成功した」と叫びながら彼女は駆け出していったわ。\n\n支払手形も書かずにね。その時は私が代わりに書いたけど。"},
+                {"who": "ada", "text": "『6月24日 \n復号化装置は、値の推測・暗号化、そして\n暗号化された入力値を繰り返し比較することができる。\n入力値が高ければ推測値を大きくし、逆に入力値が少なければ、推測値を小さくする。\nこのような装置は、多くの機能を「反転」させることができるのだ。\n\nチャーリーが開発した蒸気比較器こそ、今の私には必要だ。\nしかしながら、今年の高圧蒸気協会の会合前には、\n忘れずにチャールズに返却しなくては。』"},
                 {"who": "nicola", "text": "少なくとも、彼の蒸気比較器がどこにあるかぐらいは分かりますね。"}
             ],
             [
@@ -2287,193 +2895,197 @@
                 {"who": "ada", "text": "80 PSI [もしもし]\n93 PSI [私は エイダ・チャビントン です]\n"},
                 {"who": "nicola", "text": "60 PSI [どちら様ですか?]\n73 PSI [繰り返す]"},
                 {"who": "ada", "text": "25 PSI [A], 28 PSI [D], 25 PSI [A]\n24 PSI [_]\n27 PSI [C], 32 PSI [H], 25 PSI [A], 46 PSI [V], 46 PSI [V], 33 PSI [I], 38 PSI [N], 31 PSI [G], 44 PSI [T], 39 PSI [O], 38 PSI [N]"},
-                {"who": "nicola", "text": "これは想定外の事態です。 すぐにチャビントン卿に報告しなければ。\n\n...チャビントン卿！御夫人の妹様の家に通信を接続したところ、\n相手はチャビントン夫人本人だとおっしゃっておいでです！"},
+                {"who": "nicola", "text": "これは想定外の事態です。すぐにチャビントン卿に報告しなければ。\n\n...チャビントン卿！ 御夫人の妹様の家に通信を接続したところ、\n相手はチャビントン夫人本人だとおっしゃっておいでです！"},
                 {"who": "charles", "text": "ああ、そうだとも、彼女はまさしく「エイダ」だ。"},
                 {"who": "nicola", "text": "え...でもチャビントン卿、「エイダは亡くなられた」とおっしゃっていませんでしたか？"},
-                {"who": "charles", "text": "何を言っとるんじゃ!? \nエイダは完全に元気で、\n高圧蒸気機関が行方知れずとなった件を解決するまで妹のところにおるんじゃ。"},
+                {"who": "charles", "text": "何を言っとるんじゃ!? \nエイダは完全に元気で、高圧蒸気機関が\n行方知れずとなった件を解決するまで妹のところにおるんじゃ。"},
                 {"who": "nicola", "text": "あなたは彼女のことを「親愛なる故人」とおっしゃっていました。"},
                 {"who": "charles", "text": "そうだとも...彼女は旅立ってしまったんじゃ...\n「妹」のところへ..." },
                 {"who": "nicola", "text": "全員、彼女が死んだと思っていましたよ。"},
-                {"who": "charles", "text": "ふむ....そうじゃな...。\nよくよく振り返ってみると、\nワシの高圧蒸気機関が失われたことを悼む花束やカードが送られたんじゃった。\n高圧蒸気機関が失われたことを心配してくれた市民の方々にはワシは心を打たれた。\n\nそれでも、早く新しい蒸気コンピュータを完成させることができれば、\nすぐにでも真相を暴くことができるじゃろうて。\nさあ、急いで研究を続けるのじゃ。"},
-                {"who": "ada", "text": "『6月27日 \nムーアハウス卿と共に行っていた、蒸気計算の研究に大きな進展があった。\n以前のデザインは、不正確な要素で多かった。\nバルブのバランスが完璧で、且つ出力が「50」の時しか、\n完璧な結果が得られなかったのだ。\n\nこのことから、私は思いついた。\n\n蒸気を排出するもう一つのバルブを設置し、その開度を調整することで、\n当該バルブの開度を把握できるということを。\n2つのバルブが同程度開いている時のみ、\nバルブ間の圧力は正確に「50」になる。\nあとは、そうなるように入力値を調整すればよいはずだ。"},
-                {"who": "ada", "text": "この発見によって、ムーアハウス卿は「蒸気圧を加える部品」を作ることができた。\n\nムーアハウス卿はとてもシャイな反面、頭が切れるお方ではあるが、\n自ら思いついた革新的な技術の共有を\nひどく恐れる傾向にあることは大変残念だ。 』"}
+                {"who": "charles", "text": "ふむ....そうじゃな...。\nよくよく振り返ってみると、\nワシの高圧蒸気機関が失われたことを悼む花束やカードが送られたんじゃった。\n高圧蒸気機関が失われたことを心配してくれた市民の方々にはワシは心を打たれた。\n\nそれでも、早く新しい蒸気コンピュータを完成させることができれば、\nすぐにでも真相を暴くことができるじゃろうて。さあ、急いで研究を続けるのじゃ。"},
+                {"who": "ada", "text": "『6月27日 \nムーアハウス卿と共に行っていた、蒸気計算の研究に大きな進展があった。\n以前のデザインは、不正確な要素で多かった。\nバルブのバランスが均一、且つ出力が「50」の時しか完璧な結果にならなかったのだ。\n\nこのことから、私は思いついた。蒸気を排出するもう一つのバルブを設置し、\nその開度を調整することで、当該バルブの開度を把握できるということを。\n2つのバルブが同程度開いている時のみ、バルブ間の圧力は正確に「50」になる。\nあとは、そうなるように入力値を調整すればよいはずだ。"},
+                {"who": "ada", "text": "この発見によって、ムーアハウス卿は「蒸気圧を加える部品」を作ることができた。\n\nムーアハウス卿はとてもシャイな反面、頭が切れるお方ではあるが、\n自ら思いついた革新的な技術の共有を\nひどく恐れる傾向にあることは大変残念だ。』"}
+            ],
+            [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
             ],
             [
                 {"who": "nicola", "text": "うまくいきましたね。\nこれで、バルブの開度が正確に把握できるようにはなりましたが、\nこれでどうやって蒸気コンピュータを作ればいいかよく分かりませんね。\n\nムーアハウス卿に聞いてみましょうか。"},
                 {"who": "nicola", "text": "ムーアハウス卿、応答まことに感謝いたします。\n夫人がご不在の間、我々が蒸気コンピュータの開発を継続しようと考えております。\n「増圧装置」の構造を知っているのはあなただけだと伺っております。\nどうかその構造について私たちにご教示いただけますか。"},
-                {"who": "george", "text": "いいだろう。 気が変わったぞ。\n彼女がチャールズと結託して私に歯向かっているとしても、\n知識の歩みを止めることは、あってはならないことだな。\n彼女をチャールズの魔の手から守ってくれるのであれば、\n「増圧装置」について君たちに教えよう。\nここ最近、ホールを通る度に\n「彼女がチャールズによって殺された」という噂を耳にするのでな。"},
+                {"who": "george", "text": "いいだろう。気が変わったぞ。\n\n彼女がチャールズと結託して私に歯向かっているとしても、\n知識の歩みを止めることは、あってはならないことだな。\n彼女をチャールズの魔の手から守ってくれるのであれば、\n「増圧装置」について君たちに教えよう。\nここ最近、ホールを通る度に\n「彼女がチャールズによって殺された」という噂を耳にするのでな。"},
                 {"who": "nicola", "text": "チャビントン夫人は息災で、現在、妹様のお宅にいらっしゃいます。"},
-                {"who": "george", "text": "それなら安心だ。\n彼女があの「高圧のデストラップ」の中でにこれ以上時間を過ごすことを思うと、\n私は夜も眠れないからな。\nあの高圧タンカーが爆発でもしたら...\n考えたくもないが、その破壊力は計り知れないだろう。\nこの世界から「高圧の恐怖」がなくなるまで、しっかり休むことは不可能だろう...\n\nおっと、なんの話だったか。 そうだ追加デザインについてだな。\n設計する前に、「減算装置」を作る必要がある。\nバルブは(+)側の圧力から(-)側の圧力を引いた分だけ開くものだ。\nバルブを作ったら、その開度を測定してみたまえ。"},
+                {"who": "george", "text": "それなら安心だ。\n彼女があの「高圧のデストラップ」の中でこれ以上時間を過ごすことを思うと、\n私は夜も眠れないからな。あの高圧タンカーが爆発でもしたら...\n考えたくもないが、その破壊力は計り知れないだろう。\nこの世界から「高圧の恐怖」がなくなるまで、しっかり休むことは不可能だろう...\nおっと、なんの話だったか。そうだ追加デザインについてだな。\n設計する前に、「減算装置」を作る必要がある。\nバルブは(+)側の圧力から(-)側の圧力を引いた分だけ開くものだ。\nバルブを作ったら、その開度を測定してみたまえ。"},
                 {"who": "george", "text": "さて、私はそろそろ出かけなくては。\nエイダの安全を確保した上で、\n私には準備しなければならない重要な仕事があるのでな。"}
             ],
             [
                 {"who": "charles", "text": "エイダに頼まれていたパイプの書類を持ってきたぞ。"},
                 {"who": "nicola", "text": "「数ヶ月前」の依頼だったような。"},
-                {"who": "charles", "text": "そうじゃな、まあ、チャビントンは「やると決めたら必ずやる」男じゃ。\nとはいえ、毎月言わんでもよいじゃろ。\n\nワシからのメッセージを彼女に送ってもらってもよいか？\n\n80, 94, 76, 52, 68, 70"},
+                {"who": "charles", "text": "そうじゃな、まあ、チャビントンは「やると決めたら必ずやる」男じゃ。\nとはいえ、毎月ワシに言わんでもよいじゃろ。\n\nワシからのメッセージを彼女に送ってもらってもよいか？\n\n80, 94, 76, 52, 68, 70"},
                 {"who": "nicola", "text": "あなたもコードを学んだんですね！" },
-                {"who": "charles", "text": "学んだ?!? ワシがデザインしたんじゃぞ！軍役中にな。\n隊長間で交わされる最も頻繁の高いメッセージの組み合わせじゃよ。\n\nほれほれ、さっさとメッセージを送信するんじゃ。 " },
+                {"who": "charles", "text": "学んだ?!? ワシがデザインしたんじゃぞ！ 軍役中にな。\n隊長間で交わされる最も頻繁の高いメッセージの組み合わせじゃよ。\n\nほれほれ、さっさとメッセージを送信するんじゃ。" },
                 {"who": "nicola", "text": "80 PSI [もしもし]\n94 PSI [こちら、チャーリー = チャビントン]\n76 PSI [我が愛しのエンジェル]\n52 PSI [君がいなくても寂しい]\n68 PSI [首を長くして帰りを待つ]\n70 PSI [君がいない人生なんて無意味だ]"},
                 {"who": "charles", "text": "よし、これで「減算器」の設計は完了じゃな。 素晴らしいぞ。\n\n親愛なる妻エイダがかつて言ったように..."},
                 {"who": "nicola", "text": "その言い方はお止めになった方が宜しいかと。\n人々はあなたのことを「殺人者」と思い始めていますよ..."},
-                {"who": "charles", "text": "むむむ....確かにそうじゃな。\nワシのそばに今はいないエイダ…が\n『「加算器」は「減算器」の反転にすぎず、\n一方の入力から差し引いた出力は、\nもう一方の入力と等しくなければならない」とかつて言っておった。\nしかし、どの「入力」のことを言っておるのじゃろうか？\n彼女は、その入力値が「0」になるとデザインが動かなくなり、\n入力を切り替えても、もう一方の入力が「0」になっても動かなくなることに納得できず、\nしばらくの間、悩んでいました。\n\n両方のアプローチを組み合わせる必要があることに気付いたとき、\n彼女はピンときたんじゃっよ。"}
+                {"who": "charles", "text": "むむむ....確かにそうじゃな。ワシのそばに今はいないエイダ…が\n『「加算器」は「減算器」の反転にすぎず、一方の入力から差し引いた出力は、\nもう一方の入力と等しくなければならない」とかつて言っておった。\nしかし、どの「入力」のことを言っておるのじゃろうか？\n彼女は、その入力値が「0」になるとデザインが動かなくなり、\n入力を切り替えても、もう一方の入力が「0」になっても動かなくなることに納得できず、\nしばらくの間、悩んでいたんじゃ。\n両方のアプローチを組み合わせる必要があることに気付いたとき、\n彼女はピンときたんじゃよ。"}
             ],
             [
                 {"who": "annie", "text": "何故私のメッセージに応答したのかしら?"},
                 {"who": "nicola", "text": "申し訳ありません、イーズリー様, 我々には送信した覚えが無いのですが。"},
-                {"who": "annie", "text": "こちらの「メッセージラッチ」には記録されているはずです。\n..._ _ _ 無くなっている！\nラボに侵入した者が「ラッチ」を盗んでいったのね。\n\n他の重要な通信を見逃さないためにも、すぐに作り直すべきよ。"},
-                {"who": "annie", "text": "メッセージが保存されると、「タイミングパイプ」に蒸気の「パルス」が送られるわ。\nこれにより、ラッチはその時の値を記録するの。\nラッチは、タイミングパイプが低圧レベルに戻るまで、記録された古い数値を保持するようになってるのよ。\n\nこれらの「ラッチ」は、一連のメッセージを順番に保存するから、\nタイミングパイプが低圧に戻った時のみが解放されるよう設定することが重要ね。"},
+                {"who": "annie", "text": "こちらの「メッセージラッチ」には記録されているはずよ。\n..._ _ _ 無くなっている！\nラボに侵入した者が「ラッチ回路」を盗んでいったのね。\n\n他の重要な通信を見逃さないためにも、すぐに作り直すべきよ。"},
+                {"who": "annie", "text": "メッセージが保存されると、「タイミングパイプ」に蒸気の「パルス」が送られるわ。\nこれにより、ラッチはその時の値を記録するの。\nラッチは、タイミングパイプが低圧レベルに戻るまで、\n記録された古い数値を保持するようになってるのよ。\n\nこれらの「ラッチ」は、一連のメッセージを順番に保存するから、\nタイミングパイプが低圧に戻った時のみが解放されるよう設定することが重要ね。"},
                 {"who": "annie", "text": "チャールズが設計したバルブの密閉性の高さにはいつも感心するわ。\nこのデザインが失われないことを願うばかりね。"}
             ],
             [
-                {"who": "charles", "text": "皆、グッド・ニュースじゃ。 ジョセフ・コグスワース教授を紹介しよう。\n我が町で最も優れた知性を持つ\n...というわけでもないが優秀なお方じゃ。\n\n彼のギア式作表機は、ワシらの経理部門に素晴らしい成果をもたらしてくれたんじゃ。\n彼は現在行方不明になっている高圧蒸気機関の探索にも協力してくれていて、\nエイダの仕事にも興味を持ってくくれているのじゃ。"},
-                {"who": "joseph", "text": "あなたがどれだけ進歩したかを見るのは興味深い。 エイダがノートに書いたのと同じ仕様でラッチを再構築したようですね"},
-                {"who": "nicola", "text": "あのノートは、休憩中になくなってしまいました。 どうしてそれを知っているんですか？" },
-                {"who": "joseph", "text": "エイダはいつも私の仕事を賞賛してくれました。 彼女の蒸気を使ったアプローチは粗悪で不正確だと思っていましたが、それが適切なものになることを期待して、しばしば私に助言を求めてきました」。"},
-                {"who": "charles", "text": "蒸気の集計器を完成させれば、私の会計士のうち誰が高圧蒸気を横領したのかがわかるでしょう。 北側の接続部で加算か減算かを選択し、南側の接続部で高圧蒸気のタイミングパルスを供給します。 エイダは、使用するすべての部品の精度を上げるために、これまでの設計をすべて改良しなければなりませんでした。 彼女が完成させることができなかった仕事だ」。"}
+                {"who": "charles", "text": "皆、グッド・ニュースじゃ。「ジョセフ・コグスワース教授」を紹介しよう。\n我が町で最も優れた知性を持つ\n...というわけでもないが優秀なお方じゃ。\n\n彼の「歯車式作表機」は、ワシらの経理部門に素晴らしい成果をもたらしてくれたんじゃ。\n彼は、行方不明となっている「高圧蒸気機関」の探索にも協力していて、\nエイダの研究にも興味を持ってくれているのじゃ。"},
+                {"who": "joseph", "text": "君たちの研究がどれだけ進捗してるかを見るのは実に興味深い。\nエイダの日記に書かれているものと同じ仕様でラッチを再構築したようだね。"},
+                {"who": "nicola", "text": "あの日記は、休憩中にどこかにいってしまったんです。\n何故そのことをご存知なのでしょうか？" },
+                {"who": "joseph", "text": "エイダはいつも私の仕事を賞賛してくれました。\n彼女の蒸気を使用したアプローチは「粗悪」で「不正確」だと考えていたが、\nアプローチをより適切なものとするべく、しばしば私にアドバイスを求めていたのだよ。"},
+                {"who": "charles", "text": "「蒸気作表機」を完成させれば、ワシが雇っているの会計士の内、\n誰が高圧蒸気機関を盗んだかが分かるじゃろう。\n\n北側ポートで「加算」か「減算」のいずれかを選択し、\n南側ポートで高圧蒸気のタイミングパルスを供給するんじゃ。\n\nエイダは、使用するすべての部品の精度を向上させる為、\n今までのデザインを全て改良しなければならなかった。\nこれは、彼女がなし得なかった仕事じゃ。"}
             ],
             [
-                {"who": "charles", "text": "素晴らしい、しかし残念ながら遅すぎる、コグスワース教授がすでに罪を犯した会計士を特定しているからだ。 " },
-                {"who": "joseph", "text": "確かに、だがその見返りとして、この蒸気式集計装置の粗悪な試みを手に入れてもらいたいのだ。 エイダは、彼女の研究のすべてを私が管理することを望んだ。 ガートルード？ニコラ？君らの仕事は終わった"},
-                {"who": "ada", "text": "I hardly think that!性格も知性も寄生虫のようなスズメバチのような男に、自分の仕事を渡すとは思えません」｝。"},
-                {"who": "joseph", "text": "Ada!亡くなったとばかり思っていました" },
-                {"who": "ada", "text": "Charles!この男を捕まえろ、この騒動の原因は彼にあるのだから"},
-                {"who": "charles", "text": "えっ！！？彼のような人物がそんな小さな犯罪に手を染めるとは思えません」。"},
-                {"who": "george", "text": "It's true Charles.ジョセフは私をあなたに対抗するために虚偽の情報を流し、お互いに憎しみ合うように仕向けました。 最初は高圧蒸気を嫌う彼に協力していましたが、後になって彼がすべての蒸気を嫌っていることに気がつきました」｝。"},
-                {"who": "charles", "text": "Is this true Joseph?あなたは高圧蒸気に情熱を持っていないのですか」。"},
-                {"who": "joseph", "text": "Of course it is true!恐ろしい物質だ。 しかし、私を逮捕しろと？何のために？何の証拠もないでしょう？"},
-                {"who": "ada", "text": "実はそうなんです。 歯車式の集計機では、各取引からわずかな端数が取り除かれていました。 蒸気式の集計機と比較して、初めてその誤差を発見したのです。 これは、高圧の蒸気をゆっくりと吸い上げるためです。 チャールズが何かを感じ取っていなければ、これを発見することはできなかっただろう。"},
-                {"who": "joseph", "text": "Preposterous!こんな気持ちの悪い物質で何がしたいんだ！」｝。"},
-                {"who": "charles", "text": "えっ！！？でも、それは低圧の容器だよ。 高圧蒸気を入れたらどうなるか、わからないのか！」｝。"},
-                {"who": "joseph", "text": "The only result is the world finally rejecting steam once and for all!蒸気は死刑執行のためのものであり、博物館でしか見られないようにすべきだ。 考えてみてください。 蒸気がオフィスに侵入し、私の機械を駆逐してしまうのです。 歯車でしか生産できない...放してくれ！手を離せ！哀れな愚か者たちよ！こんなことは許されない！アカデミーに知らせろ！"},
-                {"who": "charles", "text": "アカデミーは必ずやこのことを耳にするだろう!私の高圧蒸気は無事だし、愛するエイダも無事だ"},
-                {"who": "ada", "text": "Actually darling, I think the story of steam computation is not yet now beginning" },
-                {"who": "charles", "text": "確かに。 しかし、まずはその蒸気爆弾を拡散させるべきかもしれません」。"}
+                {"who": "charles", "text": "素晴らしい、しかし残念ながら遅すぎじゃ。\nコグスワース教授が既に犯人たる会計士を特定したんでな。" },
+                {"who": "joseph", "text": "その通りだ、だがその「対価」として、私は「蒸気作表機」による\n野蛮な実験の責任者となりたいのだよ。\nエイダは、彼女自身の研究の全てを私に管理をして欲しいと望んでいだ。\n\nガートルード、そしてニコラ、\n君たらの仕事はここで終わりだ。"},
+                {"who": "ada", "text": "私はこれっぽっちもそんなこと思ってないわ！\n性格も知性も「寄生バチ」のような男に、私の研究を渡すわけにはいかないわ。"},
+                {"who": "joseph", "text": "エイダ!\n君は「死んだ」とばかり思っていたよ。" },
+                {"who": "ada", "text": "チャーリー！\nこの男を捕まえて、今回の騒動の犯人は彼なのよ。"},
+                {"who": "charles", "text": "なんじゃと!!? 彼のような人がそんな「軽犯罪」に手を染めるとは思えんが..."},
+                {"who": "george", "text": "事実だよ、チャーリー。\nジョセフはあなたと私を敵対させる為に\nウソの情報を流し、お互いに憎しみ合うように仕向けたのだ。\n\n当初は「高圧蒸気」を憎む彼に協力していたが、\n後になって彼が「全ての蒸気」を憎んでいることに気づいたのだ。"},
+                {"who": "charles", "text": "本当なのか、ジョセフ？\n君は「高圧蒸気」に情熱を抱いていないのか？"},
+                {"who": "joseph", "text": "ああ、そうだとも!\n蒸気とは、なんと恐ろしい物質だ。\n\nしかし、証拠も無いというのに、私をどうやって逮捕するつもりなのかね？ \n何の為に？"},
+                {"who": "ada", "text": "証拠はこれよ。\n歯車式作表機では、各計算からわずかな「端数」が取り除かれていたの。\n蒸気作表機での計算結果と比較して、初めてその誤差を発見できたのよ。\n\nこれは、高圧の蒸気をゆっくりと吸い上げる為ね。\nチャールズが異変を感じ取っていなければ、\nこの事実を発見することはできなかったでしょうね。"},
+                {"who": "joseph", "text": "馬鹿げてる!\nこんな気持ちの悪い物質で何がしたいと言うのだ。"},
+                {"who":"george", "text":"圧力容器をゆっくりと満たすように、\n市庁舎に下の「蒸気作表機」を建てるよう、私に頼んでいたな、ジョセフ。"},
+				{"who": "charles", "text": "なんじゃって!?!\nじゃが、それは低圧容器じゃ。\n高圧蒸気なんぞ入れたらどうなるか分からんのか！。"},
+                {"who": "joseph", "text": "世界全体が蒸気を完全に否定することになるだろうな!\n\n蒸気は「死刑執行」の際に用いられるものであり、\n博物館でしか見られないようにすべきだ。\n考えてもみたまえ。蒸気が我がオフィスに侵入し、「歯車」でしか作れない私の機械を駆逐する様をな。\n...放してくれ！離せ！哀れな愚か者どもめ！\nこんなことが許されてなるものか！\nこの件についてアカデミーの耳に入るまで待ってくれ！"},
+                {"who": "charles", "text": "アカデミーは必ずやこのことを耳にするじゃろうて!\nひとまずワシの高圧蒸気機関と、愛するエイダも無事じゃな。"},
+                {"who": "ada", "text": "ダーリン、\n「蒸気コンピュータ」の件は、まだ始まってすらいないわよ。" },
+                {"who": "charles", "text": "確かにな。じゃが、まず手始めに市庁舎の下に埋め込まれた\n「爆弾」の蒸気を放散させる必要がありそうじゃ。"}
             ],
             [
-                {"who": "ada", "text": "ありがとう、ガートルード。 あなたの迅速な判断がなければ、大惨事になっていたでしょう" },
-                {"who": "george", "text": "私もかなり感心しました。 エイダ、あなたが私の家を略奪したことを非難したことを、いくら謝っても足りません。 ガートルードとニコラに私のデザインを手伝ってもらうことはできないだろうか？彼らの意見は非常に建設的だと思います。"},
-                {"who": "ada", "text": "もうこの話はしないでください、私も許されなければなりませんから。 親切の印として、私の...私たちの研究室を自由に使ってください。 イーズリー女史がすでに利用しています。 チャールズと私はこの騒動から少し離れる必要があると思っています。 数日後に戻ってきますが、あなたの発見を調べるのが楽しみです。"},
-                {"who": "george", "text": "Thank you, and safe journey.\n\nニコラ、x2プレッシャー・アンプを探してくれないか？" },
-                {"who": "nicola", "text": "ここにあります。\n\n構造はシンプルですが、操作は驚くほど便利だと思います。"},
-                {"who": "george", "text": "確かに。 この装置は、0〜50の特定の範囲の値を0〜100の範囲まで増幅しますが最小値と最大値が与えられれば、任意の範囲を拡大するアンプを構築できると思います"},
-                {"who": "nicola", "text": "We shall name it the Zoom element."},
-                {"who": "george", "text": "その通りだが、まず我々がそれを考案すべきだ。 北が最大、南が最小になります。 東の出力は、西の入力がその範囲内のどこにあるかを教えてくれます」。"}
+                {"who": "ada", "text": "ありがとう、ガートルード。\nあなたの迅速な判断がなければ、大惨事になっていたわね。" },
+                {"who": "george", "text": "私もかなり感心させられたよ。\nエイダ、君が我が家を略奪したことを非難したことは、いくら謝っても足りないな。\n\nガートルードとニコラに私のデザインを手伝ってもらうことはできないだろうか？\n彼らの意見は非常に建設的だと思っているのだ。"},
+                {"who": "ada", "text": "もうこの話は止めましょうジョージ、私も悪かったのだから。\n好意の印として、私の...\n私たち二人のラボを自由に使ってくれていいわ。\nミズ・イーズリーが既に使っているし。\n\nチャールズと私はしばらくこの騒動から距離を置く必要があると思うの。\n数日後には戻ってきます、そして\nあなたたちの研究成果を見るのが楽しみよ。"},
+                {"who": "george", "text": "ありがとう、そして道中の無事を祈っているよ。\n\nニコラ、加圧アンプを２つ探してくれないか？" },
+                {"who": "nicola", "text": "こちらにございます。\n\n構造はシンプルですが、操作性は驚くほど良いと思われます。"},
+                {"who": "george", "text": "確かにそうだな。\nこの装置は、「0〜50」の特定の値を、\n「0〜100」の範囲で増幅させるのだが、\n「最小値」と「最大値」が与えさえすれば、任意の範囲を拡大する「増幅器」が作れると思うのだ。"},
+                {"who": "nicola", "text": "「ズーム原理」とでも名付けましょうか。"},
+                {"who": "george", "text": "確かにその通りだが、まず我々がそれを開発すべきだろう。\n\n北を「最大」、南が「最小」となるように設定してみようか。\n東側の出力が、範囲内のどこに\n西側の入力が存在するかを教えてくれるだろう。"}
             ],
             [
-                {"who": "george", "text": "よし、これで任意の圧力範囲にズームできるようになった。 次に必要なのは、その範囲内にいるかどうかを検出する方法です。 この「蒸気式速度計」を見てみましょう。 エイダがチャールズのために作ったもので、中を通る蒸気の量を測るためのものです。 長いパイプの中を蒸気が通ると、ある程度の圧力が失われます。 蒸気が速く通過すればするほど、より多くの圧力が失われます。 両側が同じ圧力であれば、動く蒸気はないはずです。 彼女はパイプの中にいくつかのバルブを入れて抵抗を増やし、その差を大きくしました」。"},
-                {"who": "george", "text": "私が必要としているのは、西の入力基準が2つの圧力の間にあるかどうかを判断する方法です。 北よりも低く、南よりも高くなければなりません」。"}
+                {"who": "george", "text": "よし、これで任意の圧力範囲にズームできるようになった。\n次に必要となるのは、その範囲内にあるかどうかを検出する方法だろう。\n\nこの「蒸気速度計」で見てみよう。\nこれは、エイダがチャールズの為に作ったもので、\n中を通る蒸気の量を測定するためのものだ。\n\n長いパイプの中を蒸気が通ると、ある程度の圧力が失われる。\n蒸気が速く通過すればするほど、より多くの圧力が失われるのだ。\n圧力の量が同じであれば、蒸気の動きはないはずだ。\n彼女はパイプの中にいくつかバルブを配置して抵抗を増やし、\nその圧力差を大きくしていたのだ。"},
+                {"who": "george", "text": "私が必要としているのは、\n西側の基準入力が2つの圧力間にあるかどうかを判断する方法だ。\n\n基準入力値は北側よりも低く、南側よりも高くなければならないだろう。"}
             ],
             [
-                {"who": "george", "text": "さて、範囲を拡大することで、誰かが使っている蒸気の量をより正確に知ることができますが、自分が検査している範囲に入っているかどうかもわかりません。 お客様には、次回の蒸気代の請求書に小数点以下の桁数が増えることを覚悟するように言っておこう！」｝。"},
-                {"who": "annie", "text": "これまでの研究は、あなたの会社の利益のためだけに行われてきたのですか？これは、私たちの契約とは異なります」。"},
-                {"who": "george", "text": "But Lady Easley!私はあなたのためにこれを作りました。 信じてください、これは将来とても役に立つ部品になりますよ」｝。"},
-                {"who": "annie", "text": "I very doubt that.私は、純粋な研究をするべきだと思います。\n_ エイダと私が取り組んでいたラッチのデザインに戻りましょう。 私は、有効にも無効にもできるラッチが欲しかったのです。 ノース入力が高ければラッチは通常通り動作しますが、低ければ出力を駆動せず、タイミングパルスを見ても新しい入力を受け付けないようにします。 古いデザインを使ってもいいのですが、カスタムで作った方が効率がいいかもしれません」。"}
+                {"who": "george", "text": "これで、圧力範囲を「ズーム」することで\n「蒸気の使用量」を正確に把握するだけでなく、\n「検査範囲内にズームできているか」を確認できるようになった。\n\n次回の蒸気代金の請求書に「小数点以下の桁数」が増えることを\n覚悟するよう顧客に伝えなくてはな！"},
+                {"who": "annie", "text": "これまでの研究は、あなたの会社の利益の為だけに行われてきたって言うの？\n私たちが決めた「取り決め」と違うじゃない。"},
+                {"who": "george", "text": "しかしながらミズ・イーズリー! 私はあなたのために「この装置」を作ったのだ。\n信じて欲しい、これは将来とても役に立つものになるよ。"},
+                {"who": "annie", "text": "疑わしいわね...私は「純粋な研究」をするべきだと思うわ。\n\nエイダと私が取り組んでいた「ラッチ回路」のデザインに話を戻しましょう。\n私は「オン・オフが切り替えられるラッチ」が欲しかったの。\n北側の入力値が高ければラッチは通常通り動作するけれど、\n逆に低ければ出力を駆動せず、タイミングパルスを確認しても\n新しい入力を受け付けなくなってしまうわ。\n\n「古いデザイン」を使用してもよいけれど、\n「カスタムしたデザイン」の方が効率が良いかもしれないわね。"}
             ],
             [
-                {"who": "annie", "text": "さて、私がこのデザインを求めた理由は、North入力が複数のラッチのうちの1つを選択する「アドレス可能なラッチ」を構築できるようにするためでした。 この方法では、複数の値を保存し、それぞれに自由にアクセスすることができます。 North入力は、2つのラッチを選択します。 北の値0〜50で1つ、北の値50〜100で2つ目が選択されます」。"}
+                {"who": "annie", "text": "さて、私がこのデザインを採用した理由は、\n北側入力で複数のラッチのうちの1つを選択する\n「アドレス可能なラッチ」を構築したかったからなの。\n\nこれにより、複数の入力を格納し、自由に各値にアクセスできるようになるというわけ。\n\n「ラッチ回路」を2つ作成してみましょう。\n北側の出力でいずれかのラッチを選択されるようにするの。\n「0〜50」の時に「1つ目」、\n「50〜100」の時に「2つ目」のラッチが選択されればよいはずよ。"}
             ],
             [
-                {"who": "annie", "text": "そのとおりですが、残念ながらここまでしかできませんでした。 次に、5つの値を格納できるラッチが欲しかったのですが、Adaと私は1つのデザインにすべてを収めることができませんでした。 選択範囲は、0-20、20-40、40-60、60-80、80-100です。 残念ながら、セレクト信号がどの範囲にあるかを検出するのは難しすぎました。"},
-                {"who": "george", "text": "If only one had range detecting design."},
-                {"who": "annie", "text": "Your design detects flow, not a pressure range"},
-                {"who": "george", "text": "Well, yes and no.流れている蒸気の圧力範囲を検出します。 鎖状に配置して蒸気を通すと、圧力の範囲を検出します」。"}
+                {"who": "annie", "text": "かなり精密だけれど、私たちはここまでしか設計できなかったの。\n次に「5つの値を格納できるラッチ」が欲しかったんだけれど、\nエイダと私は1つのデザインに落とし込むことができなくてね。\n選択範囲は、「0-20、20-40、40-60、60-80、80-100」ね。\n困ったことに、選択した入力の範囲検出があまりにも難しすぎたのよ。"},
+                {"who": "george", "text": "仮に「範囲検出デザイン」を1つにできれば..."},
+                {"who": "annie", "text": "あなたのデザインは圧力の「範囲」ではなく、その「流れ」を検出するものよね。"},
+                {"who": "george", "text": "「イエス」であり「ノー」でもある。\n私のデザインは「流れる蒸気の圧力範囲」を検出するのだ。\nデザインを「鎖状」に配置し、そこに蒸気を通すと、\n圧力範囲を検出する、というわけだ。"}
             ],
             [
-                {"who": "annie", "text": "確かに、あのフローディテクターは非常に独創的で、私たちが必要としていたトリックでした。 しかし今度は、このLatch5ブロックを2つ繋げてLatch10を作るにはどうしたらいいでしょうか？\n\n選択範囲は、0-10、10-20、20-30..."},
-                {"who": "george", "text": "そして、これがズームエレメントのデザインを依頼した理由です。 あなたのアイデアには天才的なものを感じ、すでに計画を立てています」"}
+                {"who": "annie", "text": "「フロー検出器」が非常に巧妙で、私たちが求めていた手法であることは認めるわ。\nそれじゃ次は、この「Latch5」を2つ繋げて\n「Latch10」を構築するにはどうすれば良いかしら？\n\n選択範囲は、「0-10、10-20、20-30...」"},
+                {"who": "george", "text": "そして、これが君たちに「ズーム原理」のデザインを依頼した理由だ。\n君たちの天才的なアイデアを見て、前もって計画していたのだよ。"}
             ],
             [
-                {"who": "ada", "text": "いやあ、感心しました。 私たちがいなくなってまだ2日しか経っていないのに、あなたはスチームコンピューターの収納部分を作ってしまったのですから"},
-                {"who": "nicola", "text": "The what?" },
-                {"who": "annie", "text": "すべては時が来れば明らかになる。 ストレージの設計はできました。 あなたには、計算と制御の調査をお任せします」。"},
-                {"who": "ada", "text": "さて、小さなことから始めましょう。 私たちは、2つの入力値のうち小さい方の値を与えるコンポーネントが必要です。 簡単なことですね。"}
+                {"who": "ada", "text": "いやあ、感心したわ。\n\n私たちがいなくなってまだ「2日」しか経っていないのに、\n蒸気コンピュータの「ストレージ」を設計してしまったのだから。"},
+                {"who": "nicola", "text": "今なんと?" },
+                {"who": "annie", "text": "いずれ分かるわ。\nストレージの設計はなんとか完了よ。\n「計算とその制御」の検証はあなたに一任するわ、エイダ。"},
+                {"who": "ada", "text": "それじゃあ、小さなところから始めましょうか。\n\n2つの入力値のうち、小さい方の値を与える「コンポーネント」が必要そうね。\n今のあなたたちなら簡単よね。"}
             ],
             [
-                {"who": "charles", "text": "Ada!私のダーリン!ジョージが紹介してくれた新しい飲み物を試してみてね。 その名も \"フロフィー・コーヒー \"です。 ぜひ味わってみてください」。"},
-                {"who": "ada", "text": "Hmmm, yes it is rather ni..."},
-                {"who": "charles", "text": "You know what would be further better!!!" },
-                {"who": "ada", "text": "High press..."},
-                {"who": "charles", "text": "High Pressure Steam!" },
-                {"who": "ada", "text": "ダーリン。 あなたがジョージと仲直りしたことはとても感謝していますが、お二人は番組の要素を計画するはずではありませんでしたか？"},
-                {"who": "charles", "text": "Already done!ジョージが詩の最終調整をしています...いや、要件というべきでしょうか" },
-                {"who": "ada", "text": "おぉ！早速Maxコンポーネントを作成して、弊社のエンジニアにアクセスしてみましょうか。\n\n今回の出力は、2つの入力の最大値でなければなりません。"}
+                {"who": "charles", "text": "エイダ! 愛しの妻よ!\nジョージが紹介してくれたこの新しいドリンクを試してごらん。\nその名も 『フロフィー・コーヒー』じゃ。ぜひ味わってみてくれ。"},
+                {"who": "ada", "text": "ふむ、 美味しいわね。"},
+                {"who": "charles", "text": "美味しさの「秘訣」は何か分かるかい!?!" },
+                {"who": "ada", "text": "高圧..."},
+                {"who": "charles", "text": "そう！　「高圧蒸気」じゃ！" },
+                {"who": "ada", "text": "ダーリン。\n\nあなたがジョージと仲直りしたことはとても感謝しているけれど、\n2人で「プログラム原理」について計画する予定じゃなかったかしら？"},
+                {"who": "charles", "text": "既に完了しておるよ!ジョージは既に「ポエム」の最終調整をしておる...\nいや、「要件」とでもいうべきでしょうか。" },
+                {"who": "ada", "text": "まあ！それじゃ早速「Max」コンポーネントを作成して、\n弊社のエンジニアにアクセスしてみましょうか。\n\n今回の出力は、2つの入力の最大値でなければならないわね。"}
             ],
             [
-                {"who": "charles", "text": "もし、ジョージが来るまでに時間があったら、彼の圧力容器をより安全にするために使うべきだ。 90PSIまでは安全ですが、それ以上になると爆発してしまいます。 私が必要とするのは「蒸気ヒューズ」です。 西から東への蒸気の流れを許容するが、圧力が90PSIを超えたら、供給を切り離して容器を排気する。 まず電源を切り、それからタンクの空気を抜くことを忘れないでください」。"}
+                {"who": "charles", "text": "もし、ジョージが来るまでに時間があるなら、\n彼の圧力容器をより安全なものに改良すべきじゃな。\n\n彼の容器は「90PSI」までは安全じゃが、それ以上になると爆発しやすくなる。\n必要となるのは「蒸気ヒューズ」じゃな。西から東への蒸気の流れを許容し、\n圧力が「90PSI」を超えたら、容器の接続を解除して排気する仕組みじゃ。\n蒸気の供給を遮断してから、容器内の蒸気を排出することを忘れずにな。"}
             ],
             [
-                {"who": "charles", "text": "Come George!私たちにはプライバシーがあります！"},
-                {"who": "george", "text": "Are you sure about this Charles?イーズリー夫人は私の存在をほとんど認めていません。"},
-                {"who": "charles", "text": "Stiff upper lip old chap!"},
-                {"who": "george", "text": "very well.これは少々デリケートな問題です。 1サイクルごとに10PSIずつ増加する装置が必要です。 0PSIからスタートして、タイミングパルスごとに10PSIずつ上昇する必要があります。 100PSIに到達する代わりに、0PSIにリセットされる必要があります"}
+                {"who": "charles", "text": "こっちに来るんじゃジョージ！ 2人だけの「内緒話」をしよう。"},
+                {"who": "george", "text": "本当に大丈夫なのだろうな、チャールズ? \nミズ・イーズリーは私のことを全く気にかけてはいないのだぞ。"},
+                {"who": "charles", "text": "くじけちゃダメじゃぞ、君！"},
+                {"who": "george", "text": "分かったよ。これは少々デリケートな問題だ。\n\n1サイクルごとに圧力が「10PSI」ずつ増加する装置が必要なのだ。\n「0PSI」からスタートして、\nタイミングパルスに合わせて「10PSI」ずつ増加するよう設定し、\n「100PSI」に到達すると同時に、「0PSI」にリセットする仕組みが必要だ。"}
             ],
             [
-                {"who": "george", "text": "Charles, あなたの詩を使わせてくれて、感謝の言葉もありません。 この詩は、イーズリー夫人に対する私の気持ちを完璧に表現しています。 彼女の美しさ、優しさ、そして独創的なラッチのデザインが描かれています。 私が必要としていたのは、愛情の対象をあなたの「高圧蒸気」から私の「イーズリー夫人」に置き換えることだけでした" },
-                {"who": "george", "text": "EasleyのLatch10のデザインを見てください。 私たちが求めているのは、よりシンプルでありながら、より複雑なものです。 入力値の範囲ごとに、特定の圧力を出力する必要があります。 保持している値を更新する必要はありません。 昔の設計をベースにして、その例に合わせて実装を変えることができます」。"}
+                {"who": "george", "text": "チャーリー、君のポエムの使わせてくれて本当にありがとう。\nこのポエムは、私のミズ・イーズリーに対する感情を完璧に表現しているよ。\n\n彼女の「美しさ」、「優しさ」、そして\n「独創的なラッチ回路」のデザインが描出されている。\n\n私に必要だったのは、愛情の対象を\n君の「高圧蒸気」から\n私の「イーズリー夫人」に置換することだったのだな。" },
+                {"who": "george", "text": "ミズ・イーズリーの「ラッチ10」のデザインを見てくれ。\n我々が求めているのは、より「シンプル」で、より「複雑な」ものだ。\n入力値の範囲ごとに、特定値の圧力を出力する必要があるというわけだ。保持されている数値の更新は必要ない。\n\n改良型コンポーネントの作成方法を考える必要がありそうだな。\n以前作成したデザインを流用し、状況に合わせて変更することができるはずだ。"}
             ],
             [
-                {"who": "george", "text": "We are almost there.私の詩を再生するために、これらのパーツをつなげてみましょう。 スチームパルスのたびに、次の値を読み上げる必要があります。 カウンタは0, 10, 20, 30...の順に進みますが、詩のストレージは5, 15, 25, 35...の順に進みますので、これは簡単なことではありません。"}
+                {"who": "george", "text": "後もう少しだ。これらを部品を繋げてポエムをを再生してみよう。\n\n蒸気パルスが発生する度に、次の値を読み上げる必要がある。\nカウンタは「0, 10, 20, 30...」の順に進むが、\nポエムのストレージは「5, 15, 25, 35...」の順に進むから\n並大抵のことではないぞ。"}
             ],
             [
-                {"who": "charles", "text": "素晴らしい作品だ!ただ、タイミングパルスを提供するのに、この恐ろしいコグスワース・クロックに頼らなければならないのは残念です。"},
-                {"who": "nicola", "text": "Gertrude, do you remember how you diffuse that bomb?同じように正確な時計を作れると思うわ。"},
-                {"who": "charles", "text": "However you do it, I want it flip once every tick and I don't want it change time depending on what is connected." }
+                {"who": "charles", "text": "素晴らしい作品じゃ!\n\nただ、タイミングパルスの生成に、\nこの恐ろしいコグスワース・クロックを使用しなければならないのは残念じゃが。"},
+                {"who": "nicola", "text": "ゲルトルード、蒸気ボムを放散させた時のことを覚えておいでですか？\n内部クロックも正確なものが同様に作れると思うのですが。"},
+                {"who": "charles", "text": "作り方はどうあれ、1ティック毎に1回反転させ、接続先に応じてクロックの数値を変更しないよう設定するんじゃぞ." }
             ],
             [
-                {"who": "ada", "text": "What have you two been up to?" },
-                {"who": "charles", "text": "George and I have just delivered a most marvellous poetry reciting machine to Lady Easley.この機械は、ジョージの彼女に対する気持ちを朗読するようにプログラムされています。\n\n十分な改良を加えれば、このような装置を馬の大きさにまで小さくすることができます"},
-                {"who": "ada", "text": "それは素敵ですね。 でも、アニーのコードがすべて否定されているので、圧力を元に戻してほしいですね」。"},
-                {"who": "george", "text": "WHAT!!! Nicola!何を送ったんだろう？" },
-                {"who": "nicola", "text": "Hmm...どうやら、彼女の立派なヒゲを褒めて...淫らな絵を要求して...夜明けに敵を攻撃するように指示したようですね」｝。"},
-                {"who": "george", "text":"・・・。\nそれはそうと、私は自分の住居に戻って、ブランデーのボトルを飲みながらしばらく過ごすことにしよう」"},
-                {"who": "ada", "text": "Charles!彼を助けに行ってください！2人がいない間に、あなたたち2人が手伝ってあげてください。 チャールズは、この壁に2本のパイプを取り付けるはずでしたが、1本しかありません。 北と南、西と東をつなぐ必要があります。 どうにかして新しいパイプを待たずに取り付けられないだろうか？"},
-                {"who": "nicola", "text": "Good thing we live in clockwork universe because I think I have an idea."}
+                {"who": "ada", "text": "2人で何をしているのかしら?" },
+                {"who": "charles", "text": "ジョージとワシはレディ・イーズリーに\n大変素晴らしい「ポエム朗読機」を届けたところじゃよ。\n、ジョージの、彼女に対する「想い」を朗読するようにプログラムされているんじゃ。\n\n十分な改良を施していけば、馬サイズぐらいまで小型化できるじゃろうて。"},
+                {"who": "ada", "text": "それは素敵ね。\n\nでも、アニーのコードはすべて「無効」になっているから、\n圧力を元に戻した方が良いかもしれないけれど。"},
+                {"who": "george", "text": "何だって!!! \nニコラ！ ワシは彼女に何を送ったんじゃ？" },
+                {"who": "nicola", "text": "ええと...どうやら、\n彼女の「立派なヒゲ」を褒めて...\n「スケベな銅版画」を要求し...\nそして、夜明けに「敵を襲撃」するよう指示した...\nようですね"},
+                {"who": "george", "text":"...\nそれじゃあ私は自宅に戻って、\nブランデーのボトルを飲みながらしばらく過ごすことにするよ..."},
+                {"who": "ada", "text": "チャーリー！ジョージの元へ行くのよ！\n\n2人がいない間に、ゲートルードとニコラ、あなたたち2人が手伝ってあげてね。\nチャールズは、この壁に2本のパイプを設置する予定だったけど、今は1本しか無いの。\n北と南、西と東でパイプを繋げる必要があるわ。\n追加のパイプを使用せずにこれを行うにはどうしたらよいかしら？"},
+                {"who": "nicola", "text": "「時計じかけの宇宙」に住んでいて良かったです。\n私にいい考えがあります。"}
             ],
             [
-                {"who": "annie", "text": "Hello Ada.ジョージはいますか？私の家に届いたこの機械のことで、彼と話をしたいのですが..." },
-                {"who": "ada", "text": "Oh Annie!本当に申し訳ありません。 彼とチャールズはコードブックの違いについて全く知らなかったのです"},
-                {"who": "annie", "text": "ああ、それはすぐにわかりました。 そうしないと、こんなくだらない茶番劇になってしまいますからね"},
-                {"who": "ada", "text": "Nicola!ジョージとチャールズを連れてきてくれ。"},
-                {"who": "annie", "text": "彼らが作ったこの詩の装置は、とても素晴らしい仕掛けになっています。 使われている部品も工夫されています。 ガートルード？このカウンター。 君が設計したんだろう？値を設定できるようにしてくれないか？西側のポートに新しい値が入り、北側のポートでその値を使うかどうかを選択する」。"}
+                {"who": "annie", "text": "こんにちはエイダ。ジョージはいらっしゃらない？\n私の家に届いたこの「装置」のことで、彼とお話をしたいんだけど..." },
+                {"who": "ada", "text": "あら、アニー!\n申し訳ないのだけど、彼とチャールズは「コードブック」の違いについて無頓着だったのよ。"},
+                {"who": "annie", "text": "ああ、その違いに関してはすぐに理解できたわ。\nそうでなければ、バカげた茶番劇になってしまうものね。"},
+                {"who": "ada", "text": "ニコラ! ジョージとチャールズを連れてきてくれる？"},
+                {"who": "annie", "text": "彼らが作った「ポエム装置」は、とても素晴らし細工が施されているわ。\n使われている部品も独創的なの。\nこの「カウンター」はあなたが設計したのでしょう、ガートルード？\n\nこの「カウンター」で任意の値を設定できるよう調整できないかしら？\n西側のポートに新しい値が入力され、\n北側のポートでその値を使うかどうかを選択できるようにしてもらいたいの。"}
             ],
             [
-                {"who": "ada", "text": "I have to say Annie, don't find all this rather complicated?" },
-                {"who": "annie", "text": "そうですが、私たちはここまで来ました。 アダーを動作させるために費やした1週間を覚えていますか？振り返ってみると、今ではすべてが簡単に見えます。 研究が進んだだけでなく、蒸気についての理解も深まったと思います"},
-                {"who": "ada", "text": "それであれば、あなたのメッセージラッチの1つを見るのを手伝ってもらえませんか？どこが悪いのかわかりません。 ベクレル様からのメッセージが全て無意味なものになってしまいます。"},
-                {"who": "annie", "text": "面白いですね。 どうやら、値が安定する前にタイミングパルスが届くのが少し早すぎるようです。 もし、パルスを1目盛りよりも少しだけ遅らせることができれば、それで解決するでしょう。 0から100PSIの間を非常に素早くシフトする必要があります。 何か作ってみよう」。"}
+                {"who": "ada", "text": "アニー、あなたに言わなきゃいけないと思うんだけれど、\nこの調整はいささか複雑過ぎないかしら？" },
+                {"who": "annie", "text": "そうだけど、私たちはここまで成し遂げてきたじゃない。\n「加算器」を作動させるために費やした1週間を覚えている？\n振り返ってみると、今ではすべてが簡単に見えるわ。\n\n研究が進んだだけでなく、蒸気についての理解も深まったと思っているの。"},
+                {"who": "ada", "text": "それなら、あなたが作ったメッセージラッチの点検を手伝ってもらってよいかしら。\n\nどこが悪いのか分からなくて。\nベクレル様からのメッセージが\n全て無意味なものになってしまっているの。"},
+                {"who": "annie", "text": "面白いわね。\n\nどうやら、値が安定化する前にタイミングパルスが生成されているようね。\nもし、パルスの生成を「1ティック分遅らせる」ことができれば改善すると思うわ。\n\n値を「0から100PSI」の間で非常に素早くシフトさせる必要があるわね。\n試してみましょう。"}
             ],
             [
-                {"who": "annie", "text": "What does this gauge show?" },
-                {"who": "ada", "text": "それは、コグスワース・クロックワークスに向かう蒸気の圧力でしょう。 なぜ？"},
-                {"who": "annie", "text": "見てください。 こんなに独特な模様があるんですよ。 また、休みではないのですか？今日は日曜日だからね。\n_ _ 1ティックで100PSIまで跳ね上がり、もう1ティックで別の値になり、その後0PSIに戻ります"},
-                {"who": "ada", "text": "That is intriguing.解読できないかな」"}
+                {"who": "annie", "text": "この「ゲージ」は何を示しているのかしら?" },
+                {"who": "ada", "text": "おそらく「コグスワース・クロックワークス」に向かう蒸気圧でしょうね。\nどうして気になるの？"},
+                {"who": "annie", "text": "ほら見て。この独特な模様。\n加えて、今日は日曜日だし、お店は閉まってるわよね？\n\nこのゲージは「0PSI」に戻る前に\n数値が1ティックで「100PSI」まで跳ね上がり、\n次ティックで別の値へと変化しているのよ。"},
+                {"who": "ada", "text": "興味深いわね。\nどうにかして解読できないかしら。"}
             ],
             [
                 {"who": "nicola", "text": "チャビントン夫人!街中をくまなく探したのですが、見つかりませんでした..."},
-                {"who": "ada", "text": "We know where they are!ジョージは吸気口のスイッチを入れたり切ったりすることで、私たちにメッセージを伝えてくれました。 彼らはコグスワース・クロックワークスのスチームルームに閉じ込められています。 すぐに行きましょう！」｝。"},
-                {"who": "charles", "text":"[BANG] [BANG] [BANG]\nGet us out!部屋中に高圧蒸気が充満している!愛するものに殺されるとは、なんとも残酷な皮肉だ。"},
-                {"who": "nicola", "text": "このドアを開けるはずの鍵が効かない!誰かが鍵を撃って、中のパイプを破裂させたようです。 壊れた鍵はともかく、鍵の開け方は全く知りません"}
+                {"who": "ada", "text": "彼らの居場所が分かったわ!\nジョージは吸気口のスイッチを切り替えることで、\n私たちにメッセージを伝えていたのです。\n\n彼らはコグスワース・クロックワークスの蒸気室に閉じ込められています。\n\nすぐに向かいましょう！"},
+                {"who": "charles", "text":"[バン！] [バン！] [バン！]\nここから出してくれ！\n部屋中に高圧の蒸気が充満しておる!\n愛する「蒸気」に殺されるとは、あまりにも残酷じゃ...。"},
+                {"who": "nicola", "text": "ドアの鍵が入りません!\n誰かが銃で「鍵穴」を撃って、中のパイプを破裂させたようです。\n\n壊れた鍵はともかく、鍵の開け方は皆目検討がつきません。"}
             ],
             [
-                {"who": "charles", "text": "Gertrude!私たちの命を救ってくれただけでなく、高圧蒸気を使ってくれたことに、感謝してもしきれません！」｝。"},
-                {"who": "ada", "text": "Darling, how did you get into this dreadful situation?" },
-                {"who": "charles", "text": "ジョージと私は、オールド・ブラスという酒場で2、3杯飲んでいたのですが、その時、何かがぼやけてしまいました。 次に覚えているのは、この部屋で目が覚めたとき、コグスワースが彼の人生を台無しにしたと私たちを非難していたことです。 アカデミーを解雇された後、彼の投資家たちは疑問を持ち始めました。 彼の唯一の選択肢は、私たちを黙らせ、投資家のお金を奪って急いで退散する時間を与えることでした。 _ _ _ 早く！飛行場へ！彼を逃がしてはいけません"},
-                {"who": "george", "text": "このパイプは西から東へ発射コードを伝える。 それぞれ3つのコードがあり、1つのコードにつき2つのティックで送信されます。 コグスワースのコード「27、39、31」を見れば、彼がここにいて逃げようとしていることがわかるだろう"},
-                {"who": "ada", "text": "それでは遅すぎます。 その時には、彼は発射許可を得ていて、逃げられてしまうかもしれません。 飛行場の管理者に、彼を逃がさないように言わなければなりません"},
-                {"who": "george", "text": "残念ながら、マネージャーはコグスワースのマシンに置き換えられてしまいました。 おそらく危険な状態のものでしょう。 {pos(100,250)}コグスワースの発射コードを 許してはいけません でも飛行場を混乱させてはいけません 彼に気づかれないように{cH00ffff}信号を数十秒遅らせて 見つけたら削除するのはどうでしょう？そうすれば、彼を見つけて逮捕する時間ができます」。"}
+                {"who": "charles", "text": "ゲルトルード!\nワシたちの命を救ってくれただけでなく、\n高圧蒸気機関を使ってくれたこと、感謝してもしきれんぞい！"},
+                {"who": "ada", "text": "ダーリン、この恐ろしい状況にはどうやって巻き込まれたの?" },
+                {"who": "charles", "text": "ジョージとワシは、「オールド・ブラス」という酒場で数杯飲んでいたんじゃが、\n急に視界がばやけての。次にこの部屋で目を覚ました時、\nコグスワースが「私の人生に台無しにした」とワシらを非難していたのを覚えておる。\nアカデミーを解雇された後、彼の出資者たちは疑問を抱き始めた。\nヤツの目的は、ワシらを黙らせ、出資者たちの資産を奪い、\nそして逃亡に必要な時間を稼ぐことだったのじゃ。\n\n_ _ _ 早く飛行場へ！逃がしてはならん！"},
+                {"who": "george", "text": "このパイプは西から東へ出発コードを送信する。それぞれ3つのコードが設定されていて、\「2ティック毎」にコードが「1つ」ずつ送信されるようになっているのだ。\n\nコグスワースのコード「27、39、31」を見れば、\n彼がここにいて逃げようとしていることがわかるだろう。"},
+                {"who": "ada", "text": "それだと手遅れになるわ。\nコードを送信してる合間に、彼は出発許可を得て、逃げられてしまうわ。\n\n飛行場の管理者に、彼を逃がさないよう伝達しなければならないわね。"},
+                {"who": "george", "text": "残念だが、マネージャーはコグスワースのマシンに置き換えられてしまった。\nおそらく危険な装置だろう。\n\nコグスワースの出発コードを許すわけにはいかないが、\n飛行場を混乱させることもあってはならないだろう。\n彼に気づかれないように事を成す必要があるな。\n\n信号を数ティック遅らせ、表示された瞬間に削除できるとしたら？\nそうすれば、ヤツを探し、捕まえる時間が確保できるだろう。"}
             ],
             [
-                {"who": "ada", "text": "やっとだ。 コグスワースを牢屋に入れて、ようやく蒸気コンピュータを完成させることができました。 フィボナッチ数を計算する「プログラム」と名付けたものを書きましたが、結果は不正確です。 問題の診断と微調整にかなりの時間を費やすことになるかもしれません」。"}
+                {"who": "ada", "text": "やっとね。\nコグスワースを牢屋に入れ、「蒸気コンピュータ」を完成させることができたわ。\n「フィボナッチ数列」を計算する「プログラム」と名付けたものを書いてみたけど、\n出力結果は正しくならなかったわ。\n\n実際に運用できるように、コンポーネントの改良が必要そうね。\n問題点の解消と微調整にはまだまだ時間が掛かりそう。"}
             ],
             [
-                {"who": "charles", "text": "It is here!アカデミーからの回答です。\n\n「科学アカデミーの審査のために『蒸気コンピューター』を提出してくださったことに感謝します。 我々は、この製品が蒸気計算に関する我々の知識を大幅に拡大したことを確認しました。 したがって、あなたの会員申請が承認されたことを喜んでお伝えします！"},
-                {"who": "nicola", "text": "Congratulations Lady Chavvington."},
-                {"who": "ada", "text": "実は、あの申請は私のためではありませんでした。 ガートルードのためのものでした。 ガートルード、あなたはこれらすべての部品を作った人であり、蒸気を不思議な方法で操作する方法を私たちに教えてくれました。 あなたこそ、蒸気の計算方法を他の人に教えるべきです」。"},
-                {"who": "charles", "text": "Huzzah!\n\n今日の午後、お祝いしましょう！"},
-                {"who": "george", "text": "Lady Easley?この機会にご一緒にいかがですか？"},
-                {"who": "annie", "text": "I am afraid I can't hide, because I have an appointment this afternoon with a dashing gentleman." },
-                {"who": "george", "text": "Oh."},
-                {"who": "annie", "text": "That would be you George.マディングリーホールでのアフタヌーンティーのお誘い、快くお受けします"},
+                {"who": "charles", "text": "アカデミーからの回答が遂に来たぞい！\n\n『審査の為に「蒸気コンピュータ」を\n科学アカデミーに提出して頂き、誠にありがとうございます。\n我々は、この機械が「蒸気計算」における\n我々の知見を大幅に拡充したことを確認しました。\nしたがって、あなたの会員申請が承認されたことを\n喜んでお伝えさせて頂きます！』とのことじゃ。"},
+                {"who": "nicola", "text": "おめでとうございます、ミズ・チャビントン。"},
+                {"who": "ada", "text": "実は、この入会申請は私ではなく、ガートルードに向けたものなの。\n\nガートルード、あなたはこれら全ての部品を作り、そして\n奇跡的な手法でもって蒸気の操作方法を私たちに教えてくれたわ。\nあなたこそ、「蒸気計算」について他の人に教えるのにふさわしいわ。"},
+                {"who": "charles", "text": "バンザーイ!\n\n今日の午後はお祝いじゃな！"},
+                {"who": "george", "text": "イーズリー夫人、せっかくですからご一緒しませんか？"},
+                {"who": "annie", "text": "申し訳ないけれど、今日は午後、粋な「紳士」の方との予定があって...といっても全てお見通しかしら。 " },
+                {"who": "george", "text": "おや。"},
+                {"who": "annie", "text": "それは「あなた」のことよ、ジョージ。\nマディングリーホールでのお茶会のお誘い、快くお受けしますわ。"},
                 {"who": "ada", "text": "『ComPressure』をプレイしていただき、ありがとうございます。"}
             ]
         ],
@@ -2493,6 +3105,9 @@
             ],
             [
                 {"who": "nicola", "text": "入力値が高い場合、北側を接続します。\nその方法は、「常時 開」のデザインで既に理解していますよね。\n\nそして、 逆に入力値が低い場合は、南側を接続します。\nこれが「常時 閉」のデザインです。"}
+            ],
+            [
+                {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
             ],
             [
                 {"who": "nicola", "text": "さて、まずは基本的なことから始めましょう。\n「入力値が大きい」ときは、出力を蒸気源に接続します。\n「入力値が小さい」ときは、大き気へと接続します。\n大気に接続する際、単にパイプの端を開放したままにしておきます。\n\nチャヴィントン夫人が指摘したように、バルブは「アナログ式」で、\n値が0から100の間にあるときは、部分的に開き、正確な比率を再現するようです。"}
@@ -2519,85 +3134,91 @@
                 {"who": "nicola", "text": "出力を「暗号化」コンポーネントに通すと、\n入力が何であったかを判断することができます。\n\n「比較器」の2つの入力が等しい場合、出力は「加圧」や「排気」を実行しません。\n\n数値の揺れが大きすぎる場合は、\n「比較器」のデザインに戻り、その強度を下げる必要があるでしょう。"}
             ],
             [
-                {"who": "nicola", "text": "私たちは、decryptのデザインと同じトリックを使うことができます。 両者の間の圧力がちょうど50になるまで、下側のバルブを開ける量を増減させます。 これを実現するAmp50があります」。"}
+                {"who": "nicola", "text": "「復号化」デザインで使用した手法が有効でしょう。\n両バルブ間の圧力がちょうど「50」になるまで、下バルブの開度を増減させましょう。\n\nこの動作を行う「Amp50」デザインを我々は持っています。"}
             ],
             [
-                {"who": "nicola", "text": "西の入力から南の入力を引いた値に合わせて1つのバルブを開き、その間の圧力が50になった時を見計らって、2つ目のバルブを同じレベルの開度にすることができます"}
+                {"who": "nicola", "text": "「復号化」デザインで使用した手法が有効でしょう。\n両バルブ間の圧力がちょうど「50」になるまで、下バルブの開度を増減させましょう。\n\nこの動作を行う「Amp50」デザインを我々は持っています。"}
             ],
             [
-                {"who": "nicola", "text": "これはちょっと難しいですね。 減算器を使うと、揺れが大きすぎます。 しかしその場合は、2つ目のバルブペアを使って同じ比較を行い、入力を切り替えることができます。 その後、Amp50を使って、4つのバルブ間の圧力が50PSIであることを確認できます。\n\n要件をクリックすると、この設定の図が表示されます。"}
+                {"who": "nicola", "text": "1つ目のバルブを西側の入力から南側の入力を引いた値になるよう開き、\nバルブ間圧力が「50」にあるタイミングを発見すれば、\n2つ目のバルブを同じレベルの開度まで開くことができるでしょう。"}
             ],
             [
-                {"who": "annie", "text": "南側の入力が大きいときには、ストレージパイプを開きます。 バッファを使って、出力を取り込んだのと同じレベルまで加圧することができます。 新しい圧力が伝わらないように、South入力が高い間は出力を閉じなければなりません。 これを保証する最も簡単な方法は、タイミングバルブと出力バルブの閾値を50にすることです」。"}
+                {"who": "nicola", "text": "これはちょっと難しいですね。「減算器」を使うと、数値揺れが大きくなります。\n\n2つ目の出力が「0」、且つ完全に閉じている場合、\n出力から入力の1つを引いたものを他の入力と比較することはできません。\nただし、その場合は2つ目のバルブのペアを使って\n同様の比較・入力の切り替えを行うことができます。\nその後、「Amp50」を使用し、4つのバルブ間圧力が「50PSI」であることを確認できます。\n\n「要件」をクリックすると、この設定図が表示されます。"}
             ],
             [
-                {"who": "nicola", "text": "出力は、South入力で制御されるラッチの値です。 ラッチへの入力は、ラッチの出力に西の入力を加えたものか、あるいは差し引いたものです。 北側の入力はそれらの間を選択します。 加算器、減算器、スイッチがあります。"}
+                {"who": "annie", "text": "南側の入力が大きい時には、ストレージパイプを開いてみるとよいわ。\n「バッファ」を用いることで、出力を取り込んだものと同じレベルまで「加圧」できるわ。\n新しい圧力が伝わらないように、南側の入力値が高い間は出力を閉じないとダメね。\nこの条件を最も簡単に満たしたいのであれば、\nタイミングバルブと出力バルブの閾値を「50」に設定すればいいはずよ。"}
             ],
             [
-                {"who": "nicola", "text": "For a change a wobble is actually desirable.アンプをリング状に配置すると、デザインが不安定になり、上下にふらついてしまいます」｝。"}
+                {"who": "nicola", "text": "出力は、南側の入力で制御されるラッチ回路の値ですね。\nラッチへの入力は、ラッチの出力に西側の入力を加えたものか、\nあるいは差し引いたものとなるはずです。\n\n北側の入力はそれらの間を選択します。\n「加算回路」、「減算回路」、「スイッチ」が有用でしょう。"}
             ],
             [
-                {"who": "nicola", "text": "西が南よりも高い位置にあるときは、より多くの蒸気を加え始める。 西が北より低いときは、より多くの蒸気を放出してください」。"}
+                {"who": "nicola", "text": "たまには「数値のぐらつき」を利用するのも悪くないかもしれません。\n「増幅器」を「リング状」に配置すると、\nデザイン全体が不安定となり、数値の上下にふらつくようになります。"}
             ],
             [
-                {"who": "nicola", "text": "バルブを直列に並べることができます。 すべてのバルブが開いている場合にのみ、蒸気が流れます」。"}
+                {"who": "nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
-                {"who": "nicola", "text": "This is not much different from our normal latch design, except outside output and the timing pulse are not connected when the North input is low"}
+                {"who": "nicola", "text": "西側が南側よりも高い場合は、より多くの蒸気を貯蓄し始めます。\n西側が北側より低い場合は、より多くの蒸気が放出されるでしょう。"}
             ],
             [
-                {"who": "nicola", "text": "North Select入力が50より大きい場合、一方のラッチを有効にし、そうでない場合はもう一方を有効にします"}
+                {"who": "nicola", "text": "バルブは直列配置できます。\nすべてのバルブが開いている場合にのみ、蒸気が放出されます。"}
             ],
             [
-                {"who": "nicola", "text": "非常に多くの選択信号が必要です。 一端が蒸気の入口、もう一端が大気になっているフローディテクタの列を連鎖させたらどうでしょう？そうすれば、必要な値がすべて得られるでしょう」。"}
+                {"who": "nicola", "text": "「北側の出力が低い時に、\n出力、およびタイミングパルスが接続されない」という点を除けば、\n通常のラッチ回路のデザインと大差はありません。"}
             ],
             [
-                {"who": "nicola", "text": "2つのLatch5要素を使用して、selectが50以下か50以上かで切り替えることができます。 しかし、その場合、2つの範囲（0～50、または50～100）のうちの1つから、Latch5のデザインが取る範囲（0～100）にセレクトを拡大する必要があります。 それぞれのズームは5つのフローディテクターに接続されていて、すべてのパイプを加圧するには時間がかかります。 デザインをより強固にするためには、単純に複製すればいいのです」。"}
+                {"who": "nicola", "text": "北側の選択入力が「50」より大きい場合、一方のラッチを有効にし、\nそうでない場合は、もう一方のラッチを有効にします。"}
             ],
             [
-                {"who": "ada", "text": "It should be as easy as a comparator and a switch"}
+                {"who": "nicola", "text": "非常に多くの「選択信号」が必要ですね！\n仮に、一方の端に「蒸気孔」、もう一方の端が「大気」と接続している\n「フロー検知」デザインを連結させたらどうなるでしょう？\nそうすれば、必要な値がすべて得られるはずです。"}
             ],
             [
-                {"who": "ada", "text": "これは、私たちのMinコンポーネントと同じではなく、逆に選択しているのではないか？"}
+                {"who": "nicola", "text": "2つの「ラッチ5」部品を使用することで、\n信号の数値が「50未満」、あるいは「50以上」かでチャンネルを切り替えられます。\n\nしかしその場合、2つの範囲（0～50、または50～100）の内いずれかから、\n「ラッチ5」の範囲（0～100）へ「選択信号」をスケーリングさせる必要があります。\n\n「ズーム原理」は便利だと思いますが、\n今回の場合、より強力なズームが必要なようです。\nそれぞれのズームは5つの「フロー検知機」に接続されていて、\nすべてのパイプを加圧するには時間がかかります。\nデザインをより強固にするためには、単純に複製すればいいのです。"}
             ],
             [
-                {"who": "charles", "text": "長いパイプのベントパイプを使って、90PSIという値を形成することができます。 その値と外部入力とのコンパレータで、容器を排気するタイミングを知ることができます。 コンパレータの圧力が0PSIから50PSIに上昇すると、入力を遮断する必要があります。 50PSI以上になったら、バルブを開いて容器内の内容物を大気に放出する必要があります」。"}
+                {"who": "ada", "text": "「比較器」や「スイッチ」を同じくらい簡単にできるはずよ。"}
             ],
             [
-                {"who": "george", "text": "1つの入力に静的な10PSIを持つ加算器を使うことができます。 その後、ラッチを使用して新しい値をキャプチャします。 最後にループ内のヒューズでカウンタを0PSIにリセットします」とあります。"}
+                {"who": "ada", "text": "「Min」コンポーネントと仕組みが「同じ」なだけでなく、\nその「逆」を選択している、ということかしら。"}
             ],
             [
-                {"who": "george", "text": "Latch10の設計で使ったのと同じ方法で、10個の値を選択することができます。 各値はカスタムメイドで、選択されたときに出力に接続する必要があります。 これにはいくつかのカスタムデザインが必要です」。"}
+                {"who": "charles", "text": "長めの「パイプ排出パイプ」を使用することで、\n「90PSI」という圧力を生み出すことができるぞ。\nそのパイプと入出力の間にある「比較器」を見ることで、\n容器の排出タイミングが分かるはずじゃ。\n比較器の圧力が「0PSI」から「50PSI」に上昇したら、入力の遮断が必要じゃ。\n「50PSI以上」になったら、バルブを開いて\n容器内の蒸気の放散が必要じゃ。"}
             ],
             [
-                {"who": "george", "text": "カウンタをROMに接続することができますが、まず加算器を使って5を加える必要があります"}
+                {"who": "george", "text": "1入力で「静的な10PSI」を持つ「加算器」を使用できるだろう。\nその後、「ラッチ回路」を使用して新規の値を保存するのだ。\nそうすれば、ループ内ヒューズがカウンターの圧力を「0PSI」にしてくれるだろう。"}
             ],
             [
-                {"who": "nicola", "text": "Amp50の部品をリング状にして、どこかで反転させれば、規則的なビートが得られます。 それに近いものができたら、パイプの要素を加えて少し遅くすることで、チューニングすることができます"}
+                {"who": "george", "text": "「ラッチ10」デザインで10個の値を選択する際に使用した手法が流用できるだろう。\n\nそれぞれの値は「カスタムメイド」、且つ選択時に「出力」に接続する必要がある。\nこの条件を満たすにはいくつかの「専用設計」が必要だろう。"}
             ],
             [
-                {"who": "nicola", "text": "時計は2つの入力を選択でき、壁の反対側では、同期した時計が出力を選択できます。 しかし、両方の入力を接続するべきではありません。 しかし、両方の入力を接続してはいけません。 片方を開くまでに、もう片方は封鎖されているはずです。 50PSIを基準にしてもいいでしょう」。"}
+                {"who": "george", "text": "「カウンター」を「ROM」に接続することも可能だが、\n手始めに「加算器」を使用して「5PSI」の圧力を加えなくてはな。"}
             ],
             [
-                {"who": "annie", "text": "We can amend the counter to insert a switch to select someone a new value or the incremented one"}
+                {"who": "nicola", "text": "「Amp50」を「リング状」に配置し、どこかで「反転」させれば、\n規則的なビートが得ることができます。\n\n一旦それに近づけば、「パイプ構造」を加えつつ、\nビートを少し遅くすることで、チューニングできるはずです。"}
             ],
             [
-                {"who": "annie", "text": "0 PSIと100 PSIの値を遅延させるだけでよい。 Amp50エレメントのチェーンを使えば、多少の調整でパルスを遅らせることができます。"}
+                {"who": "nicola", "text": "「クロック」は「2つの入力」および「反対側の入力」を選択できます。\nすなわち、「同期したクロック」は「同期した出力」を選択できます。\n\nしかし、両方の入力を接続するべきではありません。\n片方を開いた場合、もう片方は閉じている必要があります。\n「50PSI」を基準値に据えるのもアリですね。"}
             ],
             [
-                {"who": "annie", "text": "遅延素子で必要なタイミングパルスを得ることができます。 遅延パルスを確認したら、その値をキャプチャしますが、同時に遅延入力を強制的に0PSIにします」。"}
+                {"who": "annie", "text": "「カウンター」を修復し、「スイッチ」を挿入することで\n「新規値」と「増加値」かを選択できるようになるはずよ。"}
             ],
             [
-                {"who": "nicola", "text": "ただ穴を塞ぐのではなく、100PSIに取り付ければいい。 そうすれば簡単です。 スチームキーを作るには、錠前の中で形成される圧力を再現すればよいのです」と述べています。"}
+                {"who": "annie", "text": "「0PSI」と「100 PSI」の値を遅延させるだけでOKよ。\n「Amp50」デザインの「連結」を使えば、\n若干の調整でパルスを遅らせることができるはず。"}
             ],
             [
-                {"who": "george", "text": "入力を十分に遅延させるためには、3つのラッチが必要です。 カスタムの追加遅延を備えたクロックジェネレータでクロックを生成します。 すべての値が正しいかどうかを検出するために、パイプをゆっくりと満たし、どれかのラッチの値が検索された値よりも大きいか小さいかのどちらかであれば、パイプを排出することができます。"}
+                {"who": "annie", "text": "「ディレイ」部品が、\n私たちが必要とする「タイミングパルス」を供給してくれるわ。\n「遅延パルス」が確認されると、その値を保持すると同時に、\n遅延入力を強制的に「0PSI」にするのよ。"}
             ],
             [
-                {"who": "ada", "text": "時間をかけて、マシンの動作を理解してください。 そうすれば、スチームコンピューターの動作を改善するように設計を改善することができます」。"}
+                {"who": "nicola", "text": "単に穴を塞ぐのではなく、「100PSI」の圧力を取り付ければよいのです。\nそうすればもっと簡単でしょう。\n\n「蒸気のカギ」は、鍵穴の中で形成された圧力を再現することで作れるはずです。"}
             ],
             [
-                {"who": "ada", "text": "ヒント は無しよ。 さあ、成功を掴み取って！"}
+                {"who": "george", "text": "十分に入力を遅延させるには、3つの「ラッチ回路」が必要だ。\nカスタムの追加遅延を備えたクロック生成機を用いると良いだろう。\nすべての値が正しいかどうかを検出するために、パイプをゆっくりと蒸気で満たし、\nいずれかのラッチの値が、検索値よりも「大きい」、\nもしくは「小さい」場合に、当該パイプの排出ができるはずだ。"}
+            ],
+            [
+                {"who": "ada", "text": "時間をかけて、マシンの動作を理解してみましょうか。\nそうすれば、蒸気コンピュータの動作改善に必要なデザインが浮かんでくるはずよ。"}
+            ],
+            [
+                {"who": "ada", "text": "「ヒント」は無しよ。 さあ、成功を掴み取って！"}
             ]
         ]
     },
@@ -2649,10 +3270,9 @@
             "Info"                      :   "Infos",
             "Select language"           :   "Sélectionner la langue",
             "Number resolution"         :   "Précision des nombres",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                             "Si vous êtes bloquée, envisagez de discuter de vos défis avec les esprits les plus brillants de notre Société de la Vapeur à Haute Pression sur Discord. Appuyez sur Échap et cliquez sur le bouton \"Rejoindre notre groupe Discord\".",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "Hélas notre voyage doit s'arrêter quelque part. L'aventure continue\ndans le jeu complet.\n\nÀ suivre...",
             "Cross"                     :   "Croix",
             "50"                        :   "50",
             "Normally Open"             :   "Normalement Ouvert",
@@ -2748,6 +3368,9 @@
                  {"who":"charles", "text":"Quoi !?! Ce serait de la Vapeur à Basse Pression ! Nous ne travaillons pas avec de la Vapeur à Basse pression ! Je n'ai pas fait fortune en fournissant aux gens de la Vapeur à Basse Pression !\n\nPeu importent tout ces absurdités de basse pression. Lorsque le contrôle Ouest est Haute Pression, connectez le générateur Nord, sinon connectez le générateur Sud."}
             ],
             [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
+            ],
+            [
                  {"who":"nicola", "text":"Les notes de Lady Chavvington parlent d'une connexion vapeur entre le laboratoire et la résidence de Lady Easley qui a été utilisée pour la communication."},
                  {"who":"charles", "text":"Oui, je l'ai faite supprimer. Nouvelles procédures. Une trop grande partie de notre vapeur haute pression disparaissait. La seule vapeur autorisée à quitter notre installation est mesurée et fournie aux clients payants. Ma Vapeur à Haute Pression ne doit pas quitter ces murs."},
                  {"who":"nicola", "text":"Je pense que nous pouvons toujours établir une connexion sans fournir de vapeur. D'après ces notes..."},
@@ -2820,6 +3443,9 @@
                  {"who":"ada", "text":"En utilisant cela, Lord Moorhouse a pu créer un composant d'ajout de pression de vapeur, que j'espère qu'il me révélera.\n\nLord Moorhouse est le plus timide mais intelligent comme un fouet, hélas souvent, il a trop peur de partager ses innovations."}
             ],
             [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
+            ],
+            [
                  {"who":"nicola", "text":"Eh bien ça marche. Nous pouvons maintenant sentir à quel point une vanne est ouverte, mais je ne vois pas en quoi cela nous rapproche du calcul de la vapeur. Je suppose que nous devons demander à Lord Moorhouse."},
                  {"who":"nicola", "text":"Lord Moorhouse. Merci de nous avoir permis de faire appel à vous. En son absence, nous essayons de poursuivre le travail de calcul de vapeur de Lady Chavvington. Vous seul connaissez la construction de l'unité d'ajout de pression et nous vous prions de la partager avec nous."},
                  {"who":"george", "text":"Je suis d'accord. Ayant réfléchi à cela, l'avancée des connaissances doit se poursuivre malgré sa collusion avec Charles contre moi. Je dévoilerai le secret de l'addition en échange de l'assurance qu'elle est à l'abri de lui. En entendant les rumeurs qui circulent dans ces couloirs, je la soupçonne morte de sa main."},
@@ -2877,9 +3503,13 @@
                  {"who":"ada", "text":"Ne parlons plus de ceci, car je dois être pardonnée aussi. En guise de geste de bonne volonté, n'hésitez pas à utiliser mon... notre laboratoire. Lady Easley y a déjà accès. Je crois que Charles et moi avons besoin d'un peu de répit après toute cette agitation. Nous reviendrons dans quelques jours et j'ai déjà hâte d'inspecter vos découvertes."},
                  {"who":"george", "text":"Merci et bon voyage.\n\nNicola, pourriez-vous me trouver cet amplificateur qui double la pression."},
                  {"who":"nicola", "text":"C'est ici.\n\nLa construction est simple, mais je trouve l'opération incroyablement utile."},
-                 {"who":"george", "text":"En effet. Cet appareil amplifie les valeurs d'une plage spécifique de 0 à 50 à la plage de 0 à 100. Étant données une valeur minimale et maximale, je pense que nous pouvons construire un amplificateur qui zoomera dans n'importe quelle plage donnée."},
-                 {"who":"nicola", "text":"Nous l'appellerons l'élément Zoom."},
-                 {"who":"george", "text":"Bien, même si nous devrions d'abord l'inventer. Le Nord peut être notre maximum et le Sud notre minimum. La sortie Est nous indiquera où se situe l'entrée Ouest dans la plage."}
+                 {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a maximum value, I do believe we can construct an amplifier which will scale for any given maximum."},
+                 {"who":"nicola", "text":"We shall name it the Scale element."},
+                 {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the East output will tell us where the West input lies."}
+            ],
+            [
+                 {"who":"nicola", "text":"That wasn't that difficult, but what if we wish to zoom into a range which does not begin at zero?"},
+                 {"who":"george", "text":"That is an interesting idea. Gertrude, would you be able to construct a Zoom element which scales any range with a minimum and a maximum to the range 0 to 100?\n\nLet North be out maximum and South be our minimum of the range."}
             ],
             [
                  {"who":"george", "text":"Bon, maintenant nous pouvons zoomer sur n'importe quelle plage de pression que nous choisissons. Ce dont j'ai besoin ensuite, c'est d'un moyen de détecter si nous sommes dans une plage. Jetez un œil à ce \"compteur de vitesse à vapeur\".\n\nAda a demandé à Charles de mesurer la quantité de vapeur qui la traversait. Lorsque la vapeur passe dans un long tuyau, elle perd de la pression. Plus la vapeur passe vite, plus elle perd de la pression. Si les deux côtés sont à la même pression, il ne doit pas y avoir de vapeur en mouvement. Elle a même mis des vannes dans le tuyau pour augmenter la résistance et faire la différence plus grande."},
@@ -3017,6 +3647,9 @@
                  {"who":"nicola", "text":"Quand l'entrée est haute, on connecte le Nord. Nous savons comment faire cela grâce à la dispositif \"Normalement ouverte\". Et quand l'entrée est faible, on connecte le Sud. C'est notre dispositif \"Normalement fermée\"."}
             ],
             [
+                 {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                  {"who":"nicola", "text":"Eh bien, commençons par les bases. Lorsque l'entrée est élevée, nous allons connecter la sortie à une source de vapeur. Quand il est bas, nous nous connecterons à l'atmosphère. Pour se connecter à l'atmosphère, nous laissons simplement l'extrémité du tuyau ouverte.\n\nComme l'a noté Lady Chavvington, les vannes sont analogiques et il apparaît que lorsque les valeurs sont comprises entre 0 et 100, les vannes s'ouvrent partiellement et recréent le rapport exact."}
             ],
             [
@@ -3044,6 +3677,9 @@
                  {"who":"nicola", "text":"Nous pouvons utiliser la même astuce que dans notre dispositif de décryptage. Nous augmentons ou diminuons la quantité que nous ouvrons la vanne inférieure jusqu'à ce que la pression entre eux soit exactement de 50. Nous avons un Amp50 qui fait cela."}
             ],
             [
+                 {"who":"nicola", "text":"Nous pouvons utiliser la même astuce que dans notre dispositif de décryptage. Nous augmentons ou diminuons la quantité que nous ouvrons la vanne inférieure jusqu'à ce que la pression entre eux soit exactement de 50. Nous avons un Amp50 qui fait cela."}
+            ],
+            [
                  {"who":"nicola", "text":"On ouvre une vanne à la valeur de l'entrée Ouest moins l'entrée Sud, on peut alors ouvrir une deuxième vanne au même niveau d'ouverture en recherchant quand la pression entre elles est de 50."}
             ],
             [
@@ -3057,6 +3693,9 @@
             ],
             [
                  {"who":"nicola", "text":"Pour changer, une oscillation est en fait souhaitable. Les amplificateurs dans une configuration en anneau rendront la dispositif instable et vacilleront de haut en bas."}
+            ],
+            [
+                 {"who":"nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                  {"who":"nicola", "text":"Lorsque l'Ouest est plus haut que le Sud, commencez à ajouter plus de vapeur. Lorsque l'Ouest est plus bas que le Nord, commencez à libérer plus de vapeur."}
@@ -3171,10 +3810,9 @@
             "Info"                      :    "Информация",
             "Select language"           :    "Выбрать язык",
             "Number resolution"         :    "Числовое разрешение",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                                                                         "Если вы застряли, подумайте о том, чтобы обсудить свои проблемы с лучшими умами нашего Steam Society высокого давления на Discord. Нажмите Esc и нажмите кнопку \"Присоединяйтесь к нашей группе Discord\".",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                                                                        "Увы, наше путешествие должно где-то остановиться. Приключение продолжается\nв полной игре.\n\nПродолжение следует ...",
             "Cross"                     :    "Крест",
             "50"                        :    "50",
             "Normally Open"             :    "Нормально открытый",
@@ -3269,6 +3907,9 @@
                 {"who":"charles", "text":"Что!?! Это будет пар низкого давления! Мы не работаем с паром низкого давления! Я заработал состояние не на снабжении людей паром низкого давления!\n\nНе бери в голову всю эту чушь о низком давлении. Если западное управление установлено на высокое давление, подключите северный генератор, в противном случае подключите южный генератор ."}
             ],
             [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
+            ],
+            [
                 {"who":"nicola", "text":"Заметки леди Чаввингтон говорят о паровой связи между лабораторией и резиденцией леди Изли, которая использовалась для связи."},
                 {"who":"charles", "text":"Да, я его удалил. Новые процедуры. Слишком много пара высокого давления пропало. Единственный пар, которому разрешено покидать наш объект, дозируется и предоставляется платным клиентам. Ни один из моих паров высокого давления не может покидать эти стены."},
                 {"who":"nicola", "text":"Я думаю, что мы все еще можем установить соединение без выхода пара. Согласно этим примечаниям ..."},
@@ -3340,6 +3981,9 @@
                 {"who":"ada", "text":"Используя это, лорд Мурхаус смог создать компонент, увеличивающий давление пара, который, я надеюсь, он мне откроет.\n\nЛорд Мурхаус самый застенчивый, но умный как кнут, но, увы, часто он слишком боится делиться своими нововведениями."}
             ],
             [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
+            ],
+            [
                 {"who":"nicola", "text":"Ну, это работает. Теперь мы можем почувствовать, насколько открыт клапан, но я не понимаю, как это приближает нас к вычислению пара. Я полагаю, мы должны спросить лорда Мурхауса."},
                 {"who":"nicola", "text":"Lord Moorhouse. Спасибо за то, что позволили нам обратиться к вам. В ее отсутствие мы пытаемся продолжить паровые вычисления леди Чаввингтон. Только вы знаете конструкцию блока добавления давления, и мы просим вас поделиться ею с нами."},
                 {"who":"george", "text":"Я согласен. Подумав об этом, можно сказать, что развитие знаний должно продолжаться, несмотря на ее сговор с Чарльзом против меня. Я открою секрет прибавления в обмен на уверенность, что она в безопасности от него. Услышав слухи, ходящие по этим залам, я подозреваю, что она умерла от его руки."},
@@ -3397,9 +4041,13 @@
                 {"who":"ada", "text":"Не говори больше об этом, потому что я тоже должен быть прощен. В качестве жеста доброй воли воспользуйтесь моей ... нашей лабораторией. У леди Изли уже есть доступ. Я действительно верю, что нам с Чарльзом нужно немного отдохнуть от всей этой суматохи. Мы вернемся через несколько дней, и я с нетерпением жду возможности ознакомиться с вашими открытиями."},
                 {"who":"george", "text":"Спасибо и удачного пути.\n\nНикола, не могли бы вы найти мне этот усилитель давления x2 ."},
                 {"who":"nicola", "text":"Это прямо здесь.\n\nКонструкция проста, но я считаю эту операцию потрясающе полезной ."},
-                {"who":"george", "text":"Действительно. Хотя это устройство усиливает значения от определенного диапазона от 0 до 50 до диапазона от 0 до 100. Учитывая минимальное и максимальное значение, я верю, что мы можем сконструировать усилитель, который будет увеличивать любой заданный диапазон."},
-                {"who":"nicola", "text":"Мы назовем его элементом Zoom."},
-                {"who":"george", "text":"Вполне, хотя сначала мы должны это изобрести. Север может быть нашим максимумом, а Юг - минимумом. Выходные данные Востока сообщат нам, где входные данные Запада находятся в пределах диапазона."}
+                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a maximum value, I do believe we can construct an amplifier which will scale for any given maximum."},
+                {"who":"nicola", "text":"We shall name it the Scale element."},
+                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the East output will tell us where the West input lies."}
+            ],
+            [
+                {"who":"nicola", "text":"That wasn't that difficult, but what if we wish to zoom into a range which does not begin at zero?"},
+                {"who":"george", "text":"That is an interesting idea. Gertrude, would you be able to construct a Zoom element which scales any range with a minimum and a maximum to the range 0 to 100?\n\nLet North be out maximum and South be our minimum of the range."}
             ],
             [
                 {"who":"george", "text":"Good, теперь мы можем увеличить любой диапазон давления по нашему выбору. Что мне нужно дальше, так это способ определить, находимся ли мы в пределах досягаемости. Взгляните на этот «паровой спидометр».\n\nАда попросила Чарльза измерить количество пара, проходящего через него. Когда пар проходит по длинной трубе, он теряет некоторое давление. Чем быстрее проходит пар, тем большее давление он теряет. Если обе стороны находятся под одинаковым давлением, движущийся пар не должен быть. Она даже вставила несколько клапанов в трубу, чтобы увеличить сопротивление и сделать разницу больше."},
@@ -3537,6 +4185,9 @@
                 {"who":"nicola", "text":"Когда вход высокий, мы подключаем Север. Мы знаем, как это сделать, из «нормально открытого» дизайна. А когда на входе низкий, подключаем юг. Это наш \"нормально закрытый\" дизайн."}
             ],
             [
+                {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                 {"who":"nicola", "text":"Ну, давайте начнем с основ. Когда вход высокий, мы подключим выход к источнику пара. Когда он будет низким, мы подключимся к атмосфере. Чтобы подключиться к атмосфере, мы просто оставляем конец трубы открытым.\n\nКак отметила леди Чаввингтон, клапаны являются аналоговыми, и если значения находятся в диапазоне от 0 до 100, клапаны частично открываются и воссоздают точное соотношение ."}
             ],
             [
@@ -3564,6 +4215,9 @@
                 {"who":"nicola", "text":"Мы можем использовать тот же трюк, что и в нашем дизайне дешифрования. Мы увеличиваем или уменьшаем степень открытия нижнего клапана до тех пор, пока давление между ними не станет ровно 50. У нас есть Amp50, который делает это."}
             ],
             [
+                {"who":"nicola", "text":"Мы можем использовать тот же трюк, что и в нашем дизайне дешифрования. Мы увеличиваем или уменьшаем степень открытия нижнего клапана до тех пор, пока давление между ними не станет ровно 50. У нас есть Amp50, который делает это."}
+            ],
+            [
                 {"who":"nicola", "text":"Мы открываем один клапан до значения западного входа минус южного входа, затем мы можем открыть второй клапан до того же уровня открытости, ища, когда давление между ними составляет 50."}
             ],
             [
@@ -3577,6 +4231,9 @@
             ],
             [
                 {"who":"nicola", "text":"Для изменения действительно желательно колебание. Усилители в кольцевой конфигурации сделают конструкцию нестабильной и будут раскачиваться вверх и вниз ."}
+            ],
+            [
+                {"who":"nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                 {"who":"nicola", "text":"Когда Запад выше Юга, начинайте добавлять больше пара. Когда запад ниже севера, начните выпускать больше пара."}
@@ -3691,10 +4348,9 @@
             "Info"                      :   "Info",
             "Select language"           :   "Select language",
             "Number resolution"         :   "Number resolution",
+            "User levels"               :   "User levels",
             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button." :
                                             "If you are stuck, consider discussing your challenges with the brightest minds of our High Pressure Steam Society on Discord. Press Esc and click the \"Join our Discord group\" button.",
-            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued..." :
-                                            "Alas our journey must stop somewhere. The adventure continues\nin the full game.\n\nTo be continued...",
             "Cross"                     :   "Cross",
             "50"                        :   "50",
             "Normally Open"             :   "Normally Open",
@@ -3790,6 +4446,9 @@
                 {"who":"charles", "text":"¡¿¡Qué!?! ¡Eso sería vapor de baja presión! ¡No trabajamos con vapor de baja presión! ¡No hice mi fortuna suministrando vapor a baja presión a la gente! \n\nNo te preocupes por todas esas tonterías de baja presión. Cuando el control occidental es Alta presión, conecte el generador del norte, de lo contrario, conecte el generador del sur."}
             ],
             [
+                {"who":"charles", "text":"As much as I hate the very idea, it is sometimes necessary to discharge steam. Take the pressure vessel on the East. We want to connect it to a steam inlet when the North is at High Pressure. When South is at High Pressure we will release the steam to atmosphere. We call the process of releasing steam \"venting\"."}
+            ],
+            [
                 {"who":"nicola", "text":"Las notas de Lady Chavvington hablan de una conexión de vapor entre el laboratorio y la residencia de Lady Easley que se utilizó para la comunicación."},
                 {"who":"charles", "text":"Sí, lo quité. Nuevos procedimientos. Faltaba demasiado de nuestro vapor de alta presión. El único vapor que se permite salir de nuestras instalaciones es medido y proporcionado a los clientes que pagan. Ninguno de mi vapor de alta presión puede salir de estas paredes."},
                 {"who":"nicola", "text":"Creo que aún podemos establecer una conexión sin generar ninguna salida. Según estas notas ..."},
@@ -3861,6 +4520,9 @@
                 {"who":"ada", "text":"Con esto, Lord Moorhouse pudo crear un componente de adición de presión de vapor, que espero que me revele. \n\nLord Moorhouse es muy tímido pero inteligente como un látigo, por desgracia, a menudo tiene demasiado miedo de compartir sus innovaciones."}
             ],
             [
+                {"who":"nicola", "text":"Well it works. At low pressures the design reproduces the incoming value precisely. But it fails to reach the high values. Lady Chavvington describes a second sensor which works well at reproducing high pressure values, but fails on low pressures."},
+            ],
+            [
                 {"who":"nicola", "text":"Bueno, funciona. Ahora podemos sentir cuán abierta está una válvula, pero no veo cómo esto nos acerca al cálculo de vapor. Supongo que debemos preguntarle a Lord Moorhouse."},
                 {"who":"nicola", "text":"Lord Moorhouse. Gracias por permitirnos llamarle. En su ausencia, estamos intentando continuar el trabajo de cálculo de vapor de Lady Chavvington. Sólo usted conoce la construcción de la unidad de adición de presión y le rogamos que la comparta con nosotros."},
                 {"who":"george", "text":"Estoy de acuerdo. Habiendo pensado en esto, el avance del conocimiento debe continuar a pesar de su colusión con Charles en mi contra. Revelaré el secreto de la adición a cambio de la seguridad de que ella está a salvo de él. Al escuchar los rumores que pasan por estos pasillos, sospecho que está muerta por su mano."},
@@ -3918,9 +4580,13 @@
                 {"who":"ada", "text":"No hables más de esto, porque yo también debo ser perdonado. Como un gesto de buena voluntad, siéntete libre de usar mi ... nuestro laboratorio. Lady Easley ya tiene acceso. Creo que Charles y yo necesitamos un poco de descanso de toda esta conmoción. Regresaremos en unos días y ya espero con ansias inspeccionar tus descubrimientos."},
                 {"who":"george", "text":"Gracias y buen viaje. \n\nNicola, ¿podrías encontrarme ese amplificador de presión x2?"},
                 {"who":"nicola", "text":"Está justo aquí. \n\nLa construcción es simple, pero encuentro la operación increíblemente útil."},
-                {"who":"george", "text":"De hecho. Aunque este dispositivo amplifica valores desde un rango específico de 0 a 50 hasta el rango de 0 a 100. Dado un valor mínimo y máximo, creo que podemos construir un amplificador que se acerque a cualquier rango dado."},
-                {"who":"nicola", "text":"Lo llamaremos el elemento Zoom."},
-                {"who":"george", "text":"Absolutamente, aunque deberíamos inventarlo primero. El norte puede ser nuestro máximo y el sur nuestro mínimo. La salida del este nos dirá dónde se encuentra la entrada del oeste dentro del rango."}
+                {"who":"george", "text":"Indeed. Although this device amplifies values from a specific range of 0 to 50 to the range of 0 to 100. Given a maximum value, I do believe we can construct an amplifier which will scale for any given maximum."},
+                {"who":"nicola", "text":"We shall name it the Scale element."},
+                {"who":"george", "text":"Quite, although we should invent it first. The North can be our maximum and the East output will tell us where the West input lies."}
+            ],
+            [
+                {"who":"nicola", "text":"That wasn't that difficult, but what if we wish to zoom into a range which does not begin at zero?"},
+                {"who":"george", "text":"That is an interesting idea. Gertrude, would you be able to construct a Zoom element which scales any range with a minimum and a maximum to the range 0 to 100?\n\nLet North be out maximum and South be our minimum of the range."}
             ],
             [
                 {"who":"george", "text":"Bien, ahora podemos acercarnos a cualquier rango de presión que elijamos. Lo que necesito a continuación es una forma de detectar si estamos dentro de un rango. Echa un vistazo a este \" velocímetro de vapor \". \n\nAda lo hizo para Charles para medir la cantidad de vapor que pasa a través de él. Cuando el vapor pasa a través de una tubería larga, pierde algo de presión. Cuanto más rápido pasa el vapor, más presión pierde. Si los dos lados están a la misma presión, debe haber sin vapor en movimiento. Incluso puso algunas válvulas en la tubería para aumentar la resistencia y hacer la diferencia mayor."},
@@ -4058,6 +4724,9 @@
                 {"who":"nicola", "text":"Cuando la entrada es alta, conectamos el norte. Sabemos cómo hacerlo desde el diseño \" Normalmente abierto \". Y cuando la entrada es baja, conectamos el Sur. Ese es nuestro diseño \" Normalmente cerrado \"."}
             ],
             [
+                {"who":"nicola", "text":"We need two valves and one steam inlet. One valve is switched by the North port and connect a steam inlet to the East. The other valve connects the East port to air."}
+            ],
+            [
                 {"who":"nicola", "text":"Bueno, comencemos con lo básico. Cuando la entrada sea alta, conectaremos la salida a una fuente de vapor. Cuando esté baja, nos conectaremos a la atmósfera. Para conectarnos a la atmósfera, simplemente dejamos abierto el extremo de la tubería. \n\nComo señaló Lady Chavvington, las válvulas son analógicas y parece que cuando los valores están entre 0 y 100, las válvulas se abrirán parcialmente y recrearán la proporción exacta."}
             ],
             [
@@ -4085,6 +4754,9 @@
                 {"who":"nicola", "text":"Podemos usar el mismo truco que en nuestro diseño de descifrado. Aumentamos o disminuimos la cantidad que abrimos la válvula inferior hasta que la presión entre ellas sea exactamente 50. Tenemos un Amp50 que hace esto."}
             ],
             [
+                {"who":"nicola", "text":"Podemos usar el mismo truco que en nuestro diseño de descifrado. Aumentamos o disminuimos la cantidad que abrimos la válvula inferior hasta que la presión entre ellas sea exactamente 50. Tenemos un Amp50 que hace esto."}
+            ],
+            [
                 {"who":"nicola", "text":"Abrimos una válvula al valor de la entrada Oeste menos la entrada Sur, luego podemos abrir una segunda válvula al mismo nivel de apertura buscando cuando la presión entre ellas es 50."}
             ],
             [
@@ -4098,6 +4770,9 @@
             ],
             [
                 {"who":"nicola", "text":"Para variar, un bamboleo es realmente deseable. Los amplificadores en una configuración de anillo harán que el diseño sea inestable y se bamboleará hacia arriba y hacia abajo."}
+            ],
+            [
+                {"who":"nicola", "text":"Take a look at our Mul2 design. In this case, instead of using 50, we can use any pressure from the North."}
             ],
             [
                 {"who":"nicola", "text":"Cuando el Oeste es más alto que el Sur, comience a agregar más vapor. Cuando el Oeste sea más bajo que el Norte, comience a liberar más vapor."}
